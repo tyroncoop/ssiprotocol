@@ -1,17 +1,29 @@
-import React from "react";
+import React, {useState, useEffect} from "react";
 import logo from '../images/tyron_logo.png';
-import { Link } from "react-router-dom";
 import SSIBrowser from "./SSIBrowser";
 import Image from 'next/image'
 
 function Header() {
+    const [headerClassName, setHeaderClassName] = useState('first-load')
+    const [contentClassName, setContentClassName] = useState('first-load')
+    const [innerClassName, setInnerClassName] = useState('first-load')
+
+    useEffect(() => {
+        setTimeout(() => {
+            setHeaderClassName('header')
+            setContentClassName('content')
+            setInnerClassName('inner')
+        }, 10)
+        // eslint-disable-next-line react-hooks/exhaustive-deps
+    }, [])
+
     return(
         <>
         <SSIBrowser />
-        <div id="header">
-            <Image src={logo} width="200" alt="tyron_logo"/>
-            <div className="content">
-                <div className="inner">
+        <div id={headerClassName}>
+            {headerClassName !== 'first-load' && <Image src={logo} width="200" alt="tyron_logo"/>}
+            <div className={contentClassName}>
+                <div className={innerClassName}>
                     <h1>Self-Sovereign Identity Protocol</h1>
                     <p>Own your data. Empower your world.</p>
                 </div>
