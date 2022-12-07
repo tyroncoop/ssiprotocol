@@ -2,15 +2,16 @@ import React from "react";
 import logo from '../images/tyron_logo.png';
 import { Link } from "react-router-dom";
 import SSIBrowser from "./SSIBrowser";
+import Image from 'next/image'
 
 function Header() {
     return(
         <>
         <SSIBrowser />
         <div id="header">
-            <img src={logo} width="20%" alt="tyron_logo"/>
-            <div class="content">
-                <div class="inner">
+            <Image src={logo} width="200" alt="tyron_logo"/>
+            <div className="content">
+                <div className="inner">
                     <h1>Self-Sovereign Identity Protocol</h1>
                     <p>Own your data. Empower your world.</p>
                 </div>
@@ -29,9 +30,9 @@ function Header() {
             </nav>
             <nav>
                 <ul>
-                    <li><Link to="/about">About</Link></li>
+                    {/* <li><Link to="/about">About</Link></li>
                     <li><Link to="/wallets">DID<span style={{ textTransform: 'lowercase'}}>x</span>Wallet</Link></li>
-                    <li><Link to="/contact">Contact</Link></li>
+                    <li><Link to="/contact">Contact</Link></li> */}
                 </ul>
             </nav>
         </div>
