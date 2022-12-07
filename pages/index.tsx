@@ -6,7 +6,6 @@ const Component: NextPage = () => {
     return (
             <>
                 <Header />
-                <Footer />
             </>
     )
 }
