@@ -2,6 +2,8 @@
   "/_app": "pages/_app.js",
   "/_error": "pages/_error.js",
   "/_document": "pages/_document.js",
-  "/dao": "pages/dao.js",
+  "/": "pages/index.js",
+  "/tyronzil": "pages/tyronzil.js",
+  "/tutorials": "pages/tutorials.js",
   "/about": "pages/about.js"
 }

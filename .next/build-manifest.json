@@ -15,6 +15,11 @@
   ],
   "rootMainFiles": [],
   "pages": {
+    "/": [
+      "static/chunks/webpack.js",
+      "static/chunks/main.js",
+      "static/chunks/pages/index.js"
+    ],
     "/_app": [
       "static/chunks/webpack.js",
       "static/chunks/main.js",
@@ -30,10 +35,15 @@
       "static/chunks/main.js",
       "static/chunks/pages/about.js"
     ],
-    "/dao": [
+    "/tutorials": [
       "static/chunks/webpack.js",
       "static/chunks/main.js",
-      "static/chunks/pages/dao.js"
+      "static/chunks/pages/tutorials.js"
+    ],
+    "/tyronzil": [
+      "static/chunks/webpack.js",
+      "static/chunks/main.js",
+      "static/chunks/pages/tyronzil.js"
     ]
   },
   "ampFirstPages": []
