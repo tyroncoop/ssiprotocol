@@ -1630,5 +1630,6 @@ input, select, textarea {
 	}
 	.contentBody {
 		margin-top: 200px;
+		width: 90%;
 	}
 }

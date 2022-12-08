@@ -28,7 +28,7 @@ function Menu() {
                 <div onClick={() => Router.push('/about')} className={isActive('about') ? styles.txtMenuActive : styles.txtMenu}>ABOUT</div>
                 <div onClick={() => Router.push('/tyronzil')} className={isActive('tyronzil') ? styles.txtMenuActive : styles.txtMenu}>tyronZIL</div>
                 <div onClick={() => Router.push('/tutorials')} className={isActive('tutorials') ? styles.txtMenuActive : styles.txtMenu}>TUTORIALS</div>
-                <div onClick={() => Router.push('/whitepaper')} className={isActive('whitepaper') ? styles.txtMenuActive : styles.txtMenu}>WHITEPAPER</div>
+                <div onClick={() => window.open('https://ssiprotocol.notion.site/TYRON-whitepaper-5ca16fc254b343fb90cfeb725cbfa2c3')} className={isActive('whitepaper') ? styles.txtMenuActive : styles.txtMenu}>WHITEPAPER</div>
                 <div onClick={() => Router.push('/dao')} className={isActive('dao') ? styles.txtMenuActive : styles.txtMenu}>DAO</div>
             </div>
             <button className={styles.button} onClick={handleOnClick}>
