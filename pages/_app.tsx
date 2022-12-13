@@ -1,10 +1,10 @@
-import '../src/styles/css/main.css';
-import '../src/styles/css/noscript.css';
+import '../src/styles/css/main.css'
+import '../src/styles/css/noscript.css'
 
 import React from 'react'
-import Head from 'next/head';
-import { Footer } from '../src/components';
-import Menu from '../src/components/Menu';
+import Head from 'next/head'
+import { Footer } from '../src/components'
+import Menu from '../src/components/Menu'
 
 function App({ Component, pageProps }) {
     return (

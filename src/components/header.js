@@ -1,6 +1,6 @@
-import React, {useState, useEffect} from "react";
-import logo from '../images/tyron_logo.png';
-import Menu from "./Menu";
+import React, { useState, useEffect } from 'react'
+import logo from '../images/tyron_logo.png'
+import Menu from './Menu'
 import Image from 'next/image'
 
 function Header() {
@@ -17,21 +17,21 @@ function Header() {
         // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [])
 
-    return(
+    return (
         <>
-        <div id={headerClassName}>
-            {/* {headerClassName !== 'first-load' && 
+            <div id={headerClassName}>
+                {/* {headerClassName !== 'first-load' && 
                     <Image src={logo} width="200" alt="tyron_logo"/>
             } */}
-            <div />
-            <div className={contentClassName}>
-                <div className={innerClassName}>
-                    <h1>Self-Sovereign Identity Protocol</h1>
-                    <p>Own your data. Empower your world.</p>
+                <div />
+                <div className={contentClassName}>
+                    <div className={innerClassName}>
+                        <h1>Self-Sovereign Identity Protocol</h1>
+                        <p>Own your data. Empower your world.</p>
+                    </div>
                 </div>
-            </div>
-            <nav>
-                {/* <ul>
+                <nav>
+                    {/* <ul>
                     <li>
                         <a
                             href="https://ssiprotocol.notion.site/ssiprotocol/TYRON-Whitepaper-5ca16fc254b343fb90cfeb725cbfa2c3"
@@ -41,17 +41,17 @@ function Header() {
                         </a>
                     </li>
                 </ul> */}
-            </nav>
-            <nav>
-                <ul>
-                    {/* <li><Link to="/about">About</Link></li>
+                </nav>
+                <nav>
+                    <ul>
+                        {/* <li><Link to="/about">About</Link></li>
                     <li><Link to="/wallets">DID<span style={{ textTransform: 'lowercase'}}>x</span>Wallet</Link></li>
                     <li><Link to="/contact">Contact</Link></li> */}
-                </ul>
-            </nav>
-        </div>
+                    </ul>
+                </nav>
+            </div>
         </>
     )
 }
 
-export default Header;
+export default Header
