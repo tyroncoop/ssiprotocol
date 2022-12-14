@@ -224,10 +224,10 @@ const Component: NextPage = () => {
                     />
                     <div style={{ width: '80%' }}>
                         <div style={{ fontWeight: 'bold', fontSize: '25px' }}>
-                            community.ssi
+                            COMMUNITY.SSI
                         </div>
                         {t(
-                            'The TYRON Governing & Profit-Sharing Community, or TYRON Community - is a decentralized finance (DeFi) application that manages the liquidity of TYRON tokens to ensure their decentralized exchange. This community is also the decision-maker that governs the TYRON Network.'
+                            'COMMUNITY_1'
                         )}
                         <br />
                         <br />
