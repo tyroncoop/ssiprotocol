@@ -13,7 +13,9 @@ function Footer() {
 
     useEffect(() => {
         const lang_ = window.localStorage.getItem('language')
-        setLang(lang_)
+        if (lang_) {
+            setLang(lang_)
+        }
     }, [])
 
     const langDropdown = [

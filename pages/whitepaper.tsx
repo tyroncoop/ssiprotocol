@@ -1,21 +1,25 @@
 import React, { useState } from 'react'
 import type { NextPage } from 'next'
-import { Document, Page, pdfjs } from 'react-pdf';
-pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.js`;
+import { Document, Page, pdfjs } from 'react-pdf'
+pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.js`
 
 const Component: NextPage = () => {
     const [loading, setLoading] = useState(true)
-    const [numPages, setNumPages] = useState(null);
-    const [pageNumber, setPageNumber] = useState(1);
+    const [numPages, setNumPages] = useState(null)
+    const [pageNumber, setPageNumber] = useState(1)
 
     function onDocumentLoadSuccess({ numPages }) {
-        setNumPages(numPages);
-      }
+        setNumPages(numPages)
+    }
 
     return (
         <div>
             <div className="aboutTxt">
-                <Document file={{url: "https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf"}}  onLoadError={console.error} onLoadSuccess={onDocumentLoadSuccess}>
+                <Document
+                    file="./assets/sample.pdf"
+                    onLoadError={console.error}
+                    onLoadSuccess={onDocumentLoadSuccess}
+                >
                     <Page pageNumber={pageNumber} />
                 </Document>
                 <p>

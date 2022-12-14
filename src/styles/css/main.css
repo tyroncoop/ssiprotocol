@@ -1754,6 +1754,46 @@ body.is-preload #footer {
     left: 2%;
 }
 
+.dao_wrapperTyronSsi {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.dao_tyronSsiTitle {
+    font-size: 30px !important;
+}
+
+.dao_titleImg {
+    width: 150px;
+    height: 150px;
+}
+
+.dao_tyronSsi {
+    width: 822px;
+    height: 513px;
+    border: 1px solid #fff;
+}
+
+.dao_entities {
+    display: flex;
+    align-items: center;
+}
+
+.dao_entitiesImg {
+    width: 100px;
+    height: 100px;
+    margin-right: 2rem;
+}
+
+.dao_flexContent {
+    display: flex;
+}
+
+.dao_flexContentTxt {
+    width: 60%;
+}
+
 @media only screen and (max-width: 900px) {
     #header {
         margin-top: 15rem;
@@ -1769,5 +1809,18 @@ body.is-preload #footer {
     }
     .languageWrapper {
         width: 80px;
+    }
+
+    .dao_tyronSsi {
+        width: 274px;
+        height: 171px;
+        border: 1px solid #fff;
+    }
+    .dao_flexContent {
+        flex-direction: column;
+    }
+    .dao_flexContentTxt {
+        width: 100%;
+        margin-bottom: 1rem;
     }
 }
