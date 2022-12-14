@@ -1,42 +1,57 @@
-import React from "react";
-import logo from '../images/tyron.gif';
-import { Link } from "react-router-dom";
-import SSIBrowser from "./SSIBrowser";
+import React, { useState, useEffect } from 'react'
+import logo from '../images/tyron_logo.png'
+import Menu from './Menu'
+import Image from 'next/image'
 
 function Header() {
-    return(
+    const [headerClassName, setHeaderClassName] = useState('first-load')
+    const [contentClassName, setContentClassName] = useState('first-load')
+    const [innerClassName, setInnerClassName] = useState('first-load')
+
+    useEffect(() => {
+        setTimeout(() => {
+            setHeaderClassName('header')
+            setContentClassName('content')
+            setInnerClassName('inner')
+        }, 10)
+        // eslint-disable-next-line react-hooks/exhaustive-deps
+    }, [])
+
+    return (
         <>
-        <SSIBrowser />
-        <div id="header">
-            <img src={logo} width="20%" alt="tyron_logo"/>
-            <div class="content">
-                <div class="inner">
-                    <h1>Self-Sovereign Identity Protocol</h1>
-                    <p>Own your data. Empower your world.</p>
+            <div id={headerClassName}>
+                {/* {headerClassName !== 'first-load' && 
+                    <Image src={logo} width="200" alt="tyron_logo"/>
+            } */}
+                <div />
+                <div className={contentClassName}>
+                    <div className={innerClassName}>
+                        <h1>Self-Sovereign Identity Protocol</h1>
+                        <p>Own your data. Empower your world.</p>
+                    </div>
                 </div>
-            </div>
-            <nav>
-                <ul>
+                <nav>
+                    {/* <ul>
                     <li>
                         <a
-                            href="https://ssiprotocol.notion.site/TYRON-a-network-for-self-sovereign-identities-3e39d78b34464d178f4490048d026941"
+                            href="https://ssiprotocol.notion.site/ssiprotocol/TYRON-Whitepaper-5ca16fc254b343fb90cfeb725cbfa2c3"
                             rel="noreferrer" target="_blank"
                         >
                             whitepaper
                         </a>
                     </li>
-                </ul>
-            </nav>
-            <nav>
-                <ul>
-                    <li><Link to="/about">About</Link></li>
+                </ul> */}
+                </nav>
+                <nav>
+                    <ul>
+                        {/* <li><Link to="/about">About</Link></li>
                     <li><Link to="/wallets">DID<span style={{ textTransform: 'lowercase'}}>x</span>Wallet</Link></li>
-                    <li><Link to="/contact">Contact</Link></li>
-                </ul>
-            </nav>
-        </div>
+                    <li><Link to="/contact">Contact</Link></li> */}
+                    </ul>
+                </nav>
+            </div>
         </>
     )
 }
 
-export default Header;
+export default Header
