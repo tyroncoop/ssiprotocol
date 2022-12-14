@@ -235,7 +235,7 @@ const Component: NextPage = () => {
                             {t('TYRON Token')}
                         </div>
                         {t(
-                            'TYRON is a fungible token to be used in exchange for joining the TYRON Governing & Profit-Sharing Community and accessing other products and services on the TYRON Network, such as NFT Domain Names. It is also possible to transmute TYRON into Self-Sovereign Identity Dollars ($SI), a stablecoin utilized to buy NFT Domain Names and participate in DeFi applications on the TYRON Network.'
+                            'TYRON_1'
                         )}
                         <br />
                         <br />
@@ -243,10 +243,7 @@ const Component: NextPage = () => {
                             {t('Self-Sovereign Identity Dollar')}
                         </div>
                         {t(
-                            'The Self-Sovereign Identity Dollar ($SI) is a decentralized stablecoin equivalent to one US dollar.'
-                        )}{' '}
-                        {t(
-                            'On the Zilliqa platform, this parity is as follows'
+                            '$SI_1'
                         )}
                     </div>
                 </div>
