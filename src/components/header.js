@@ -27,7 +27,7 @@ function Header() {
                 <div className={contentClassName}>
                     <div className={innerClassName}>
                         <h1>Self-Sovereign Identity Protocol</h1>
-                        <p>Own your data. Empower your world.</p>
+                        <p>Own your data. Empower your world</p>
                     </div>
                 </div>
                 <nav>
