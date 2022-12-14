@@ -66,9 +66,10 @@ function Menu() {
                 </div>
                 <div
                     onClick={() =>
-                        window.open(
-                            'https://ssiprotocol.notion.site/TYRON-whitepaper-5ca16fc254b343fb90cfeb725cbfa2c3'
-                        )
+                        Router.push('/whitepaper')
+                        // window.open(
+                        //     'https://ssiprotocol.notion.site/TYRON-whitepaper-5ca16fc254b343fb90cfeb725cbfa2c3'
+                        // )
                     }
                     className={
                         isActive('whitepaper')

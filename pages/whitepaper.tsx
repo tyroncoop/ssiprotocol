@@ -1,11 +1,26 @@
-import React from 'react'
+import React, { useState } from 'react'
 import type { NextPage } from 'next'
+import { Document, Page, pdfjs } from 'react-pdf';
+pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.js`;
 
 const Component: NextPage = () => {
+    const [loading, setLoading] = useState(true)
+    const [numPages, setNumPages] = useState(null);
+    const [pageNumber, setPageNumber] = useState(1);
+
+    function onDocumentLoadSuccess({ numPages }) {
+        setNumPages(numPages);
+      }
+
     return (
         <div>
             <div className="aboutTxt">
-                <iframe src="https://ssiprotocol.notion.site/TYRON-whitepaper-5ca16fc254b343fb90cfeb725cbfa2c3"></iframe>
+                <Document file={{url: "https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf"}}  onLoadError={console.error} onLoadSuccess={onDocumentLoadSuccess}>
+                    <Page pageNumber={pageNumber} />
+                </Document>
+                <p>
+                    Page {pageNumber} of {numPages}
+                </p>
             </div>
         </div>
     )
