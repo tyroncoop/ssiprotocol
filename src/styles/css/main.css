@@ -1747,6 +1747,13 @@ body.is-preload #footer {
     justify-content: center;
 }
 
+.languageWrapper {
+    width: 170px;
+    position: absolute;
+    bottom: 2%;
+    left: 2%;
+}
+
 @media only screen and (max-width: 900px) {
     #header {
         margin-top: 15rem;
@@ -1759,5 +1766,8 @@ body.is-preload #footer {
     .contentBody {
         margin-top: 200px;
         width: 90%;
+    }
+    .languageWrapper {
+        width: 80px;
     }
 }

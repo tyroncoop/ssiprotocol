@@ -5,6 +5,7 @@ import React from 'react'
 import Head from 'next/head'
 import { Footer } from '../src/components'
 import Menu from '../src/components/Menu'
+import { appWithTranslation } from 'next-i18next'
 
 function App({ Component, pageProps }) {
     return (
@@ -22,4 +23,4 @@ function App({ Component, pageProps }) {
     )
 }
 
-export default App
+export default appWithTranslation(App)

@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import styles from './styles.module.scss'
 import Logo from '../../images/logo.png'
 import Image from 'next/image'
@@ -6,6 +6,7 @@ import { useRouter } from 'next/router'
 
 function Menu() {
     const Router = useRouter()
+    const { asPath } = useRouter()
     const handleOnClick = () => {
         window.open('https://tyron.network')
     }
@@ -18,6 +19,14 @@ function Menu() {
             return false
         }
     }
+
+    useEffect(() => {
+        const language = window.localStorage.getItem('language')
+        if (language) {
+            Router.push({}, asPath, { locale: language })
+        }
+        // eslint-disable-next-line react-hooks/exhaustive-deps
+    }, [])
 
     return (
         <div className={styles.wrapper}>
