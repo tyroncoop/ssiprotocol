@@ -1,12 +1,10 @@
 import React from 'react'
 import type { NextPage } from 'next'
-import { useRouter } from 'next/router'
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
 import { useTranslation } from 'next-i18next'
 
 const Component: NextPage = () => {
     const { t } = useTranslation()
-    const Router = useRouter()
     return (
         <div className="contentBody">
             <div className="aboutTxt">

@@ -1754,6 +1754,34 @@ body.is-preload #footer {
     left: 2%;
 }
 
+.h_header {
+    margin-top: 100px;
+}
+
+.h_headWrapper {
+    display: flex;
+    margin-top: 2rem;
+}
+
+.h_headIco {
+    margin-left: 20px;
+    margin-right: 20px;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.h_imgContent {
+    width: 100px;
+    margin-right: 10px;
+    margin-top: 20px;
+}
+
+.h_imgContentRight {
+    width: 100px;
+    margin-left: 10px;
+    margin-top: 20px;
+}
+
 .dao_wrapperTyronSsi {
     display: flex;
     flex-direction: column;
@@ -1809,6 +1837,19 @@ body.is-preload #footer {
     }
     .languageWrapper {
         width: 80px;
+    }
+
+    .h_header {
+        margin-top: -50px;
+    }
+    .h_headWrapper {
+        display: flex;
+        flex-direction: column;
+        margin-top: 0rem;
+    }
+    .h_headIco {
+        margin-top: 10px;
+        margin-bottom: 10px;
     }
 
     .dao_tyronSsi {
