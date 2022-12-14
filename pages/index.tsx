@@ -52,7 +52,7 @@ const Component: NextPage = () => {
                     />
                     <div style={{ width: '80%' }}>
                         <div style={{ fontWeight: 'bold', fontSize: '25px' }}>
-                            DIDXWallet
+                            DIDxWALLET
                         </div>
                         {t(
                             'Your decentralized identity on the TYRON Network includes a non-custodied Web3 digital wallet that acts as the main head of your identity.'
@@ -72,7 +72,7 @@ const Component: NextPage = () => {
                     />
                     <div style={{ width: '80%' }}>
                         <div style={{ fontWeight: 'bold', fontSize: '25px' }}>
-                            ZIL STAKING XWALLET
+                            ZIL STAKING xWALLET
                         </div>
                         {t(
                             'Delegate your ZILs to the Zillion staking dApp, while maintaining the security features of the TYRON Network.'
@@ -88,7 +88,7 @@ const Component: NextPage = () => {
                     />
                     <div style={{ width: '80%' }}>
                         <div style={{ fontWeight: 'bold', fontSize: '25px' }}>
-                            SBTXWALLET
+                            SOULBOUND xWALLET
                         </div>
                         {t(
                             'The SBTxWallet is a solution to avoid giving out personal data over and over again on private servers.'
