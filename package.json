@@ -1,12 +1,12 @@
 {
-    "name": "tyron-web-portal",
-    "description": "Self-Sovereign Identity Protocol",
-    "version": "3.0.0",
+    "name": "tyron-website",
+    "description": "Self-Sovereign Identity Protocol x TYRON",
+    "version": "4.0.0",
     "homepage": "https://ssiprotocol.com",
     "private": true,
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/pungtas/tyron-web-portal.git"
+        "url": "git+https://github.com/tyroncoop/ssiprotocol.git"
     },
     "author": "Tyron Pungtas",
     "license": "GPL-3.0-only",
