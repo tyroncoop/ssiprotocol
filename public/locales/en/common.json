@@ -39,5 +39,14 @@
     "TYRON_1": "TYRON is a fungible token used to join the Governing & Profit-Sharing Community and access other products and services on the TYRON Network. It will be possible to transmute TYRON into Self-Sovereign Identity Dollars ($SI), a stablecoin to participate in DeFi applications.",
     "Self-Sovereign Identity Dollar": "Self-Sovereign Identity Dollar",
     "$SI_1": "The Self-Sovereign Identity Dollar ($SI) is a decentralized stablecoin equivalent to one Singapore dollar (SGD).",
-    "NFT DOMAIN NAME": "NFT DOMAIN NAME"
+    "NFT DOMAIN NAME": "NFT DOMAIN NAME",
+    "About": "About",
+    "TUTORIALS": "TUTORIALS",
+    "tyronZil1": "Tyron SSI Protocol's Decentralized Identifier Method Specification",
+    "tyronZil2a": "Tyronzil is the W3C Decentralized Identifier Method of the",
+    "tyronZil2b": "You can find it published at the",
+    "tyronZil2c": "and it is the first DID Method of the",
+    "tyronZil2d": "blockchain - funded by",
+    "tyronZil2e": " Innovation grants.",
+    "hLssi": "Lexica is an NFT collection for self-sovereign identities that uses the lexica.art API. The goal is to enable personalization of the user interface on the TYRON Network with text-to-image artifical intelligence."
 }

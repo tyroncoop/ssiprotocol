@@ -1714,6 +1714,18 @@ body.is-preload #footer {
     color: #000000;
 }
 
+.title1 {
+    font-size: 40px;
+}
+
+.content1 {
+    font-size: 25px;
+}
+
+.contentCenter {
+    width: 60%;
+}
+
 .aboutWrapperBtn {
     width: 100%;
     display: flex;
@@ -1764,22 +1776,44 @@ body.is-preload #footer {
 }
 
 .h_headIco {
-    margin-left: 20px;
-    margin-right: 20px;
+    width: 100px;
+    height: 100px;
+    margin-left: 50px;
+    margin-right: 50px;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.h_headIco:hover {
+    width: 120px;
+    height: 120px;
+    margin-left: 50px;
+    margin-right: 50px;
     cursor: pointer;
     z-index: 1;
 }
 
 .h_imgContent {
-    width: 100px;
-    margin-right: 10px;
+    width: 200px;
+    height: 200px;
+    margin-right: 100px;
     margin-top: 20px;
 }
 
 .h_imgContentRight {
-    width: 100px;
-    margin-left: 10px;
+    width: 200px;
+    height: 200px;
+    margin-left: 100px;
     margin-top: 20px;
+}
+
+.h_titleContent {
+    font-weight: bold;
+    font-size: 35px;
+}
+
+.h_txtContent {
+    font-size: 30px;
 }
 
 .dao_wrapperTyronSsi {
@@ -1795,6 +1829,7 @@ body.is-preload #footer {
 .dao_titleImg {
     width: 150px;
     height: 150px;
+    margin-left: 20px;
 }
 
 .dao_tyronSsi {
@@ -1822,6 +1857,38 @@ body.is-preload #footer {
     width: 60%;
 }
 
+.dao_legalImg {
+    margin-left: 20px;
+}
+
+.btnLink {
+    border-radius: 0px;
+    border: 0;
+    border: 2px solid grey;
+    box-shadow: none;
+    border-radius: 5px;
+    color: #ffffff !important;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 0.8rem;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 900;
+    height: 2.5rem;
+    letter-spacing: 0.2rem;
+    line-height: 1.7rem;
+    outline: 0;
+    padding: 0 1.25rem 0 1.35rem;
+    text-align: center;
+    text-decoration: none;
+    text-transform: none;
+    white-space: nowrap;
+}
+
+.btnLink:hover {
+    border-color: #ffff32;
+    color: #ffff32 !important;
+}
+
 @media only screen and (max-width: 900px) {
     #header {
         margin-top: 15rem;
@@ -1838,6 +1905,17 @@ body.is-preload #footer {
     .languageWrapper {
         width: 80px;
     }
+    .title1 {
+        font-size: 30px;
+    }
+
+    .content1 {
+        font-size: 17px;
+    }
+
+    .contentCenter {
+        width: 90%;
+    }
 
     .h_header {
         margin-top: -50px;
@@ -1851,6 +1929,25 @@ body.is-preload #footer {
         margin-top: 10px;
         margin-bottom: 10px;
     }
+    .h_imgContent {
+        width: 80px;
+        height: 80px;
+        margin-right: 20px;
+        margin-top: 20px;
+    }
+    .h_imgContentRight {
+        width: 80px;
+        height: 80px;
+        margin-left: 20px;
+        margin-top: 20px;
+    }
+    .h_titleContent {
+        font-size: 25px;
+    }
+
+    .h_txtContent {
+        font-size: 20px;
+    }
 
     .dao_tyronSsi {
         width: 274px;
@@ -1863,5 +1960,11 @@ body.is-preload #footer {
     .dao_flexContentTxt {
         width: 100%;
         margin-bottom: 1rem;
+    }
+    .dao_legalImg {
+        margin-left: 0px;
+    }
+    .dao_titleImg {
+        margin-left: 0px;
     }
 }
