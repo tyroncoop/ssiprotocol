@@ -12,8 +12,11 @@ import { useTranslation } from 'next-i18next'
 const Component: NextPage = () => {
     const { t } = useTranslation()
     return (
-        <div className="contentBody">
-            <div className="aboutTxt">
+        <div
+            className="contentBody"
+            style={{ justifyContent: 'center', display: 'flex', zIndex: 1 }}
+        >
+            <div className="contentCenter">
                 <div style={{ fontWeight: 'bold', fontSize: '50px' }}>DAO</div>
                 <br />
                 <div className="dao_flexContent">
@@ -131,6 +134,7 @@ const Component: NextPage = () => {
                     </div>
                     <div>
                         <Image
+                            className="dao_legalImg"
                             width={200}
                             height={200}
                             src={legalEntities}

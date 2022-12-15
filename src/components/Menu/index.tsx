@@ -4,10 +4,12 @@ import Logo from '../../images/logo.png'
 import Image from 'next/image'
 import { useRouter } from 'next/router'
 import burgerIco from '../../images/burger.png'
+import { useTranslation } from 'next-i18next'
 
 function Menu() {
     const Router = useRouter()
     const { asPath } = useRouter()
+    const { t } = useTranslation()
     const [showMenu, setShowMenu] = useState(false)
 
     const handleOnClick = () => {
@@ -45,7 +47,7 @@ function Menu() {
                             : styles.txtMenu
                     }
                 >
-                    ABOUT
+                    {t('ABOUT')}
                 </div>
                 <div
                     onClick={() => Router.push('/tyronzil')}
@@ -65,7 +67,7 @@ function Menu() {
                             : styles.txtMenu
                     }
                 >
-                    TUTORIALS
+                    {t('TUTORIALS')}
                 </div>
                 <div
                     onClick={() =>

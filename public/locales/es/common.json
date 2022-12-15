@@ -40,5 +40,14 @@
     "Self-Sovereign Identity Dollar": "Dólar de Identidades Autosoberanas ($SI)",
     "The Self-Sovereign Identity Dollar ($SI) is a decentralized stablecoin equivalent to one US dollar.": "El Dólar de Identidades Autosoberanas ($SI) es una moneda estable (stablecoin) de tipo algorítmica, la cual equivale a un dólar estadounidense.",
     "On the Zilliqa platform, this parity is as follows": "En la plataforma Zilliqa, tal paridad se representa de la siguiente manera:",
-    "NFT DOMAIN NAME": "NOMBRE DE DOMINIO NFT"
+    "NFT DOMAIN NAME": "NOMBRE DE DOMINIO NFT",
+    "About": "Info",
+    "TUTORIALS": "TUTORIALES",
+    "tyronZil1": "Especificación del método de identificador descentralizado del protocolo Tyron SSI",
+    "tyronZil2a": "Tyronzil es el método del identificador descentralizado del W3C de",
+    "tyronZil2b": "Podés encontrarlo publicado en",
+    "tyronZil2c": "y es el primer método DID del blockchain",
+    "tyronZil2d": "- fundado por las Becas de innovación",
+    "tyronZil2e": ".",
+    "hLssi": "Lexica es una colección de NFTs para identidades autosoberanas que utiliza la API lexica.art. El objetivo es permitir la personalización de la interfaz del usuarie en la Red TYRON con inteligencia artificial de texto a imagen."
 }
