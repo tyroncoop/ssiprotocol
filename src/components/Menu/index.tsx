@@ -56,6 +56,7 @@ function Menu() {
                             ? styles.txtMenuActive
                             : styles.txtMenu
                     }
+                    style={{ textTransform: 'none' }}
                 >
                     tyronZIL
                 </div>
@@ -107,7 +108,7 @@ function Menu() {
                                     : styles.txtMenu
                             }
                         >
-                            ABOUT
+                            {t('ABOUT')}
                         </div>
                         <div
                             onClick={() => Router.push('/tyronzil')}
@@ -116,6 +117,7 @@ function Menu() {
                                     ? styles.txtMenuActive
                                     : styles.txtMenu
                             }
+                            style={{ textTransform: 'none' }}
                         >
                             tyronZIL
                         </div>
@@ -127,7 +129,7 @@ function Menu() {
                                     : styles.txtMenu
                             }
                         >
-                            TUTORIALS
+                            {t('TUTORIALS')}
                         </div>
                         <div
                             onClick={() =>

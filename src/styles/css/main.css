@@ -1742,6 +1742,11 @@ body.is-preload #footer {
     width: 90%;
 }
 
+.aboutImg {
+    width: 500px;
+    height: 300px;
+}
+
 .iFrame {
     width: 476px;
     height: 268px;
@@ -1947,6 +1952,11 @@ body.is-preload #footer {
 
     .h_txtContent {
         font-size: 20px;
+    }
+
+    .aboutImg {
+        width: 250px;
+        height: 150px;
     }
 
     .dao_tyronSsi {

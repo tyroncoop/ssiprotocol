@@ -66,7 +66,8 @@ const Component: NextPage = () => {
                 <br />
                 <div style={{ width: '60%' }}>
                     {t(
-                        'The DAO has a multidisciplinary team dubbed Tyron Coop. With contributors from independent projects working in various support areas to the decentralized network of self-sovereign identities: the'
+                        'The DAO has a multidisciplinary team dubbed Tyron Coop. With contributors from independent projects working in various support areas to the decentralized network of self-sovereign identities{{colon}} the',
+                        { colon: ':' }
                     )}{' '}
                     <a href="https://tyron.network">TYRON Network</a>.<br />
                     <br />
@@ -83,7 +84,7 @@ const Component: NextPage = () => {
                         'The principle of the Coop is to work holistically with independent projects and to encourage self-sovereignty in all developers.'
                     )}
                 </div>
-                <br />
+                {/* <br />
                 <div style={{ width: '60%' }}>
                     {t('The Tyron DAO has two legal entities:')}
                     <br />
@@ -142,7 +143,7 @@ const Component: NextPage = () => {
                         />
                     </div>
                 </div>
-                <br />
+                <br /> */}
             </div>
         </div>
     )
