@@ -1,7 +1,9 @@
 import React from 'react'
 import type { NextPage } from 'next'
+import Image from 'next/image'
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
 import { useTranslation } from 'next-i18next'
+import placeholder from '../../src/images/placeholder.webp'
 
 const Component: NextPage = () => {
     const { t } = useTranslation()
@@ -19,9 +21,27 @@ const Component: NextPage = () => {
                     )}
                     <br />
                     <br />
+                    <div style={{ display: 'flex', justifyContent: 'center' }}>
+                        <Image
+                            className="aboutImg"
+                            src={placeholder}
+                            alt="img-about"
+                        />
+                    </div>
+                    <br />
+                    <br />
                     {t(
                         "TYRON, a decentralized network of Self-sovereign identities, was created in these circumstances. The word tyron derives from the Greek turannos, meaning 'sovereign'. Thus, the purpose of the TYRON Network is to give you sovereignty over your data. Sovereignty to empower the world and improve our security, with no need to exploit nature to do so, by using new Web3 technologies."
                     )}
+                    <br />
+                    <br />
+                    <div style={{ display: 'flex', justifyContent: 'center' }}>
+                        <Image
+                            className="aboutImg"
+                            src={placeholder}
+                            alt="img-about"
+                        />
+                    </div>
                     <br />
                     <br />
                     {t(

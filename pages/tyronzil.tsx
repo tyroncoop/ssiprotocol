@@ -14,11 +14,11 @@ const Component: NextPage = () => {
                 <div className="title1">{t('tyronZil1')}</div>
                 <br />
                 <div className="content1">
-                    {t('tyronZil2a')}
+                    {t('tyronZil2a')}{' '}
                     <a href="https://www.ssiprotocol.com/">
                         Tyron Self-Sovereign Identity Protocol
                     </a>
-                    . {t('tyronZil2b')}
+                    . {t('tyronZil2b')}{' '}
                     <a href="https://w3c.github.io/did-spec-registries/">
                         W3C DID Specification Registries
                     </a>
