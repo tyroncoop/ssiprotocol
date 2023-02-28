@@ -247,25 +247,19 @@ const Component: NextPage = () => {
                         <div style={{ fontWeight: 'bold', fontSize: '25px' }}>
                             COMMUNITY.SSI
                         </div>
-                        {t(
-                            'COMMUNITY_1'
-                        )}
+                        {t('COMMUNITY_1')}
                         <br />
                         <br />
                         <div style={{ fontWeight: 'bold', fontSize: '25px' }}>
                             {t('TYRON Token')}
                         </div>
-                        {t(
-                            'TYRON_1'
-                        )}
+                        {t('TYRON_1')}
                         <br />
                         <br />
                         <div style={{ fontWeight: 'bold', fontSize: '25px' }}>
                             {t('Self-Sovereign Identity Dollar')}
                         </div>
-                        {t(
-                            '$SI_1'
-                        )}
+                        {t('$SI_1')}
                     </div>
                 </div>
             </div>
