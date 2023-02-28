@@ -1,6 +1,6 @@
 {
-    "name": "tyron-website",
-    "description": "Self-Sovereign Identity Protocol x TYRON",
+    "name": "ssiprotocol",
+    "description": "Self-Sovereign Identity Protocol",
     "version": "4.0.0",
     "homepage": "https://ssiprotocol.com",
     "private": true,
