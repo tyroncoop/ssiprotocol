@@ -22,19 +22,19 @@ const Component: NextPage = () => {
                 <div className="dao_flexContent">
                     <div className="dao_flexContentTxt">
                         {t(
-                            'The coordination of the projects is the job of the'
+                            'dao1'
                         )}
                          <a href="https://tyron.network/tyron">Tyron DAO</a>,{' '}
-                        {t('a Decentralized Autonomous Organisation (DAO).')}
+                        {t('dao2')}
                         <br />
                         <br />
                         {t(
-                            "On the TYRON Network, the DAO has a self-sovereign identity. You can access the organisation's DID Social Tree at"
+                            "dao3"
                         )}
                          <a href="https://tyron.network/tyron.did">tyron.did</a>
                         .{' '}
                         {t(
-                            'To find out about the Tyron Coop Minority Reports with the development info and other valuable information, such as the Gather Virtual Office 🔥.'
+                            'dao4'
                         )}
                     </div>
                     <div>
@@ -71,22 +71,22 @@ const Component: NextPage = () => {
                     )}{' '}
                     <a href="https://tyron.network">TYRON Network</a>.<br />
                     <br />
-                    {t('The areas cover')}
+                    {t('dao6')}
                     <br />
-                    &#183; {t('Engineering & software development')}
+                    &#183; {t('dao7')}
                     <br />
-                    &#183; {t('Pedagogy & anthropology')}
+                    &#183; {t('dao8')}
                     <br />
-                    &#183; {t('Design & technical analysis')}
+                    &#183; {t('dao9')}
                     <br />
                     <br />
                     {t(
-                        'The principle of the Coop is to work holistically with independent projects and to encourage self-sovereignty in all developers.'
+                        'dao10'
                     )}
                 </div>
                 {/* <br />
                 <div style={{ width: '60%' }}>
-                    {t('The Tyron DAO has two legal entities:')}
+                    {t('dao11')}
                     <br />
                     <br />
                 </div>
@@ -103,10 +103,10 @@ const Component: NextPage = () => {
                         <a href="https://tyron.network/tyronmapu">Tyron Mapu</a>
                         :{' '}
                         {t(
-                            'a Community Interest Company (CIC) registered in the UK, and that provides information services. By law, it must reinvest 65% of profits into the community.'
+                            'dao12'
                         )}
                         <br />
-                        {t('+info: tyronmapu.ssi')}
+                        {t('dao13')}
                     </div>
                 </div>
                 <br />
@@ -121,7 +121,7 @@ const Component: NextPage = () => {
                     <div style={{ width: '60%' }}>
                         &#183; Tyron Pungtas:{' '}
                         {t(
-                            'a private company registered in Singapore, whose main activity is the development of web portals.'
+                            'dao14'
                         )}
                     </div>
                 </div>
@@ -130,7 +130,7 @@ const Component: NextPage = () => {
                 <div className="dao_flexContent">
                     <div className="dao_flexContentTxt">
                         {t(
-                            'These legal entities support the DAO in maintaining a relational approach to technology. So that the protocol of the TYRON Network, the Self-Sovereign Identity Protocol, cannot be corrupted and to maintain a network of cooperation to address socio-economic and environmental issues. Tyron Mapu CIC will address these issues in three areas: social injustices, DeFi education, and remediation of the environment.'
+                            'dao15'
                         )}
                     </div>
                     <div>
