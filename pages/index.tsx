@@ -55,11 +55,11 @@ const Component: NextPage = () => {
                         <div className="h_titleContent">DIDxWALLET</div>
                         <div className="h_txtContent">
                             {t(
-                                'Your decentralized identity on the TYRON Network includes a non-custodied Web3 digital wallet that acts as the main head of your identity.'
+                                'index1'
                             )}
                             <br />
                             {t(
-                                'You can make withdrawals and deposits in a 100% decentralized way, with all ZIL cryptocurrencies and ZRC2 tokens (including stable currencies such as the Singapore dollar XSGD and the Tether dollar USDT).'
+                                'index2'
                             )}
                         </div>
                     </div>
@@ -77,7 +77,7 @@ const Component: NextPage = () => {
                         </div>
                         <div className="h_txtContent">
                             {t(
-                                'Delegate your ZILs to the Zillion staking dApp, while maintaining the security features of the TYRON Network.'
+                                'index3'
                             )}
                         </div>
                     </div>
@@ -93,11 +93,11 @@ const Component: NextPage = () => {
                         <div className="h_titleContent">SBTxWALLET</div>
                         <div className="h_txtContent">
                             {t(
-                                'The SBTxWallet is a solution to avoid giving out personal data over and over again on private servers.'
+                                'index4'
                             )}
                             <br />
                             {t(
-                                'With this xWallet, you will be able to acquire and store Soulbound Tokens, increasing the security of your data and access to different sites.'
+                                'index5'
                             )}
                         </div>
                     </div>
@@ -118,7 +118,7 @@ const Component: NextPage = () => {
                         </div>
                         <div className="h_txtContent">
                             {t(
-                                'Social Recovery is a feature of your self-sovereign identity that allows you to update your private key address through Guardians, so that you do not run the risk of losing access to your account.'
+                                'index6'
                             )}
                         </div>
                     </div>
@@ -146,11 +146,11 @@ const Component: NextPage = () => {
                         </div>
                         <div className="h_txtContent">
                             {t(
-                                'Assign to your identity the Domain Name(s) you want, according to the use you are going to give it.'
+                                'index7'
                             )}
                             <br />
                             {t(
-                                'The NFT Domain Name works as an alias that will allow you to make transactions easily.'
+                                'index8'
                             )}
                         </div>
                     </div>
@@ -166,18 +166,18 @@ const Component: NextPage = () => {
                         <div className="h_titleContent">TYDRAS</div>
                         <div className="h_txtContent">
                             {t(
-                                "Tydras are NFTs that represent an analogy of how relational technology, advanced in Tyron's"
+                                "index9"
                             )}{' '}
                             <a href="https://www.tyron.io/origin/">
-                                {t('origin')}
+                                {t('index10')}
                             </a>
                             ,{' '}
                             {t(
-                                'is possible with Web3 and blockchain using these NFTs for recognition and access to communities and the future metaverse.'
+                                'index11'
                             )}
                             <br />
                             {t(
-                                'Get them in your DIDxWallet and enjoy their benefits!'
+                                'index12'
                             )}
                         </div>
                     </div>
@@ -208,14 +208,14 @@ const Component: NextPage = () => {
                         <div className="h_titleContent">{t('SOCIAL TREE')}</div>
                         <div className="h_txtContent">
                             {t(
-                                'In your social tree, you can share website addresses that are important to you, such as your projects, social networks, websites or whatever you want!'
+                                'index13'
                             )}
                             <br />
                             {t(
-                                'Also, as part of your DIDxWallet, your social tree has a direct access to receive donations or tips from your fans directly in your self-sovereign identity.'
+                                'index14'
                             )}
                             <br />
-                            {t("Get to know TYRON's social tree")}{' '}
+                            {t("index15")}{' '}
                             <a href="www.tyron.network/ssiprotocol">
                                 www.tyron.network/ssiprotocol
                             </a>
