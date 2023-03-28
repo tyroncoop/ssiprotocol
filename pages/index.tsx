@@ -152,6 +152,10 @@ const Component: NextPage = () => {
                             {t(
                                 'index8'
                             )}
+                            <br />
+                            {t(
+                                'index8b'
+                            )}
                         </div>
                     </div>
                 </div>
