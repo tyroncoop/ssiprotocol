@@ -222,24 +222,6 @@ const Component: NextPage = () => {
                     </div>
                 </div>
     
-                <br />
-                <div style={{ display: 'flex' }}>
-                    <Image
-                        className="h_imgContent"
-                        src={}
-                        alt="content-ico"
-                    />
-                    <div style={{ width: '80%' }}>
-                        <div className="h_titleContent">.gZil</div>
-                        <div className="h_txtContent">
-                            {t('index_gzil1')}
-                            {t('index_gzil2')}
-                            <br />
-                            {t('index_gzil3')}
-                                 
-                            </div>
-                    </div>
-                </div>
             </div>
             <br />
             <br />
