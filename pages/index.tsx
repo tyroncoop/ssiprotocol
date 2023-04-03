@@ -146,15 +146,15 @@ const Component: NextPage = () => {
                         </div>
                         <div className="h_txtContent">
                             {t(
-                                'index7'
+                                'index7_nft'
                             )}
                             <br />
                             {t(
-                                'index8'
+                                'index8_nft'
                             )}
                             <br />
                             {t(
-                                'index8b'
+                                'index8b_nft'
                             )}
                         </div>
                     </div>
@@ -170,19 +170,32 @@ const Component: NextPage = () => {
                         <div className="h_titleContent">TYDRAS</div>
                         <div className="h_txtContent">
                             {t(
-                                "index9"
+                                "index9_tot"
                             )}{' '}
+                            {t(
+                                'index10_tot'
+                            )}
+                            <br />
+                            <strong>{t(
+                                'index11_tot'
+                            )}</strong>
+                            
+                            <br />
+                            <strong>{t(
+                                'index12_tot'
+                            )}</strong> 
+                            <br />
+                            {t(
+                                'index13_tot'
+                            )}
                             <a href="https://www.tyron.io/origin/">
-                                {t('index10')}
+                                {t('index14_tot')}
                             </a>
                             ,{' '}
                             {t(
-                                'index11'
+                                'index15_tot'
                             )}
-                            <br />
-                            {t(
-                                'index12'
-                            )}
+                            
                         </div>
                     </div>
                 </div>
@@ -195,7 +208,36 @@ const Component: NextPage = () => {
                     />
                     <div style={{ width: '80%' }}>
                         <div className="h_titleContent">LEXICA.SSI</div>
-                        <div className="h_txtContent">{t('hLssi')}</div>
+                        <div className="h_txtContent">
+                            {t('index_lexica1')}
+                        <a href="http://lexica.art/">
+                                lexica.art</a>
+                            {t('index_lexica2')}
+                            <br />
+                            {t('index_lexica3')}
+                            <br />
+                            {t('index_lexica4')}
+                               
+                            </div>
+                    </div>
+                </div>
+    
+                <br />
+                <div style={{ display: 'flex' }}>
+                    <Image
+                        className="h_imgContent"
+                        src={}
+                        alt="content-ico"
+                    />
+                    <div style={{ width: '80%' }}>
+                        <div className="h_titleContent">.gZil</div>
+                        <div className="h_txtContent">
+                            {t('index_gzil1')}
+                            {t('index_gzil2')}
+                            <br />
+                            {t('index_gzil3')}
+                                 
+                            </div>
                     </div>
                 </div>
             </div>
