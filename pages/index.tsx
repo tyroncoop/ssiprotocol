@@ -55,11 +55,15 @@ const Component: NextPage = () => {
                         <div className="h_titleContent">DIDxWALLET</div>
                         <div className="h_txtContent">
                             {t(
-                                'index1'
+                                'index_wallets1'
                             )}
                             <br />
                             {t(
-                                'index2'
+                                'index_wallets2'
+                            )}
+                            <br />
+                            {t(
+                                'index_wallets3'
                             )}
                         </div>
                     </div>
@@ -77,7 +81,11 @@ const Component: NextPage = () => {
                         </div>
                         <div className="h_txtContent">
                             {t(
-                                'index3'
+                                'index_wallets4'
+                            )}
+                            <br />
+                            {t(
+                                'index_wallets5'
                             )}
                         </div>
                     </div>
@@ -93,11 +101,11 @@ const Component: NextPage = () => {
                         <div className="h_titleContent">SBTxWALLET</div>
                         <div className="h_txtContent">
                             {t(
-                                'index4'
+                                'index_wallets6'
                             )}
                             <br />
                             {t(
-                                'index5'
+                                'index_wallets7'
                             )}
                         </div>
                     </div>
@@ -118,7 +126,14 @@ const Component: NextPage = () => {
                         </div>
                         <div className="h_txtContent">
                             {t(
-                                'index6'
+                                'index_recsoc1'
+                            )}
+                            <br />
+                            {t(
+                                'index_recsoc2'
+                            )}
+                            <br />{t(
+                                'index_recsoc3'
                             )}
                         </div>
                     </div>
@@ -146,15 +161,15 @@ const Component: NextPage = () => {
                         </div>
                         <div className="h_txtContent">
                             {t(
-                                'index7_nft'
+                                'index_nft1'
                             )}
                             <br />
                             {t(
-                                'index8_nft'
+                                'index_nft2'
                             )}
                             <br />
                             {t(
-                                'index8b_nft'
+                                'index_nft3'
                             )}
                         </div>
                     </div>
@@ -170,30 +185,30 @@ const Component: NextPage = () => {
                         <div className="h_titleContent">TYDRAS</div>
                         <div className="h_txtContent">
                             {t(
-                                "index9_tot"
+                                "index_tot1"
                             )}{' '}
                             {t(
-                                'index10_tot'
+                                'index_tot2'
                             )}
                             <br />
                             <strong>{t(
-                                'index11_tot'
+                                'index_tot3'
                             )}</strong>
                             
                             <br />
                             <strong>{t(
-                                'index12_tot'
+                                'index_tot4'
                             )}</strong> 
                             <br />
                             {t(
-                                'index13_tot'
+                                'index_tot5'
                             )}
                             <a href="https://www.tyron.io/origin/">
-                                {t('index14_tot')}
+                                {t('index_tot6')}
                             </a>
                             ,{' '}
                             {t(
-                                'index15_tot'
+                                'index_tot7'
                             )}
                             
                         </div>
@@ -236,14 +251,14 @@ const Component: NextPage = () => {
                         <div className="h_titleContent">{t('SOCIAL TREE')}</div>
                         <div className="h_txtContent">
                             {t(
-                                'index13'
+                                'index_tree1'
                             )}
                             <br />
                             {t(
-                                'index14'
+                                'index_tree2'
                             )}
                             <br />
-                            {t("index15")}{' '}
+                            {t("index_tree3")}{' '}
                             <a href="www.tyron.network/ssiprotocol">
                                 www.tyron.network/ssiprotocol
                             </a>
@@ -276,24 +291,14 @@ const Component: NextPage = () => {
                             COMMUNITY.SSI
                         </div>
                         {t(
-                            'COMMUNITY_1'
+                            'index_community1'
                         )}
                         <br />
-                        <br />
-                        <div style={{ fontWeight: 'bold', fontSize: '25px' }}>
-                            {t('TYRON Token')}
-                        </div>
                         {t(
-                            'TYRON_1'
+                            'index_community1'
                         )}
                         <br />
-                        <br />
-                        <div style={{ fontWeight: 'bold', fontSize: '25px' }}>
-                            {t('Self-Sovereign Identity Dollar')}
-                        </div>
-                        {t(
-                            '$SI_1'
-                        )}
+                        
                     </div>
                 </div>
             </div>
