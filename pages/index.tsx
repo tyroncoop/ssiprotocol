@@ -289,6 +289,7 @@ const Component: NextPage = () => {
                         <div style={{ fontWeight: 'bold', fontSize: '25px' }}>
                             COMMUNITY.SSI
                         </div>
+                        <div className="h_txtContent">
                         {t(
                             'index_community1'
                         )}
@@ -297,6 +298,9 @@ const Component: NextPage = () => {
                             'index_community1'
                         )}
                         <br />
+
+                        </div>
+                        
                         
                     </div>
                 </div>
