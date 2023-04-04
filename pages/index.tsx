@@ -285,8 +285,7 @@ const Component: NextPage = () => {
                         src={Commun}
                         alt="content-ico"
                     />
-                    <div style={{ width: '80%' }}>
-                        <div style={{ fontWeight: 'bold', fontSize: '25px' }}>
+                    <div className='h_titleContent' >
                             COMMUNITY.SSI
                         </div>
                         <div className="h_txtContent">
