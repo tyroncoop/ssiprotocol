@@ -191,14 +191,13 @@ const Component: NextPage = () => {
                                 'index_tot2'
                             )}
                             <br />
-                            <strong>{t(
+                            {t(
                                 'index_tot3'
-                            )}</strong>
-                            
+                            )}                            
                             <br />
-                            <strong>{t(
+                            {t(
                                 'index_tot4'
-                            )}</strong> 
+                            )}
                             <br />
                             {t(
                                 'index_tot5'
