@@ -16,9 +16,7 @@ const Component: NextPage = () => {
                 <div className="title1">{t('About')}</div>
                 <br />
                 <div className="content1">
-                    {t(
-                        'about1'
-                    )}
+                    {t('about1')}
                     <br />
                     <br />
                     <div style={{ display: 'flex', justifyContent: 'center' }}>
@@ -30,9 +28,7 @@ const Component: NextPage = () => {
                     </div>
                     <br />
                     <br />
-                    {t(
-                        "about2"
-                    )}
+                    {t('about2')}
                     <br />
                     <br />
                     <div style={{ display: 'flex', justifyContent: 'center' }}>
@@ -44,14 +40,10 @@ const Component: NextPage = () => {
                     </div>
                     <br />
                     <br />
-                    {t(
-                        'about3'
-                    )}
+                    {t('about3')}
                     <br />
                     <br />
-                    {t(
-                        'about4'
-                    )}
+                    {t('about4')}
                 </div>
             </div>
         </div>

@@ -21,21 +21,14 @@ const Component: NextPage = () => {
                 <br />
                 <div className="dao_flexContent">
                     <div className="dao_flexContentTxt">
-                        {t(
-                            'dao1'
-                        )}
-                         <a href="https://tyron.network/tyron">Tyron DAO</a>,{' '}
+                        {t('dao1')} 
+                        <a href="https://tyron.network/tyron">Tyron DAO</a>,{' '}
                         {t('dao2')}
                         <br />
                         <br />
-                        {t(
-                            "dao3"
-                        )}
-                         <a href="https://tyron.network/tyron.did">tyron.did</a>
-                        .{' '}
-                        {t(
-                            'dao4'
-                        )}
+                        {t('dao3')} 
+                        <a href="https://tyron.network/tyron.did">tyron.did</a>.{' '}
+                        {t('dao4')}
                     </div>
                     <div>
                         <Image
@@ -65,10 +58,7 @@ const Component: NextPage = () => {
                 <br />
                 <br />
                 <div style={{ width: '60%' }}>
-                    {t(
-                        'dao5 {{colon}} the',
-                        { colon: ':' }
-                    )}{' '}
+                    {t('dao5 {{colon}} the', { colon: ':' })}{' '}
                     <a href="https://tyron.network">TYRON Network</a>.<br />
                     <br />
                     {t('dao6')}
@@ -80,9 +70,7 @@ const Component: NextPage = () => {
                     &#183; {t('dao9')}
                     <br />
                     <br />
-                    {t(
-                        'dao10'
-                    )}
+                    {t('dao10')}
                 </div>
                 {/* <br />
                 <div style={{ width: '60%' }}>
