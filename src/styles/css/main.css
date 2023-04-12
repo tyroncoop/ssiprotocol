@@ -1779,6 +1779,12 @@ body.is-preload #footer {
     display: flex;
     margin-top: 2rem;
 }
+a:link.link_iconos { 
+    text-decoration:none;
+ }
+a:visited.link_iconos { 
+    text-decoration:none;
+ }
 
 .h_headIco {
     width: 100px;

@@ -7,7 +7,7 @@ import NFT from '../src/images/iconos/ssi_icon_60px_NFT.svg'
 import RecSoc from '../src/images/iconos/ssi_icon_60px_RecSoc.svg'
 import SocTree from '../src/images/iconos/ssi_icon_60px_SocTree.svg'
 import Commun from '../src/images/iconos/ssi_icon_60px_CommunGen.svg'
-import DIDx from '../src/images/iconos/H_DIDx.svg'
+import DIDx from '../src/images/iconos/ssi_icon_60px_DIDx.svg'
 import ZILx from '../src/images/iconos/ssi_icon_60px_ZILx.svg'
 import SBT from '../src/images/iconos/ssi_icon_60px_SBT.svg'
 import DomName from '../src/images/iconos/ssi_icon_60px_DomName.svg'
@@ -17,6 +17,7 @@ import gZil from '../src/images/iconos/ssi_icon_60px_gZILDomName.svg'
 
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
 import { useTranslation } from 'next-i18next'
+import { text } from 'stream/consumers'
 
 const Component: NextPage = () => {
     const { t } = useTranslation()
@@ -26,7 +27,7 @@ const Component: NextPage = () => {
                 <Header />
             </div>
             <div className="h_headWrapper">
-                <a href="#xwalletlink">
+                <a className= "link_iconos" href="#xwalletlink">
                     <div>
                         <Image
                             className="h_headIco"
@@ -35,12 +36,12 @@ const Component: NextPage = () => {
                         />
                     </div>
                 </a>
-                <a href="#nftlink">
+                <a className='link_iconos' href="#nftlink">
                     <div>
                         <Image className="h_headIco" src={NFT} alt="menu-ico" />
                     </div>
                 </a>
-                <a href="#recsoclink">
+                <a className='link_iconos' href="#recsoclink">
                     <div>
                         <Image
                             className="h_headIco"
@@ -49,7 +50,7 @@ const Component: NextPage = () => {
                         />
                     </div>
                 </a>
-                <a href="#soctreelink">
+                <a className='link_iconos' href="#soctreelink" style={{textDecorationLine:'none'}}>
                     <div>
                         <Image
                             className="h_headIco"
@@ -58,7 +59,7 @@ const Component: NextPage = () => {
                         />
                     </div>
                 </a>
-                <a href="#communlink">
+                <a className='link_iconos' href="#communlink">
                     <div>
                         <Image
                             className="h_headIco"
@@ -280,6 +281,7 @@ const Component: NextPage = () => {
                         src={Commun}
                         alt="content-ico"
                     />
+                    <div style={{ width: '80%' }}>
                     <div className="h_titleContent">COMMUNITY.SSI</div>
                     <div className="h_txtContent">
                         {t('index_community1')}
@@ -287,6 +289,7 @@ const Component: NextPage = () => {
                         {t('index_community1')}
                         <br />{' '}
                     </div>
+                </div>
                 </div>
             </div>
             <br />

@@ -2,6 +2,8 @@ import React, { useState, useEffect } from 'react'
 import logo from '../images/tyron_logo.png'
 import Menu from './Menu'
 import Image from 'next/image'
+import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
+import { useTranslation } from 'next-i18next'
 
 function Header() {
     const [headerClassName, setHeaderClassName] = useState('first-load')
@@ -26,8 +28,8 @@ function Header() {
                 <div />
                 <div className={contentClassName}>
                     <div className={innerClassName}>
-                        <h1>Self-Sovereign Identity Protocol</h1>
-                        <p>Own your data. Empower your world</p>
+                        <h1> Self-Sovereign Identity Protocol </h1>
+                        <p> Own your data. Empower your world </p>
                     </div>
                 </div>
                 <nav>
