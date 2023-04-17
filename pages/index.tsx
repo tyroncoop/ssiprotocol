@@ -28,7 +28,7 @@ const Component: NextPage = () => {
             </div>
             <div className="h_headWrapper">
                 <a className= "link_iconos" href="#xwalletlink">
-                    <div>
+                    <div className='link_iconos'>
                         <Image
                             className="h_headIco"
                             src={xWall}
@@ -50,7 +50,7 @@ const Component: NextPage = () => {
                         />
                     </div>
                 </a>
-                <a className='link_iconos' href="#soctreelink" style={{textDecorationLine:'none'}}>
+                <a className='link_iconos' href="#soctreelink" >
                     <div>
                         <Image
                             className="h_headIco"

@@ -18,32 +18,35 @@ const Component: NextPage = () => {
                 <div className="content1">
                     {t('about1')}
                     <br />
-                    <br />
-                    <div style={{ display: 'flex', justifyContent: 'center' }}>
-                        <Image
-                            className="aboutImg"
-                            src={placeholder}
-                            alt="img-about"
-                        />
-                    </div>
-                    <br />
-                    <br />
                     {t('about2')}
-                    <br />
-                    <br />
-                    <div style={{ display: 'flex', justifyContent: 'center' }}>
-                        <Image
-                            className="aboutImg"
-                            src={placeholder}
-                            alt="img-about"
-                        />
-                    </div>
-                    <br />
-                    <br />
+                    <p id='about_turannus'>turannus</p>
                     {t('about3')}
                     <br />
                     <br />
+                    <div style={{ display: 'flex', justifyContent: 'center' }}>
+                        <Image
+                            className="aboutImg"
+                            src={placeholder}
+                            alt="img-about"
+                        />
+                    </div>
+                    <br />
+                    <br />
                     {t('about4')}
+                    <br />
+                    <br />
+                    <div style={{ display: 'flex', justifyContent: 'center' }}>
+                        <Image
+                            className="aboutImg"
+                            src={placeholder}
+                            alt="img-about"
+                        />
+                    </div>
+                    <br />
+                    <br />
+                    {t('about5')}
+                    <br />
+                   
                 </div>
             </div>
         </div>

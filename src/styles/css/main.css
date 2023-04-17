@@ -252,6 +252,9 @@ a {
 a:hover {
     border-bottom-color: transparent;
 }
+a:link {
+    text-decoration: none;
+}
 
 strong,
 b {
@@ -289,6 +292,10 @@ h4 a,
 h5 a,
 h6 a {
     color: inherit;
+    text-decoration: none;
+}
+
+div, a.link_iconos {
     text-decoration: none;
 }
 
@@ -730,6 +737,7 @@ input[type='radio'] + label:before {
     text-transform: none !important;
     font-family: 'Font Awesome 5 Free';
     font-weight: 400;
+    
 }
 
 .icon > .label {
@@ -1663,6 +1671,7 @@ body.is-preload #header .content .inner {
     width: 40rem;
 }
 
+
 /* Footer */
 
 #footer {
@@ -1779,13 +1788,18 @@ body.is-preload #footer {
     display: flex;
     margin-top: 2rem;
 }
-a:link.link_iconos { 
-    text-decoration:none;
- }
-a:visited.link_iconos { 
-    text-decoration:none;
- }
 
+a:link,a:visited, a:active.link_iconos {
+    text-decoration: none;
+}
+
+.link_iconos a:link,a:visited, a:active {
+    text-decoration: none;
+}
+
+#about_turannus {
+    font-style: italic;
+}
 .h_headIco {
     width: 100px;
     height: 100px;
@@ -1793,16 +1807,18 @@ a:visited.link_iconos {
     margin-right: 50px;
     cursor: pointer;
     z-index: 1;
+    text-decoration: none;
 }
 
 .h_headIco:hover {
-    width: 120px;
-    height: 120px;
+    width: 180px;
+    height: 180px;
     margin-left: 50px;
     margin-right: 50px;
     cursor: pointer;
     z-index: 1;
 }
+
 
 .h_imgContent {
     width: 200px;
@@ -1963,6 +1979,9 @@ a:visited.link_iconos {
     .aboutImg {
         width: 250px;
         height: 150px;
+    }
+    #about_turannus {
+        font-style: italic;
     }
 
     .dao_tyronSsi {

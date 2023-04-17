@@ -37,7 +37,7 @@ function Menu() {
         <div className={styles.wrapper}>
             <div className={styles.wrapperLeftDesktop}>
                 <div onClick={() => Router.push('/')} className={styles.logo}>
-                    <Image width={50} height={50} src={Logo} alt="logo" />
+                    <Image width={90} height={90} src={Logo} alt="logo" />
                 </div>
                 <div
                     onClick={() => Router.push('/about')}
@@ -96,7 +96,7 @@ function Menu() {
             </div>
             <div className={styles.wrapperLeftMobile}>
                 <div onClick={() => Router.push('/')} className={styles.logo}>
-                    <Image width={50} height={50} src={Logo} alt="logo" />
+                    <Image width={90} height={90} src={Logo} alt="logo" />
                 </div>
                 {showMenu && (
                     <>
