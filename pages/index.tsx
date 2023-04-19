@@ -14,6 +14,10 @@ import DomName from '../src/images/iconos/ssi_icon_60px_DomName.svg'
 import Tydra from '../src/images/iconos/ssi_icon_60px_Tydra.svg'
 import Lssi from '../src/images/iconos/ssi_icon_60px_Lssi.svg'
 import gZil from '../src/images/iconos/ssi_icon_60px_gZILDomName.svg'
+import app_didx from '../src/images/didxwallet.png'
+import app_RecSoc from '../src/images/socialrecovery.png'
+import app_SocTree from '../src/images/socialtree.png'
+import mapuche from '../src/images/mapuche.png'
 
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
 import { useTranslation } from 'next-i18next'
@@ -69,11 +73,21 @@ const Component: NextPage = () => {
                     </div>
                 </a>
             </div>
+            <br />
+            <br />
+            <div style={{ display: 'flex' , width: '65%' }}>
+        
+            <div className="h_txtContent_kf">
+             <span id='italicas'>Kvme Felen</span> {t('index_kvmefelen1')} <span id='italicas'>Buen Vivir</span>
+                {t('index_kvmefelen2')}
+                <br />
+                {t('index_kvmefelen3')}<span id='italicas'>ixokomfijmogen</span> {t('index_kvmefelen4')}
+                <br />
+                {t('index_kvmefelen5')}<span id='italicas'>Kvme Felen</span>{t('index_kvmefelen6')}
+                </div>                
+                </div>
 
             <div id="xwalletlink">
-                <br />
-                <br />
-                <br />
             </div>
             <div
                 id="#xwallets"
@@ -82,21 +96,31 @@ const Component: NextPage = () => {
             >
                 <div style={{ display: 'flex' }}>
                     <Image
-                        className="h_imgContent"
+                        className="h_imgContent_DIDx"
                         src={DIDx}
                         alt="content-ico"
                     />
-                    <div style={{ width: '80%' }}>
-                        <div className="h_titleContent">DIDxWALLET</div>
+                    <div style={{ width: '80%'}}>
+                        <div className="h_titleContent">DIDxWALLET
+                        </div>
                         <div className="h_txtContent">
                             {t('index_wallets1')}
                             <br />
                             {t('index_wallets2')}
                             <br />
                             {t('index_wallets3')}
+                            <br />
+                            <br />
                         </div>
                     </div>
                 </div>
+                <div style={{ display: 'flex', justifyContent: 'center' }}>
+                        <Image
+                            className="homePageImg"
+                            src={app_didx}
+                            alt="img-didx"
+                        />
+                    </div>
                 <br />
                 <div style={{ display: 'flex' }}>
                     <Image
@@ -104,8 +128,8 @@ const Component: NextPage = () => {
                         src={ZILx}
                         alt="content-ico"
                     />
-                    <div style={{ width: '80%' }}>
-                        <div className="h_titleContent">
+                    <div style={{ width: '70%' }}>
+                        <div className="h_titleContent_b">
                             ZIL STAKING xWALLET
                         </div>
                         <div className="h_txtContent">
@@ -122,8 +146,8 @@ const Component: NextPage = () => {
                         src={SBT}
                         alt="content-ico"
                     />
-                    <div style={{ width: '80%' }}>
-                        <div className="h_titleContent">SBTxWALLET</div>
+                    <div style={{ width: '70%' }}>
+                        <div className="h_titleContent_b">SBTxWALLET</div>
                         <div className="h_txtContent">
                             {t('index_wallets6')}
                             <br />
@@ -156,18 +180,33 @@ const Component: NextPage = () => {
                         </div>
                     </div>
                     <Image
-                        className="h_imgContentRight"
+                        className="h_imgContentRight_RecSoc"
                         src={RecSoc}
                         alt="content-ico"
                     />
                 </div>
                 <br />
+                <div style={{ display: 'flex', justifyContent: 'center' }}>
+                        <Image
+                            className="homePageImg"
+                            src={app_RecSoc}
+                            alt="img-RecSoc"
+                        />
+                    </div>
             </div>
             <div id="nftlink">
                 <br />
                 <br />
                 <br />
+                <br />
             </div>
+            <div style={{ display: 'flex' }}>
+                    <Image
+                        className="h_imgContent_NFTs"
+                        src={NFT}
+                        alt="content-ico"
+                    />                    
+                </div>
             <div id="#nft" className="aboutTxt" style={{ marginTop: '2rem' }}>
                 <div style={{ display: 'flex' }}>
                     <Image
@@ -176,7 +215,7 @@ const Component: NextPage = () => {
                         alt="content-ico"
                     />
                     <div style={{ width: '80%' }}>
-                        <div id="nftlink" className="h_titleContent">
+                        <div id="nftlink" className="h_titleContent_b">
                             {t('NFT DOMAIN NAME')}
                         </div>
                         <div className="h_txtContent">
@@ -196,7 +235,7 @@ const Component: NextPage = () => {
                         alt="content-ico"
                     />
                     <div style={{ width: '80%' }}>
-                        <div className="h_titleContent">TYDRAS</div>
+                        <div className="h_titleContent_b">TYDRAS</div>
                         <div className="h_txtContent">
                             {t('index_tot1')} {t('index_tot2')}
                             <br />
@@ -220,7 +259,7 @@ const Component: NextPage = () => {
                         alt="content-ico"
                     />
                     <div style={{ width: '80%' }}>
-                        <div className="h_titleContent">LEXICA.SSI</div>
+                        <div className="h_titleContent_b">LEXICA.SSI</div>
                         <div className="h_txtContent">
                             {t('index_lexica1')}
                             <a href="http://lexica.art/">lexica.art</a>
@@ -258,11 +297,18 @@ const Component: NextPage = () => {
                         </div>
                     </div>
                     <Image
-                        className="h_imgContentRight"
+                        className="h_imgContentRight_RecSoc"
                         src={SocTree}
                         alt="content-ico"
                     />
                 </div>
+                <div style={{ display: 'flex', justifyContent: 'center' }}>
+                        <Image
+                            className="homePageImg"
+                            src={app_SocTree}
+                            alt="img-SocialTree"
+                        />
+                    </div>
                 <br />
             </div>
             <div id="communlink">
@@ -277,7 +323,7 @@ const Component: NextPage = () => {
             >
                 <div style={{ display: 'flex' }}>
                     <Image
-                        className="h_imgContent"
+                        className="h_imgContent_DIDx"
                         src={Commun}
                         alt="content-ico"
                     />

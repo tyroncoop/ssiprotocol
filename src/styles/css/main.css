@@ -1755,6 +1755,13 @@ body.is-preload #footer {
     width: 500px;
     height: 300px;
 }
+.homePageImg {
+    width: 1500px;
+    height: 750px;
+    padding:1px;
+    background-color: #ffff32;
+}
+
 
 .iFrame {
     width: 476px;
@@ -1788,21 +1795,26 @@ body.is-preload #footer {
     display: flex;
     margin-top: 2rem;
 }
-
+/*
 a:link,a:visited, a:active.link_iconos {
     text-decoration: none;
 }
+ 
 
 .link_iconos a:link,a:visited, a:active {
     text-decoration: none;
-}
+}*/
 
-#about_turannus {
+.link_iconos a img {
+    text-decoration: none;
+  }
+ 
+#italicas {
     font-style: italic;
 }
 .h_headIco {
-    width: 100px;
-    height: 100px;
+    width: 150px;
+    height: 150px;
     margin-left: 50px;
     margin-right: 50px;
     cursor: pointer;
@@ -1811,8 +1823,8 @@ a:link,a:visited, a:active.link_iconos {
 }
 
 .h_headIco:hover {
-    width: 180px;
-    height: 180px;
+    width: 200px;
+    height: 200px;
     margin-left: 50px;
     margin-right: 50px;
     cursor: pointer;
@@ -1827,6 +1839,27 @@ a:link,a:visited, a:active.link_iconos {
     margin-top: 20px;
 }
 
+
+.h_imgContent_DIDx {
+    width: 500px;
+    height: 500px;
+    margin-right: 100px;
+    margin-top: 20px;
+}
+.h_imgContent_NFTs {
+    width: 450px;
+    height: 450px;
+    margin-right: 100px;
+    margin-top: 20px;
+}
+
+.h_imgContentRight_RecSoc {
+    width: 500px;
+    height: 500px;
+    margin-left: 100px;
+    margin-top: 20px;
+}
+
 .h_imgContentRight {
     width: 200px;
     height: 200px;
@@ -1836,11 +1869,29 @@ a:link,a:visited, a:active.link_iconos {
 
 .h_titleContent {
     font-weight: bold;
-    font-size: 35px;
+    font-size: 80px;
+}
+
+.h_titleContent_b {
+    font-weight: bold;
+    font-size: 50px;
 }
 
 .h_txtContent {
     font-size: 30px;
+}
+
+.h_txtContent_kf {
+    font-size: 25px;
+    justify-content: center;
+    align-text: center;
+    padding: 25px;
+    border-width: 2px;
+    border-color: #000000;
+}
+
+#italicas {
+    font-style: italic;
 }
 
 .dao_wrapperTyronSsi {
@@ -1951,6 +2002,7 @@ a:link,a:visited, a:active.link_iconos {
         display: flex;
         flex-direction: column;
         margin-top: 0rem;
+        text-decoration: none;
     }
     .h_headIco {
         margin-top: 10px;
@@ -1962,6 +2014,14 @@ a:link,a:visited, a:active.link_iconos {
         margin-right: 20px;
         margin-top: 20px;
     }
+
+    .h_imgContent_DIDx {
+        width: 80px;
+        height: 80px;
+        margin-right: 20px;
+        margin-top: 20px;
+    }
+
     .h_imgContentRight {
         width: 80px;
         height: 80px;
@@ -1980,7 +2040,12 @@ a:link,a:visited, a:active.link_iconos {
         width: 250px;
         height: 150px;
     }
-    #about_turannus {
+    .homePageImg {
+        width: 250px;
+        height: 150px;
+        padding-top: 10px;
+    }
+    #italicas {
         font-style: italic;
     }
 

@@ -18,8 +18,8 @@ const Component: NextPage = () => {
                 <div className="content1">
                     {t('about1')}
                     <br />
-                    {t('about2')}
-                    <p id='about_turannus'>turannus</p>
+                    <br />
+                    {t('about2')} <span id='italicas'>turannus</span>
                     {t('about3')}
                     <br />
                     <br />
