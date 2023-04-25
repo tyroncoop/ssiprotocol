@@ -6,7 +6,7 @@ import xWall from '../src/images/iconos/ssi_icon_60px_xWallets.svg'
 import NFT from '../src/images/iconos/ssi_icon_60px_NFT.svg'
 import RecSoc from '../src/images/iconos/ssi_icon_60px_RecSoc.svg'
 import SocTree from '../src/images/iconos/ssi_icon_60px_SocTree.svg'
-import Commun from '../src/images/iconos/ssi_icon_60px_CommunGen.svg'
+import Commun from '../src/images/iconos/ssi_icon_60px_balanza.svg'
 import DIDx from '../src/images/iconos/ssi_icon_60px_DIDx.svg'
 import ZILx from '../src/images/iconos/ssi_icon_60px_ZILx.svg'
 import SBT from '../src/images/iconos/ssi_icon_60px_SBT.svg'
@@ -17,7 +17,7 @@ import gZil from '../src/images/iconos/ssi_icon_60px_gZILDomName.svg'
 import app_didx from '../src/images/didxwallet.png'
 import app_RecSoc from '../src/images/socialrecovery.png'
 import app_SocTree from '../src/images/socialtree.png'
-import mapuche from '../src/images/mapuche.png'
+import KvmeFelen from '../src/images/ejemplo_kf.jpg'
 
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
 import { useTranslation } from 'next-i18next'
@@ -75,6 +75,7 @@ const Component: NextPage = () => {
             </div>
             <br />
             <br />
+        
             <div style={{ display: 'flex' , width: '65%' }}>
         
             <div className="h_txtContent_kf">
@@ -84,11 +85,23 @@ const Component: NextPage = () => {
                 {t('index_kvmefelen3')}<span id='italicas'>ixokomfijmogen</span> {t('index_kvmefelen4')}
                 <br />
                 {t('index_kvmefelen5')}<span id='italicas'>Kvme Felen</span>{t('index_kvmefelen6')}
+                <br />
+                <br />
+                <Image
+                className="indexImg"
+                src={KvmeFelen}
+                alt="paisaje"
+                        />
                 </div>                
                 </div>
+            
 
             <div id="xwalletlink">
             </div>
+            <br />
+            <br />
+            <br />
+            
             <div
                 id="#xwallets"
                 className="aboutTxt"
@@ -109,6 +122,7 @@ const Component: NextPage = () => {
                             {t('index_wallets2')}
                             <br />
                             {t('index_wallets3')}
+                            <br />
                             <br />
                             <br />
                         </div>

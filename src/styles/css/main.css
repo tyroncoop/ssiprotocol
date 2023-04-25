@@ -1283,7 +1283,7 @@ button {
     -ms-transition: -ms-transform 0.325s ease-in-out,
         -ms-filter 0.325s ease-in-out;
     transition: transform 0.325s ease-in-out, filter 0.325s ease-in-out;
-    background-image: url('/images/lightning.jpg');
+    background-image: url('/images/SSI_protocolWeb_8001x4501px_fireBG.jpg');
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -1755,11 +1755,21 @@ body.is-preload #footer {
     width: 500px;
     height: 300px;
 }
+
+.indexImg {
+    width: 800px;
+    height: 300px;
+    padding-left:100px;
+}
+
 .homePageImg {
     width: 1500px;
     height: 750px;
-    padding:1px;
-    background-color: #ffff32;
+    border-style:solid;
+    border-width:2px;
+    border-color: red;
+    margin-top:90px;
+    margin-bottom:20px;
 }
 
 
@@ -2037,6 +2047,10 @@ a:link,a:visited, a:active.link_iconos {
     }
 
     .aboutImg {
+        width: 250px;
+        height: 150px;
+    }
+    .indexImg {
         width: 250px;
         height: 150px;
     }

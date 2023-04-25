@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import styles from './styles.module.scss'
-import Logo from '../../images/logo.png'
+import Logo from '../../images/ssi_ssiprotocol_iso_2000px.png'
 import Image from 'next/image'
 import { useRouter } from 'next/router'
 import burgerIco from '../../images/burger.png'
@@ -37,7 +37,7 @@ function Menu() {
         <div className={styles.wrapper}>
             <div className={styles.wrapperLeftDesktop}>
                 <div onClick={() => Router.push('/')} className={styles.logo}>
-                    <Image width={90} height={90} src={Logo} alt="logo" />
+                    <Image width={100} height={100} src={Logo} alt="logo" />
                 </div>
                 <div
                     onClick={() => Router.push('/about')}
