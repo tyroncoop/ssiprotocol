@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import styles from './styles.module.scss'
 import Logo from '../../images/ssi_ssiprotocol_iso_2000px.png'
+import LogoTYRON from '../../images/ssi_$Tipo_Chrome_1920x640px_trans.png'
 import Image from 'next/image'
 import { useRouter } from 'next/router'
 import burgerIco from '../../images/burger.png'
@@ -166,9 +167,8 @@ function Menu() {
                 )}
             </div>
             <div className={styles.btnDesktop}>
-                <button className={styles.button} onClick={handleOnClick}>
-                    tyron.network
-                </button>
+                <button className={styles.button} onClick={handleOnClick}> 
+                <Image height={50} width={150} src={LogoTYRON} alt="logo" /></button>
             </div>
             <div
                 onClick={() => setShowMenu(!showMenu)}

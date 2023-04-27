@@ -1840,6 +1840,24 @@ a:link,a:visited, a:active.link_iconos {
     cursor: pointer;
     z-index: 1;
 }
+.h_headIco_indice {
+    width: 150px;
+    height: 150px;
+    margin-left: 50px;
+    margin-right: 50px;
+    cursor: pointer;
+    z-index: 1;
+    text-decoration: none;
+}
+
+.h_headIco_indice:hover {
+    width: 200px;
+    height: 200px;
+    margin-left: 50px;
+    margin-right: 50px;
+    cursor: pointer;
+    z-index: 1;
+}
 
 
 .h_imgContent {
@@ -1847,6 +1865,12 @@ a:link,a:visited, a:active.link_iconos {
     height: 200px;
     margin-right: 100px;
     margin-top: 20px;
+}
+.majin {
+    height:600px;
+    width: 600px;
+    background: red; 
+    float: left; 
 }
 
 
