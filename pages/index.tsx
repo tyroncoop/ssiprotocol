@@ -96,52 +96,38 @@ const Component: NextPage = () => {
                 </div>
             
 
-            <div id="xwalletlink">
-            </div>
-            <br />
-            <br />
-            <br />
-            <div className='majin'>
-            <div><Image
-                        className="h_imgContent_DIDx"
-                        src={xWall}
-                        alt="content-ico"
-                    />  </div>          
-                    
+            <div className='indice_majin' id="xwalletlink">
             </div>
             
-            { /* div para poner los iconos con sus indices
-<div className="indice_varios">
-                    <a className='link_iconos' href="#nftlink">
-                    <div><Image className="h_headIco_indice" src={DIDx} alt="menu-ico" /></div>
-                    </a>
-                    <a className='link_iconos' href="#nftlink">
-                    <div><Image className="h_headIco_indice" src={ZILx} alt="menu-ico" /></div>
-                    </a>  
-                    <a className='link_iconos' href="#nftlink">
-                    <div><Image className="h_headIco_indice" src={SBT} alt="menu-ico" /></div>
-                    </a>     
-                    </div>
-
-            <div style={{ display: 'flex' }}>
-                    <Image
-                        className="h_imgContent_NFTs"
+            <table>
+                <tr>
+                    <th><Image
+                        className="h_imgContent_majin"
                         src={xWall}
                         alt="content-ico"
-                    />                    
-                </div>
-                <div className="h_txtContent">
-                        {t('index_community1')}
-                        <br />
-                        {t('index_community1')}
-                        <br />{' '}
-                    </div>
-                
-                
-            */}
-
+                    /></th>
+                    <th>
+                        <div className="h_titleContent_majin">xWALLETS
+                        </div>
+                        <table>
+                        <tr className='majin2'>
+                            <th><a className='link_iconos' href="#didxlink" title='DIDxWALLET'>
+                    <div><Image className="h_headIco_indice" src={DIDx} alt="menu-ico" /></div>
+                    </a></th>
+                            <th><a className='link_iconos' href="#zilxlink" title='ZILxWALLET'>
+                    <div><Image className="h_headIco_indice" src={ZILx} alt="menu-ico" /></div>
+                    </a> </th>
+                            <th><a className='link_iconos' href="#sbtxlink"title='SBTxWALLET'>
+                    <div><Image className="h_headIco_indice" src={SBT} alt="menu-ico" /></div>
+                    </a></th>
+                            </tr>
+                            </table> </th>
+                </tr>
+            </table>
+            <div className='indice_majin2' id="didxlink">
+            </div>
+        
             <div
-                id="#xwallets"
                 className="aboutTxt"
                 style={{ marginTop: '10rem' }}
             >
@@ -151,7 +137,7 @@ const Component: NextPage = () => {
                         src={DIDx}
                         alt="content-ico"
                     />
-                    <div style={{ width: '80%'}}>
+                    <div style={{ width: '70%'}}>
                         <div className="h_titleContent">DIDxWALLET
                         </div>
                         <div className="h_txtContent">
@@ -160,6 +146,7 @@ const Component: NextPage = () => {
                             {t('index_wallets2')}
                             <br />
                             {t('index_wallets3')}
+                            <br />
                             <br />
                             <br />
                             <br />
@@ -173,17 +160,20 @@ const Component: NextPage = () => {
                             alt="img-didx"
                         />
                     </div>
-                <br />
+                   
+
+        <div className='indice_majin' id="zilxlink">
+            </div>
+
                 <div style={{ display: 'flex' }}>
                     <Image
                         className="h_imgContent_DIDx"
                         src={ZILx}
                         alt="content-ico"
                     />
-                    <div style={{ width: '70%' }}>
-                        <div className="h_titleContent">
-                            ZIL STAKING xWALLET
-                        </div>
+                    <div style={{ width: '50%' }}>
+                        <div className="h_titleContent">ZIL STAKING xWALLET</div>
+                        <br />
                         <div className="h_txtContent">
                             {t('index_wallets4')}
                             <br />
@@ -192,14 +182,18 @@ const Component: NextPage = () => {
                     </div>
                 </div>
                 <br />
+
+            <div className='indice_majin' id="sbtxlink">
+            </div>
                 <div style={{ display: 'flex' }}>
                     <Image
                         className="h_imgContent_DIDx"
                         src={SBT}
                         alt="content-ico"
                     />
-                    <div style={{ width: '70%' }}>
+                    <div style={{ width: '50%' }}>
                         <div className="h_titleContent">SBTxWALLET</div>
+                        <br />
                         <div className="h_txtContent">
                             {t('index_wallets6')}
                             <br />
@@ -208,21 +202,22 @@ const Component: NextPage = () => {
                     </div>
                 </div>
             </div>
-            <div id="recsoclink">
-                <br />
-                <br />
-                <br />
+            <div className='indice_majin2' id="recsoclink">
             </div>
+            <br />
+            <br />
+            <br />
+
             <div
-                id="#socrec"
                 className="aboutTxt"
                 style={{ marginTop: '2rem' }}
             >
                 <div style={{ display: 'flex' }}>
-                    <div style={{ width: '80%' }}>
-                        <div className="h_titleContent">
+                    <div style={{ width: '50%' }}>
+                        <div className="h_titleContent_majin2">
                             {t('SOCIAL RECOVERY')}
                         </div>
+                        <br />
                         <div className="h_txtContent">
                             {t('index_recsoc1')}
                             <br />
@@ -245,31 +240,54 @@ const Component: NextPage = () => {
                             alt="img-RecSoc"
                         />
                     </div>
+                <div className='indice_majin' id="nftlink">
             </div>
-            <div id="nftlink">
-                <br />
-                <br />
-                <br />
-                <br />
-            </div>
-            <div style={{ display: 'flex' }}>
-                    <Image
-                        className="h_imgContent_NFTs"
+            <br />
+
+            
+            <table>
+                <tr>
+                    <th><Image
+                        className="h_imgContent_majin"
                         src={NFT}
                         alt="content-ico"
-                    />                    
-                </div>
-            <div id="#nft" className="aboutTxt" style={{ marginTop: '2rem' }}>
+                    /></th>
+                    <th>
+                        <div className="h_titleContent_majin">{t('index_nfts')}
+                        </div>
+                        <table>
+                        <tr className='majin2'>
+                            <th><a className='link_iconos' href="#domnamelink" title='NFTs'>
+                    <div><Image className="h_headIco_indice" src={DomName} alt="menu-ico" /></div>
+                    </a></th>
+                            <th><a className='link_iconos' href="#tydraslink" title='TYDRAS'>
+                    <div><Image className="h_headIco_indice" src={Tydra} alt="menu-ico" /></div>
+                    </a> </th>
+                            <th><a className='link_iconos' href="#lexlink"title='LEXICA.SSI'>
+                    <div><Image className="h_headIco_indice" src={Lssi} alt="menu-ico" /></div>
+                    </a></th>
+                            </tr>
+                            </table> </th>
+                </tr>
+            </table>
+            <div className='indice_majin' id="domnamelink">
+            </div>
+
+            </div>
+           
+            <div className="aboutTxt" style={{ marginTop: '2rem' }}>
                 <div style={{ display: 'flex' }}>
                     <Image
                         className="h_imgContent_DIDx"
                         src={DomName}
                         alt="content-ico"
                     />
-                    <div style={{ width: '80%' }}>
+                    <div style={{ width: '60%' }}>
                         <div id="nftlink" className="h_titleContent">
                             {t('NFT DOMAIN NAME')}
                         </div>
+                        <br />
+
                         <div className="h_txtContent">
                             {t('index_nft1')}
                             <br />
@@ -279,15 +297,20 @@ const Component: NextPage = () => {
                         </div>
                     </div>
                 </div>
-                <br />
+                
+                <div className='indice_majin' id="tydraslink">
+            </div>
+
                 <div style={{ display: 'flex' }}>
                     <Image
                         className="h_imgContent_DIDx"
                         src={Tydra}
                         alt="content-ico"
                     />
-                    <div style={{ width: '80%' }}>
+                    <div style={{ width: '60%' }}>
                         <div className="h_titleContent">TYDRAS</div>
+                        <br />
+
                         <div className="h_txtContent">
                             {t('index_tot1')} {t('index_tot2')}
                             <br />
@@ -303,14 +326,21 @@ const Component: NextPage = () => {
                         </div>
                     </div>
                 </div>
-                <br />
+            
+                <div className='indice_majin2' id="lexlink">
+            </div>
+            <br />
+            <br />
+            <br />
+
+
                 <div style={{ display: 'flex' }}>
                     <Image
                         className="h_imgContent_DIDx"
                         src={Lssi}
                         alt="content-ico"
                     />
-                    <div style={{ width: '80%' }}>
+                    <div style={{ width: '70%' }}>
                         <div className="h_titleContent">LEXICA.SSI</div>
                         <div className="h_txtContent">
                             {t('index_lexica1')}
@@ -324,19 +354,17 @@ const Component: NextPage = () => {
                     </div>
                 </div>
             </div>
-            <div id="soctreelink">
-                <br />
-                <br />
-                <br />
+            <div className='indice_majin' id="soctreelink">
             </div>
             <div
-                id="#socialtree"
                 className="aboutTxt"
                 style={{ marginTop: '2rem' }}
             >
                 <div style={{ display: 'flex' }}>
-                    <div style={{ width: '80%' }}>
-                        <div className="h_titleContent">{t('SOCIAL TREE')}</div>
+                    <div style={{ width: '60%' }}>
+                        <div className="h_titleContent_majin2">{t('SOCIAL TREE')}</div>
+                        <br />
+
                         <div className="h_txtContent">
                             {t('index_tree1')}
                             <br />
@@ -354,6 +382,7 @@ const Component: NextPage = () => {
                         alt="content-ico"
                     />
                 </div>
+                <br />
                 <div style={{ display: 'flex', justifyContent: 'center' }}>
                         <Image
                             className="homePageImg"
@@ -361,15 +390,13 @@ const Component: NextPage = () => {
                             alt="img-SocialTree"
                         />
                     </div>
-                <br />
             </div>
-            <div id="communlink">
-                <br />
-                <br />
-                <br />
+            <div className='indice_majin2' id="communlink">
             </div>
+            <br />
+            <br />
+
             <div
-                id="#community"
                 className="aboutTxt"
                 style={{ marginTop: '2rem', marginBottom: '100px' }}
             >
@@ -379,8 +406,9 @@ const Component: NextPage = () => {
                         src={Commun}
                         alt="content-ico"
                     />
-                    <div style={{ width: '80%' }}>
-                    <div className="h_titleContent">COMMUNITY.SSI</div>
+                    <div style={{ width: '65%' }}>
+                    <div className="h_titleContent_majin2">COMMUNITY.SSI</div>
+                    <br />
                     <div className="h_txtContent">
                         {t('index_community1')}
                         <br />
@@ -393,6 +421,50 @@ const Component: NextPage = () => {
             <br />
             <br />
             <br />
+            <div
+                id="#community"
+                className="aboutTxt"
+                style={{ marginTop: '2rem', marginBottom: '100px' }}
+            >
+                
+                <div style={{ display: 'flex' }}>
+                
+                    <div className='contacto' style={{ width: '80%' }}>
+                    
+                    <div className="h_titleContent">{t('index_contacto')}</div>
+                    <div className="h_txtContent">
+                        <ul>
+                            <br />
+                            <li className='contacto_2'>
+                                <i></i>
+                                <p><strong>Email:  </strong> <a href=""></a><span className='contacto_3'>team@ssiprotocol.com</span></p>
+                                
+                            </li>
+                            <li className='contacto_2'>
+                                <i></i>
+                                <p><strong>{t('index_web')}:  </strong><a href="www.ssiprotocol.com"><span className='contacto_3'>www.ssiprotocol.com</span></a></p>
+                                
+                            </li>
+                            <li className='contacto_2'>
+                                <i></i>
+                                <p><strong>Blog:  </strong> <a href="https://www.tyron.io/"><span className='contacto_3'>www.tyron.io</span></a></p>
+                                
+                            </li>
+                            <li className='contacto_2'>
+                                <i></i>
+                                <p><strong>Github:  </strong> <span className='contacto_3'><a className='contacto_4' href="https://github.com/tyroncoop">www.github.com/tyroncoop</a></span></p>
+                                
+                            </li>
+                            <li className='contacto_2'>
+                            <i></i>
+                            <p><strong>LinkedIn:  </strong><a href="https://www.linkedin.com/company/tyronssi/"><span className='contacto_3'>www.linkedin.com/company/tyronssi/</span></a></p>
+                            </li>
+                        </ul>
+                        <br />
+                    </div>
+                </div>
+                </div>
+            </div>
         </>
     )
 }

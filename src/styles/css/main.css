@@ -1843,12 +1843,18 @@ a:link,a:visited, a:active.link_iconos {
 .h_headIco_indice {
     width: 150px;
     height: 150px;
-    margin-left: 50px;
-    margin-right: 50px;
+    margin-left: 5px;
+    margin-right: 20px;
     cursor: pointer;
     z-index: 1;
     text-decoration: none;
 }
+.indice_majin {
+    margin-bottom: 300px;
+    }
+.indice_majin2 {
+    margin-bottom: 100px;
+        }
 
 .h_headIco_indice:hover {
     width: 200px;
@@ -1870,14 +1876,24 @@ a:link,a:visited, a:active.link_iconos {
     height:600px;
     width: 600px;
     background: red; 
-    float: left; 
+    float: left;
+    padding-right:600px; 
 }
 
+.majin2 { 
+    margin-top:100px;
+}
 
 .h_imgContent_DIDx {
     width: 500px;
     height: 500px;
     margin-right: 100px;
+    margin-top: 20px;
+}
+.h_imgContent_majin {
+    width: 400px;
+    height: 400px;
+    margin-left: 200px;
     margin-top: 20px;
 }
 .h_imgContent_NFTs {
@@ -1906,10 +1922,41 @@ a:link,a:visited, a:active.link_iconos {
     font-size: 80px;
 }
 
+.h_titleContent_majin2 {
+    font-weight: bold;
+    font-size: 80px;
+    color:yellow;
+}
+
+.h_titleContent_majin {
+    font-weight: bold;
+    font-size: 80px;
+    color:yellow;
+    float:left;
+    padding-left:300px;
+    padding-bottom:80px;
+
+}
+
 .h_titleContent_b {
     font-weight: bold;
     font-size: 50px;
 }
+.contacto {
+    padding-left: 500px;
+    list-style: none;
+}
+
+.contacto_2 {
+    list-style: none;
+    }
+
+.contacto_3 {
+    color: yellow;
+}
+
+
+
 
 .h_txtContent {
     font-size: 30px;
