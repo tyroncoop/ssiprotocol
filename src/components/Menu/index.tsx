@@ -161,13 +161,21 @@ function Menu() {
                         <button
                             className={styles.button}
                             onClick={handleOnClick}
-                        ><Image height={50} width={150} src={LogoTYRON} alt="logo" /></button>
+                        >
+                            <Image
+                                height={50}
+                                width={150}
+                                src={LogoTYRON}
+                                alt="logo"
+                            />
+                        </button>
                     </>
                 )}
             </div>
             <div className={styles.btnDesktop}>
-                <button className={styles.button} onClick={handleOnClick}> 
-                <Image height={50} width={150} src={LogoTYRON} alt="logo" /></button>
+                <button className={styles.button} onClick={handleOnClick}>
+                    <Image height={50} width={150} src={LogoTYRON} alt="logo" />
+                </button>
             </div>
             <div
                 onClick={() => setShowMenu(!showMenu)}

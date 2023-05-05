@@ -19,7 +19,7 @@ const Component: NextPage = () => {
                     {t('about1')}
                     <br />
                     <br />
-                    {t('about2')} <span id='italicas'>turannus</span>
+                    {t('about2')} <span id="italicas">turannus</span>
                     {t('about3')}
                     <br />
                     <br />
@@ -46,7 +46,6 @@ const Component: NextPage = () => {
                     <br />
                     {t('about5')}
                     <br />
-                   
                 </div>
             </div>
         </div>

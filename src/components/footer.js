@@ -55,7 +55,7 @@ function Footer() {
                         <span className="label">Telegram</span>
                     </a>
                 </p>
-                
+
                 <p>
                     <a
                         className="icon brands fa-twitter"

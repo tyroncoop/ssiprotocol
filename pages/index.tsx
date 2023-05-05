@@ -20,7 +20,6 @@ import app_SocTree from '../src/images/socialtree.png'
 import KvmeFelen from '../src/images/ejemplo_kf.jpg'
 import tw from '../src/images/socialmedia/soc_twitter_light.svg'
 
-
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
 import { useTranslation } from 'next-i18next'
 import { text } from 'stream/consumers'
@@ -33,8 +32,8 @@ const Component: NextPage = () => {
                 <Header />
             </div>
             <div className="h_headWrapper">
-                <a className= "link_iconos" href="#xwalletlink">
-                    <div className='link_iconos'>
+                <a className="link_iconos" href="#xwalletlink">
+                    <div className="link_iconos">
                         <Image
                             className="h_headIco"
                             src={xWall}
@@ -42,12 +41,12 @@ const Component: NextPage = () => {
                         />
                     </div>
                 </a>
-                <a className='link_iconos' href="#nftlink">
+                <a className="link_iconos" href="#nftlink">
                     <div>
                         <Image className="h_headIco" src={NFT} alt="menu-ico" />
                     </div>
                 </a>
-                <a className='link_iconos' href="#recsoclink">
+                <a className="link_iconos" href="#recsoclink">
                     <div>
                         <Image
                             className="h_headIco"
@@ -56,7 +55,7 @@ const Component: NextPage = () => {
                         />
                     </div>
                 </a>
-                <a className='link_iconos' href="#soctreelink" >
+                <a className="link_iconos" href="#soctreelink">
                     <div>
                         <Image
                             className="h_headIco"
@@ -65,7 +64,7 @@ const Component: NextPage = () => {
                         />
                     </div>
                 </a>
-                <a className='link_iconos' href="#communlink">
+                <a className="link_iconos" href="#communlink">
                     <div>
                         <Image
                             className="h_headIco"
@@ -77,71 +76,103 @@ const Component: NextPage = () => {
             </div>
             <br />
             <br />
-        
-            <div style={{ display: 'flex' , width: '65%' }}>
-        
-            <div className="h_txtContent_kf">
-             <span id='italicas'>Kvme Felen</span> {t('index_kvmefelen1')} <span id='italicas'>Buen Vivir</span>
-                {t('index_kvmefelen2')}
-                <br />
-                {t('index_kvmefelen3')}<span id='italicas'>ixokomfijmogen</span> {t('index_kvmefelen4')}
-                <br />
-                {t('index_kvmefelen5')}<span id='italicas'>Kvme Felen</span>{t('index_kvmefelen6')}
-                <br />
-                <br />
-                <Image
-                className="indexImg"
-                src={KvmeFelen}
-                alt="paisaje"
-                        />
-                </div>                
-                </div>
-            
 
-            <div className='indice_majin' id="xwalletlink">
+            <div style={{ display: 'flex', width: '65%' }}>
+                <div className="h_txtContent_kf">
+                    <span id="italicas">Kvme Felen</span>{' '}
+                    {t('index_kvmefelen1')}{' '}
+                    <span id="italicas">Buen Vivir</span>
+                    {t('index_kvmefelen2')}
+                    <br />
+                    {t('index_kvmefelen3')}
+                    <span id="italicas">ixokomfijmogen</span>{' '}
+                    {t('index_kvmefelen4')}
+                    <br />
+                    {t('index_kvmefelen5')}
+                    <span id="italicas">Kvme Felen</span>
+                    {t('index_kvmefelen6')}
+                    <br />
+                    <br />
+                    <Image className="indexImg" src={KvmeFelen} alt="paisaje" />
+                </div>
             </div>
-            
+
+            <div className="indice_majin" id="xwalletlink"></div>
+
             <table>
                 <tr>
-                    <th><Image
-                        className="h_imgContent_majin"
-                        src={xWall}
-                        alt="content-ico"
-                    /></th>
                     <th>
-                        <div className="h_titleContent_majin">xWALLETS
-                        </div>
+                        <Image
+                            className="h_imgContent_majin"
+                            src={xWall}
+                            alt="content-ico"
+                        />
+                    </th>
+                    <th>
+                        <div className="h_titleContent_majin">xWALLETS</div>
                         <table>
-                        <tr className='majin2'>
-                            <th><a className='link_iconos' href="#didxlink" title='DIDxWALLET'>
-                    <div><Image className="h_headIco_indice" src={DIDx} alt="menu-ico" /></div>
-                    </a></th>
-                            <th><a className='link_iconos' href="#zilxlink" title='ZILxWALLET'>
-                    <div><Image className="h_headIco_indice" src={ZILx} alt="menu-ico" /></div>
-                    </a> </th>
-                            <th><a className='link_iconos' href="#sbtxlink"title='SBTxWALLET'>
-                    <div><Image className="h_headIco_indice" src={SBT} alt="menu-ico" /></div>
-                    </a></th>
+                            <tr className="majin2">
+                                <th>
+                                    <a
+                                        className="link_iconos"
+                                        href="#didxlink"
+                                        title="DIDxWALLET"
+                                    >
+                                        <div>
+                                            <Image
+                                                className="h_headIco_indice"
+                                                src={DIDx}
+                                                alt="menu-ico"
+                                            />
+                                        </div>
+                                    </a>
+                                </th>
+                                <th>
+                                    <a
+                                        className="link_iconos"
+                                        href="#zilxlink"
+                                        title="ZILxWALLET"
+                                    >
+                                        <div>
+                                            <Image
+                                                className="h_headIco_indice"
+                                                src={ZILx}
+                                                alt="menu-ico"
+                                            />
+                                        </div>
+                                    </a>{' '}
+                                </th>
+                                <th>
+                                    <a
+                                        className="link_iconos"
+                                        href="#sbtxlink"
+                                        title="SBTxWALLET"
+                                    >
+                                        <div>
+                                            <Image
+                                                className="h_headIco_indice"
+                                                src={SBT}
+                                                alt="menu-ico"
+                                            />
+                                        </div>
+                                    </a>
+                                </th>
                             </tr>
-                            </table> </th>
+                        </table>{' '}
+                    </th>
                 </tr>
             </table>
-            <div className='indice_majin2' id="didxlink">
-            </div>
-        
-            <div
-                className="aboutTxt"
-                style={{ marginTop: '10rem' }}
-            >
+            <div className="indice_majin2" id="didxlink"></div>
+
+            <div className="aboutTxt" style={{ marginTop: '10rem' }}>
                 <div style={{ display: 'flex' }}>
                     <Image
                         className="h_imgContent_DIDx"
                         src={DIDx}
                         alt="content-ico"
                     />
-                    <div style={{ width: '70%'}}>
-                        <div className="h_titleContent">DIDxWALLET
-                        </div>
+                    <div style={{ width: '70%' }}>
+                        <div className="h_titleContent">DIDxWALLET</div>
                         <div className="h_txtContent">
                             {t('index_wallets1')}
                             <br />
@@ -156,16 +187,14 @@ const Component: NextPage = () => {
                     </div>
                 </div>
                 <div style={{ display: 'flex', justifyContent: 'center' }}>
-                        <Image
-                            className="homePageImg"
-                            src={app_didx}
-                            alt="img-didx"
-                        />
-                    </div>
-                   
+                    <Image
+                        className="homePageImg"
+                        src={app_didx}
+                        alt="img-didx"
+                    />
+                </div>
 
-        <div className='indice_majin' id="zilxlink">
-            </div>
+                <div className="indice_majin" id="zilxlink"></div>
 
                 <div style={{ display: 'flex' }}>
                     <Image
@@ -174,7 +203,9 @@ const Component: NextPage = () => {
                         alt="content-ico"
                     />
                     <div style={{ width: '50%' }}>
-                        <div className="h_titleContent">ZIL STAKING xWALLET</div>
+                        <div className="h_titleContent">
+                            ZIL STAKING xWALLET
+                        </div>
                         <br />
                         <div className="h_txtContent">
                             {t('index_wallets4')}
@@ -185,8 +216,7 @@ const Component: NextPage = () => {
                 </div>
                 <br />
 
-            <div className='indice_majin' id="sbtxlink">
-            </div>
+                <div className="indice_majin" id="sbtxlink"></div>
                 <div style={{ display: 'flex' }}>
                     <Image
                         className="h_imgContent_DIDx"
@@ -204,16 +234,12 @@ const Component: NextPage = () => {
                     </div>
                 </div>
             </div>
-            <div className='indice_majin2' id="recsoclink">
-            </div>
+            <div className="indice_majin2" id="recsoclink"></div>
             <br />
             <br />
             <br />
 
-            <div
-                className="aboutTxt"
-                style={{ marginTop: '2rem' }}
-            >
+            <div className="aboutTxt" style={{ marginTop: '2rem' }}>
                 <div style={{ display: 'flex' }}>
                     <div style={{ width: '50%' }}>
                         <div className="h_titleContent_majin2">
@@ -236,47 +262,83 @@ const Component: NextPage = () => {
                 </div>
                 <br />
                 <div style={{ display: 'flex', justifyContent: 'center' }}>
-                        <Image
-                            className="homePageImg"
-                            src={app_RecSoc}
-                            alt="img-RecSoc"
-                        />
-                    </div>
-                <div className='indice_majin' id="nftlink">
-            </div>
-            <br />
+                    <Image
+                        className="homePageImg"
+                        src={app_RecSoc}
+                        alt="img-RecSoc"
+                    />
+                </div>
+                <div className="indice_majin" id="nftlink"></div>
+                <br />
 
-            
-            <table>
-                <tr>
-                    <th><Image
-                        className="h_imgContent_majin"
-                        src={NFT}
-                        alt="content-ico"
-                    /></th>
-                    <th>
-                        <div className="h_titleContent_majin">{t('index_nfts')}
-                        </div>
-                        <table>
-                        <tr className='majin2'>
-                            <th><a className='link_iconos' href="#domnamelink" title='NFTs'>
-                    <div><Image className="h_headIco_indice" src={DomName} alt="menu-ico" /></div>
-                    </a></th>
-                            <th><a className='link_iconos' href="#tydraslink" title='TYDRAS'>
-                    <div><Image className="h_headIco_indice" src={Tydra} alt="menu-ico" /></div>
-                    </a> </th>
-                            <th><a className='link_iconos' href="#lexlink"title='LEXICA.SSI'>
-                    <div><Image className="h_headIco_indice" src={Lssi} alt="menu-ico" /></div>
-                    </a></th>
-                            </tr>
-                            </table> </th>
-                </tr>
-            </table>
-            <div className='indice_majin' id="domnamelink">
+                <table>
+                    <tr>
+                        <th>
+                            <Image
+                                className="h_imgContent_majin"
+                                src={NFT}
+                                alt="content-ico"
+                            />
+                        </th>
+                        <th>
+                            <div className="h_titleContent_majin">
+                                {t('index_nfts')}
+                            </div>
+                            <table>
+                                <tr className="majin2">
+                                    <th>
+                                        <a
+                                            className="link_iconos"
+                                            href="#domnamelink"
+                                            title="NFTs"
+                                        >
+                                            <div>
+                                                <Image
+                                                    className="h_headIco_indice"
+                                                    src={DomName}
+                                                    alt="menu-ico"
+                                                />
+                                            </div>
+                                        </a>
+                                    </th>
+                                    <th>
+                                        <a
+                                            className="link_iconos"
+                                            href="#tydraslink"
+                                            title="TYDRAS"
+                                        >
+                                            <div>
+                                                <Image
+                                                    className="h_headIco_indice"
+                                                    src={Tydra}
+                                                    alt="menu-ico"
+                                                />
+                                            </div>
+                                        </a>{' '}
+                                    </th>
+                                    <th>
+                                        <a
+                                            className="link_iconos"
+                                            href="#lexlink"
+                                            title="LEXICA.SSI"
+                                        >
+                                            <div>
+                                                <Image
+                                                    className="h_headIco_indice"
+                                                    src={Lssi}
+                                                    alt="menu-ico"
+                                                />
+                                            </div>
+                                        </a>
+                                    </th>
+                                </tr>
+                            </table>{' '}
+                        </th>
+                    </tr>
+                </table>
+                <div className="indice_majin" id="domnamelink"></div>
             </div>
 
-            </div>
-           
             <div className="aboutTxt" style={{ marginTop: '2rem' }}>
                 <div style={{ display: 'flex' }}>
                     <Image
@@ -299,9 +361,8 @@ const Component: NextPage = () => {
                         </div>
                     </div>
                 </div>
-                
-                <div className='indice_majin' id="tydraslink">
-            </div>
+
+                <div className="indice_majin" id="tydraslink"></div>
 
                 <div style={{ display: 'flex' }}>
                     <Image
@@ -328,13 +389,11 @@ const Component: NextPage = () => {
                         </div>
                     </div>
                 </div>
-            
-                <div className='indice_majin2' id="lexlink">
-            </div>
-            <br />
-            <br />
-            <br />
 
+                <div className="indice_majin2" id="lexlink"></div>
+                <br />
+                <br />
+                <br />
 
                 <div style={{ display: 'flex' }}>
                     <Image
@@ -356,15 +415,13 @@ const Component: NextPage = () => {
                     </div>
                 </div>
             </div>
-            <div className='indice_majin' id="soctreelink">
-            </div>
-            <div
-                className="aboutTxt"
-                style={{ marginTop: '2rem' }}
-            >
+            <div className="indice_majin" id="soctreelink"></div>
+            <div className="aboutTxt" style={{ marginTop: '2rem' }}>
                 <div style={{ display: 'flex' }}>
                     <div style={{ width: '60%' }}>
-                        <div className="h_titleContent_majin2">{t('SOCIAL TREE')}</div>
+                        <div className="h_titleContent_majin2">
+                            {t('SOCIAL TREE')}
+                        </div>
                         <br />
 
                         <div className="h_txtContent">
@@ -386,15 +443,14 @@ const Component: NextPage = () => {
                 </div>
                 <br />
                 <div style={{ display: 'flex', justifyContent: 'center' }}>
-                        <Image
-                            className="homePageImg"
-                            src={app_SocTree}
-                            alt="img-SocialTree"
-                        />
-                    </div>
+                    <Image
+                        className="homePageImg"
+                        src={app_SocTree}
+                        alt="img-SocialTree"
+                    />
+                </div>
             </div>
-            <div className='indice_majin2' id="communlink">
-            </div>
+            <div className="indice_majin2" id="communlink"></div>
             <br />
             <br />
 
@@ -409,15 +465,17 @@ const Component: NextPage = () => {
                         alt="content-ico"
                     />
                     <div style={{ width: '65%' }}>
-                    <div className="h_titleContent_majin2">COMMUNITY.SSI</div>
-                    <br />
-                    <div className="h_txtContent">
-                        {t('index_community1')}
+                        <div className="h_titleContent_majin2">
+                            COMMUNITY.SSI
+                        </div>
                         <br />
-                        {t('index_community1')}
-                        <br />{' '}
+                        <div className="h_txtContent">
+                            {t('index_community1')}
+                            <br />
+                            {t('index_community1')}
+                            <br />{' '}
+                        </div>
                     </div>
-                </div>
                 </div>
             </div>
             <br />
@@ -428,43 +486,69 @@ const Component: NextPage = () => {
                 className="aboutTxt"
                 style={{ marginTop: '2rem', marginBottom: '100px' }}
             >
-                
                 <div style={{ display: 'flex' }}>
-                
-                    <div className='contacto' style={{ width: '80%' }}>
-                    
-                    <div className="h_titleContent">{t('index_contacto')}</div>
-                    <div className="h_txtContent">
-                        <ul>
+                    <div className="contacto" style={{ width: '80%' }}>
+                        <div className="h_titleContent">
+                            {t('index_contacto')}
+                        </div>
+                        <div className="h_txtContent">
+                            <ul>
+                                <br />
+                                <li className="contacto_2">
+                                    <p>
+                                        <strong>Email: </strong> <a href=""></a>
+                                        <span className="contacto_3">
+                                            team@ssiprotocol.com
+                                        </span>
+                                    </p>
+                                </li>
+                                <li className="contacto_2">
+                                    <p>
+                                        <strong>{t('index_web')}: </strong>
+                                        <a href="www.ssiprotocol.com">
+                                            <span className="contacto_3">
+                                                www.ssiprotocol.com
+                                            </span>
+                                        </a>
+                                    </p>
+                                </li>
+                                <li className="contacto_2">
+                                    <p>
+                                        <strong>Blog: </strong>{' '}
+                                        <a href="https://www.tyron.io/">
+                                            <span className="contacto_3">
+                                                www.tyron.io
+                                            </span>
+                                        </a>
+                                    </p>
+                                </li>
+                                <li className="contacto_2">
+                                    <p>
+                                        <strong>Github: </strong>{' '}
+                                        <span className="contacto_3">
+                                            <a
+                                                className="contacto_4"
+                                                href="https://github.com/tyroncoop"
+                                            >
+                                                www.github.com/tyroncoop
+                                            </a>
+                                        </span>
+                                    </p>
+                                </li>
+                                <li className="contacto_2">
+                                    <p>
+                                        <strong>LinkedIn: </strong>
+                                        <a href="https://www.linkedin.com/company/tyronssi/">
+                                            <span className="contacto_3">
+                                                www.linkedin.com/company/tyronssi/
+                                            </span>
+                                        </a>
+                                    </p>
+                                </li>
+                            </ul>
                             <br />
-                            <li className='contacto_2'>
-                                
-                                <p><strong>Email:  </strong> <a href=""></a><span className='contacto_3'>team@ssiprotocol.com</span></p>
-                                
-                            </li>
-                            <li className='contacto_2'>
-                                
-                                <p><strong>{t('index_web')}:  </strong><a href="www.ssiprotocol.com"><span className='contacto_3'>www.ssiprotocol.com</span></a></p>
-                                
-                            </li>
-                            <li className='contacto_2'>
-                                
-                                <p><strong>Blog:  </strong> <a href="https://www.tyron.io/"><span className='contacto_3'>www.tyron.io</span></a></p>
-                                
-                            </li>
-                            <li className='contacto_2'>
-                                
-                                <p><strong>Github:  </strong> <span className='contacto_3'><a className='contacto_4' href="https://github.com/tyroncoop">www.github.com/tyroncoop</a></span></p>
-                                
-                            </li>
-                            <li className='contacto_2'>
-                            
-                            <p><strong>LinkedIn:  </strong><a href="https://www.linkedin.com/company/tyronssi/"><span className='contacto_3'>www.linkedin.com/company/tyronssi/</span></a></p>
-                            </li>
-                        </ul>
-                        <br />
+                        </div>
                     </div>
-                </div>
                 </div>
             </div>
         </>

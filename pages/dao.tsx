@@ -20,20 +20,23 @@ const Component: NextPage = () => {
                 <div style={{ fontWeight: 'bold', fontSize: '50px' }}>DAO</div>
                 <br />
                 <div className="dao_flexContent">
-                <div className="dao_flexContentTxt">
+                    <div className="dao_flexContentTxt">
                         {t('dao1')} 
                         <a href="https://tyron.network/tyron">Tyron DAO</a>,{' '}
-                        {t('dao2')} <span id='italicas'>Decentralized Autonomous Organization</span>
+                        {t('dao2')}{' '}
+                        <span id="italicas">
+                            Decentralized Autonomous Organization
+                        </span>
                         {t('dao3')} 
                         <br />
                         <br />
-                    <div className="dao_wrapperTyronSsi">
-                        <Image
-                            className="dao_titleImg"
-                            src={dao1}
-                            alt="dao-1"
-                        />
-                    </div>
+                        <div className="dao_wrapperTyronSsi">
+                            <Image
+                                className="dao_titleImg"
+                                src={dao1}
+                                alt="dao-1"
+                            />
+                        </div>
                         <br />
                         <br />
                         {t('dao4')}
@@ -51,7 +54,7 @@ const Component: NextPage = () => {
                         {t('dao9')}
                         {t('dao10')} 
                         <a href="https://tyron.network/tyron">Tyron Mapu</a>,{' '}
-                        <span id='italicas'>Community Interest Company</span>
+                        <span id="italicas">Community Interest Company</span>
                         {t('dao11')}
                         <br />
                         <br />
@@ -61,7 +64,8 @@ const Component: NextPage = () => {
                         <br />
                         <br />
                         <br />
-                        {t('dao14')}<span id='italicas'>Kvme Felen.</span>
+                        {t('dao14')}
+                        <span id="italicas">Kvme Felen.</span>
                         {t('dao15')}
                         <br />
                         <br />
@@ -84,22 +88,23 @@ const Component: NextPage = () => {
                         {t('dao22')}
                         <br />
                         <br />
-                        {t('dao23')}<a href="https://www.tyron.network/tyrondao">tyrondao.ssi</a>
+                        {t('dao23')}
+                        <a href="https://www.tyron.network/tyrondao">
+                            tyrondao.ssi
+                        </a>
                         {t('dao24')}
                         <br />
                         <br />
-                    </div> 
-                    
-                     
+                    </div>
                 </div>
                 <div className="dao_wrapperTyronSsi">
-                        <Image
-                            src={daotree}
-                            className="dao_tyronSsi"
-                            alt="daotree-ssi"
-                        />
-                        </div>
-                
+                    <Image
+                        src={daotree}
+                        className="dao_tyronSsi"
+                        alt="daotree-ssi"
+                    />
+                </div>
+
                 {/* 
                 <div className="dao_wrapperTyronSsi">
                     <a

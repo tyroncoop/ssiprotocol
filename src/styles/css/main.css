@@ -295,7 +295,8 @@ h6 a {
     text-decoration: none;
 }
 
-div, a.link_iconos {
+div,
+a.link_iconos {
     text-decoration: none;
 }
 
@@ -737,7 +738,6 @@ input[type='radio'] + label:before {
     text-transform: none !important;
     font-family: 'Font Awesome 5 Free';
     font-weight: 400;
-    
 }
 
 .icon > .label {
@@ -1671,7 +1671,6 @@ body.is-preload #header .content .inner {
     width: 40rem;
 }
 
-
 /* Footer */
 
 #footer {
@@ -1759,19 +1758,18 @@ body.is-preload #footer {
 .indexImg {
     width: 800px;
     height: 300px;
-    padding-left:100px;
+    padding-left: 100px;
 }
 
 .homePageImg {
     width: 1500px;
     height: 750px;
-    border-style:solid;
-    border-width:2px;
+    border-style: solid;
+    border-width: 2px;
     border-color: red;
-    margin-top:90px;
-    margin-bottom:20px;
+    margin-top: 90px;
+    margin-bottom: 20px;
 }
-
 
 .iFrame {
     width: 476px;
@@ -1817,8 +1815,8 @@ a:link,a:visited, a:active.link_iconos {
 
 .link_iconos a img {
     text-decoration: none;
-  }
- 
+}
+
 #italicas {
     font-style: italic;
 }
@@ -1851,10 +1849,10 @@ a:link,a:visited, a:active.link_iconos {
 }
 .indice_majin {
     margin-bottom: 300px;
-    }
+}
 .indice_majin2 {
     margin-bottom: 100px;
-        }
+}
 
 .h_headIco_indice:hover {
     width: 200px;
@@ -1865,7 +1863,6 @@ a:link,a:visited, a:active.link_iconos {
     z-index: 1;
 }
 
-
 .h_imgContent {
     width: 200px;
     height: 200px;
@@ -1873,15 +1870,15 @@ a:link,a:visited, a:active.link_iconos {
     margin-top: 20px;
 }
 .majin {
-    height:600px;
+    height: 600px;
     width: 600px;
-    background: red; 
+    background: red;
     float: left;
-    padding-right:600px; 
+    padding-right: 600px;
 }
 
-.majin2 { 
-    margin-top:100px;
+.majin2 {
+    margin-top: 100px;
 }
 
 .h_imgContent_DIDx {
@@ -1925,17 +1922,16 @@ a:link,a:visited, a:active.link_iconos {
 .h_titleContent_majin2 {
     font-weight: bold;
     font-size: 80px;
-    color:yellow;
+    color: yellow;
 }
 
 .h_titleContent_majin {
     font-weight: bold;
     font-size: 80px;
-    color:yellow;
-    float:left;
-    padding-left:300px;
-    padding-bottom:80px;
-
+    color: yellow;
+    float: left;
+    padding-left: 300px;
+    padding-bottom: 80px;
 }
 
 .h_titleContent_b {
@@ -1949,14 +1945,11 @@ a:link,a:visited, a:active.link_iconos {
 
 .contacto_2 {
     list-style: none;
-    }
+}
 
 .contacto_3 {
     color: yellow;
 }
-
-
-
 
 .h_txtContent {
     font-size: 30px;

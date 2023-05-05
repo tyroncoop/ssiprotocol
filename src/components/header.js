@@ -29,7 +29,10 @@ function Header() {
                 <div className={contentClassName}>
                     <div className={innerClassName}>
                         <h1> Self-Sovereign Identity Protocol </h1>
-                        <p> Decentralised networks of self-sovereign identities </p>
+                        <p>
+                            {' '}
+                            Decentralised networks of self-sovereign identities{' '}
+                        </p>
                     </div>
                 </div>
                 <nav>
