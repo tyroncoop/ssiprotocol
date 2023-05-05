@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import styles from './styles.module.scss'
 import Logo from '../../images/ssi_ssiprotocol_iso_2000px.png'
+import LogoNObg from '../../images/ssi_ssiprotocol_nobgside_2000px.png'
 import LogoTYRON from '../../images/ssi_$Tipo_Chrome_1920x640px_trans.png'
 import Image from 'next/image'
 import { useRouter } from 'next/router'
@@ -97,7 +98,7 @@ function Menu() {
             </div>
             <div className={styles.wrapperLeftMobile}>
                 <div onClick={() => Router.push('/')} className={styles.logo}>
-                    <Image width={90} height={90} src={Logo} alt="logo" />
+                    <Image width={200} height={200} src={LogoNObg} alt="logo" />
                 </div>
                 {showMenu && (
                     <>
@@ -160,9 +161,7 @@ function Menu() {
                         <button
                             className={styles.button}
                             onClick={handleOnClick}
-                        >
-                            tyron.network
-                        </button>
+                        ><Image height={50} width={150} src={LogoTYRON} alt="logo" /></button>
                     </>
                 )}
             </div>

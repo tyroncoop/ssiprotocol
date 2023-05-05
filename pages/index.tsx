@@ -18,6 +18,8 @@ import app_didx from '../src/images/didxwallet.png'
 import app_RecSoc from '../src/images/socialrecovery.png'
 import app_SocTree from '../src/images/socialtree.png'
 import KvmeFelen from '../src/images/ejemplo_kf.jpg'
+import tw from '../src/images/socialmedia/soc_twitter_light.svg'
+
 
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
 import { useTranslation } from 'next-i18next'
@@ -436,27 +438,27 @@ const Component: NextPage = () => {
                         <ul>
                             <br />
                             <li className='contacto_2'>
-                                <i></i>
+                                
                                 <p><strong>Email:  </strong> <a href=""></a><span className='contacto_3'>team@ssiprotocol.com</span></p>
                                 
                             </li>
                             <li className='contacto_2'>
-                                <i></i>
+                                
                                 <p><strong>{t('index_web')}:  </strong><a href="www.ssiprotocol.com"><span className='contacto_3'>www.ssiprotocol.com</span></a></p>
                                 
                             </li>
                             <li className='contacto_2'>
-                                <i></i>
+                                
                                 <p><strong>Blog:  </strong> <a href="https://www.tyron.io/"><span className='contacto_3'>www.tyron.io</span></a></p>
                                 
                             </li>
                             <li className='contacto_2'>
-                                <i></i>
+                                
                                 <p><strong>Github:  </strong> <span className='contacto_3'><a className='contacto_4' href="https://github.com/tyroncoop">www.github.com/tyroncoop</a></span></p>
                                 
                             </li>
                             <li className='contacto_2'>
-                            <i></i>
+                            
                             <p><strong>LinkedIn:  </strong><a href="https://www.linkedin.com/company/tyronssi/"><span className='contacto_3'>www.linkedin.com/company/tyronssi/</span></a></p>
                             </li>
                         </ul>

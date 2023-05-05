@@ -1,8 +1,8 @@
 import React from 'react'
 import type { NextPage } from 'next'
 import Image from 'next/image'
-import dao1 from '../src/images/dao_1.png'
-import dao2 from '../src/images/dao_2.png'
+import dao1 from '../src/images/ssi_dao_logo_iso_400px.png'
+import daotree from '../src/images/dao_socialtree.png'
 import tyronSsi from '../src/images/tyron_ssi.png'
 import tyronPungtas from '../src/images/logo.png'
 import legalEntities from '../src/images/legal_entities.webp'
@@ -20,25 +20,87 @@ const Component: NextPage = () => {
                 <div style={{ fontWeight: 'bold', fontSize: '50px' }}>DAO</div>
                 <br />
                 <div className="dao_flexContent">
-                    <div className="dao_flexContentTxt">
+                <div className="dao_flexContentTxt">
                         {t('dao1')} 
                         <a href="https://tyron.network/tyron">Tyron DAO</a>,{' '}
-                        {t('dao2')}
-                        <br />
-                        <br />
+                        {t('dao2')} <span id='italicas'>Decentralized Autonomous Organization</span>
                         {t('dao3')} 
-                        <a href="https://tyron.network/tyron.did">tyron.did</a>.{' '}
-                        {t('dao4')}
-                    </div>
-                    <div>
+                        <br />
+                        <br />
+                    <div className="dao_wrapperTyronSsi">
                         <Image
                             className="dao_titleImg"
                             src={dao1}
                             alt="dao-1"
                         />
                     </div>
+                        <br />
+                        <br />
+                        {t('dao4')}
+                        <br />
+                        <br />
+                        {t('dao5')}
+                        <br />
+                        {t('dao6')}
+                        <br />
+                        {t('dao7')}
+                        <br />
+                        <br />
+                        {t('dao8')}
+                        <br />
+                        {t('dao9')}
+                        {t('dao10')} 
+                        <a href="https://tyron.network/tyron">Tyron Mapu</a>,{' '}
+                        <span id='italicas'>Community Interest Company</span>
+                        {t('dao11')}
+                        <br />
+                        <br />
+                        {t('dao12')}
+                        <br />
+                        {t('dao13')}
+                        <br />
+                        <br />
+                        <br />
+                        {t('dao14')}<span id='italicas'>Kvme Felen.</span>
+                        {t('dao15')}
+                        <br />
+                        <br />
+                        {t('dao16')}
+                        <br />
+                        {t('dao17')}
+                        <br />
+                        {t('dao18')}
+                        <br />
+                        <br />
+                        {t('dao19')}
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        {t('dao20')}
+                        <br />
+                        {t('dao21')}
+                        <br />
+                        {t('dao22')}
+                        <br />
+                        <br />
+                        {t('dao23')}<a href="https://www.tyron.network/tyrondao">tyrondao.ssi</a>
+                        {t('dao24')}
+                        <br />
+                        <br />
+                    </div> 
+                    
+                     
                 </div>
-                <br />
+                <div className="dao_wrapperTyronSsi">
+                        <Image
+                            src={daotree}
+                            className="dao_tyronSsi"
+                            alt="daotree-ssi"
+                        />
+                        </div>
+                
+                {/* 
                 <div className="dao_wrapperTyronSsi">
                     <a
                         className="dao_tyronSsiTitle"
@@ -47,32 +109,9 @@ const Component: NextPage = () => {
                         tyron.ssi
                     </a>
                     <br />
-                    <div>
-                        <Image
-                            src={tyronSsi}
-                            className="dao_tyronSsi"
-                            alt="tyron-ssi"
-                        />
-                    </div>
+                    
                 </div>
                 <br />
-                <br />
-                <div style={{ width: '60%' }}>
-                    {t('dao5 {{colon}} the', { colon: ':' })}{' '}
-                    <a href="https://tyron.network">TYRON Network</a>.<br />
-                    <br />
-                    {t('dao6')}
-                    <br />
-                    &#183; {t('dao7')}
-                    <br />
-                    &#183; {t('dao8')}
-                    <br />
-                    &#183; {t('dao9')}
-                    <br />
-                    <br />
-                    {t('dao10')}
-                </div>
-                {/* <br />
                 <div style={{ width: '60%' }}>
                     {t('dao11')}
                     <br />
