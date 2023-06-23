@@ -45,6 +45,8 @@
     text-decoration: none;
     text-transform: none;
     white-space: nowrap;
+    display: flex;
+    align-items: center;
 }
 
 .button:hover {
@@ -58,6 +60,8 @@
     cursor: pointer;
     width: 120px;
     height: 120px;
+    display: flex;
+    align-items: center;
 }
 
 .txtMenu {

@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import type { NextPage } from 'next'
 import { Header, Footer } from '../src/components'
 import Image from 'next/image'
@@ -26,6 +26,80 @@ import { text } from 'stream/consumers'
 
 const Component: NextPage = () => {
     const { t } = useTranslation()
+    const [nftSection, setNftSection] = useState(1)
+
+    const nftSectionRender = () => {
+        if (nftSection === 3) {
+            return (
+                <div className="nftSectionDesc">
+                    <div
+                        style={{ marginTop: '-20px' }}
+                        id="nftlink"
+                        className="h_titleContent"
+                    >
+                        LEXICA.SSI
+                    </div>
+                    <div className="nftSectionDescTitleHighlight" />
+                    <div className="h_txtContent">
+                        {t('index_lexica1')}
+                        <a href="http://lexica.art/">lexica.art</a>
+                        {t('index_lexica2')}
+                        <br />
+                        {t('index_lexica3')}
+                        <br />
+                        {t('index_lexica4')}
+                    </div>
+                </div>
+            )
+        } else if (nftSection === 2) {
+            return (
+                <div className="nftSectionDesc">
+                    <div
+                        style={{ marginTop: '-20px' }}
+                        id="nftlink"
+                        className="h_titleContent"
+                    >
+                        TYDRAS
+                    </div>
+                    <div className="nftSectionDescTitleHighlight" />
+                    <div className="h_txtContent">
+                        {t('index_tot1')} {t('index_tot2')}
+                        <br />
+                        {t('index_tot3')}
+                        <br />
+                        {t('index_tot4')}
+                        <br />
+                        {t('index_tot5')}
+                        <a href="https://www.tyron.io/origin/">
+                            {t('index_tot6')}
+                        </a>
+                        , {t('index_tot7')}
+                    </div>
+                </div>
+            )
+        } else {
+            return (
+                <div className="nftSectionDesc">
+                    <div
+                        style={{ marginTop: '-20px' }}
+                        id="nftlink"
+                        className="h_titleContent"
+                    >
+                        {t('NFT DOMAIN NAME')}
+                    </div>
+                    <div className="nftSectionDescTitleHighlight" />
+                    <div className="h_txtContent">
+                        {t('index_nft1')}
+                        <br />
+                        {t('index_nft2')}
+                        <br />
+                        {t('index_nft3')}
+                    </div>
+                </div>
+            )
+        }
+    }
+
     return (
         <>
             <div className="h_header">
@@ -271,152 +345,96 @@ const Component: NextPage = () => {
                 <div className="indice_majin" id="nftlink"></div>
                 <br />
 
-                <table>
-                    <tr>
-                        <th>
+                <div>
+                    <div className="nftWrapperSectionHead">
+                        <div>
                             <Image
                                 className="h_imgContent_majin"
                                 src={NFT}
                                 alt="content-ico"
                             />
-                        </th>
-                        <th>
-                            <div className="h_titleContent_majin">
-                                {t('index_nfts')}
+                        </div>
+                        <div
+                            style={{ marginLeft: '3rem' }}
+                            className="h_titleContent_majinWhite"
+                        >
+                            {t('index_nfts')}
+                        </div>
+                    </div>
+                    <div className="nftWrapperSectionIco">
+                        <div
+                            onMouseOver={() => setNftSection(1)}
+                            className="nftSectionIco"
+                        >
+                            <a
+                                className="link_iconos nftSectionIco"
+                                // href="#domnamelink"
+                                title="NFTs"
+                            >
+                                <div>
+                                    <Image
+                                        className="h_headIco_indice"
+                                        src={DomName}
+                                        alt="menu-ico"
+                                    />
+                                </div>
+                            </a>
+                            <div className="nftSectionIcoBarWrapper">
+                                <div className="nftSectionIcoBar" />
                             </div>
-                            <table>
-                                <tr className="majin2">
-                                    <th>
-                                        <a
-                                            className="link_iconos"
-                                            href="#domnamelink"
-                                            title="NFTs"
-                                        >
-                                            <div>
-                                                <Image
-                                                    className="h_headIco_indice"
-                                                    src={DomName}
-                                                    alt="menu-ico"
-                                                />
-                                            </div>
-                                        </a>
-                                    </th>
-                                    <th>
-                                        <a
-                                            className="link_iconos"
-                                            href="#tydraslink"
-                                            title="TYDRAS"
-                                        >
-                                            <div>
-                                                <Image
-                                                    className="h_headIco_indice"
-                                                    src={Tydra}
-                                                    alt="menu-ico"
-                                                />
-                                            </div>
-                                        </a>{' '}
-                                    </th>
-                                    <th>
-                                        <a
-                                            className="link_iconos"
-                                            href="#lexlink"
-                                            title="LEXICA.SSI"
-                                        >
-                                            <div>
-                                                <Image
-                                                    className="h_headIco_indice"
-                                                    src={Lssi}
-                                                    alt="menu-ico"
-                                                />
-                                            </div>
-                                        </a>
-                                    </th>
-                                </tr>
-                            </table>{' '}
-                        </th>
-                    </tr>
-                </table>
+                        </div>
+                        <div
+                            onMouseOver={() => setNftSection(2)}
+                            className="nftSectionIco"
+                        >
+                            <a
+                                className="link_iconos nftSectionIco"
+                                // href="#tydraslink"
+                                title="TYDRAS"
+                            >
+                                <div>
+                                    <Image
+                                        className="h_headIco_indice"
+                                        src={Tydra}
+                                        alt="menu-ico"
+                                    />
+                                </div>
+                            </a>
+                            <div className="nftSectionIcoBarWrapper">
+                                <div className="nftSectionIcoBar" />
+                            </div>
+                        </div>
+                        <div
+                            onMouseOver={() => setNftSection(3)}
+                            className="nftSectionIco"
+                        >
+                            <a
+                                className="link_iconos"
+                                // href="#lexlink"
+                                title="LEXICA.SSI"
+                            >
+                                <div style={{ marginTop: '10px' }}>
+                                    <Image
+                                        className="h_headIco_indice"
+                                        src={Lssi}
+                                        alt="menu-ico"
+                                    />
+                                </div>
+                            </a>
+                            <div className="nftSectionIcoBarWrapper">
+                                <div className="nftSectionIcoBar2" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div className="nftSectionDescWrapper">
+                    {nftSectionRender()}
+                </div>
                 <div className="indice_majin" id="domnamelink"></div>
             </div>
 
-            <div className="aboutTxt" style={{ marginTop: '2rem' }}>
-                <div style={{ display: 'flex' }}>
-                    <Image
-                        className="h_imgContent_DIDx"
-                        src={DomName}
-                        alt="content-ico"
-                    />
-                    <div style={{ width: '60%' }}>
-                        <div id="nftlink" className="h_titleContent">
-                            {t('NFT DOMAIN NAME')}
-                        </div>
-                        <br />
-
-                        <div className="h_txtContent">
-                            {t('index_nft1')}
-                            <br />
-                            {t('index_nft2')}
-                            <br />
-                            {t('index_nft3')}
-                        </div>
-                    </div>
-                </div>
-
-                <div className="indice_majin" id="tydraslink"></div>
-
-                <div style={{ display: 'flex' }}>
-                    <Image
-                        className="h_imgContent_DIDx"
-                        src={Tydra}
-                        alt="content-ico"
-                    />
-                    <div style={{ width: '60%' }}>
-                        <div className="h_titleContent">TYDRAS</div>
-                        <br />
-
-                        <div className="h_txtContent">
-                            {t('index_tot1')} {t('index_tot2')}
-                            <br />
-                            {t('index_tot3')}
-                            <br />
-                            {t('index_tot4')}
-                            <br />
-                            {t('index_tot5')}
-                            <a href="https://www.tyron.io/origin/">
-                                {t('index_tot6')}
-                            </a>
-                            , {t('index_tot7')}
-                        </div>
-                    </div>
-                </div>
-
-                <div className="indice_majin2" id="lexlink"></div>
-                <br />
-                <br />
-                <br />
-
-                <div style={{ display: 'flex' }}>
-                    <Image
-                        className="h_imgContent_DIDx"
-                        src={Lssi}
-                        alt="content-ico"
-                    />
-                    <div style={{ width: '70%' }}>
-                        <div className="h_titleContent">LEXICA.SSI</div>
-                        <div className="h_txtContent">
-                            {t('index_lexica1')}
-                            <a href="http://lexica.art/">lexica.art</a>
-                            {t('index_lexica2')}
-                            <br />
-                            {t('index_lexica3')}
-                            <br />
-                            {t('index_lexica4')}
-                        </div>
-                    </div>
-                </div>
-            </div>
             <div className="indice_majin" id="soctreelink"></div>
-            <div className="aboutTxt" style={{ marginTop: '2rem' }}>
+            <div className="aboutTxt">
                 <div style={{ display: 'flex' }}>
                     <div style={{ width: '60%' }}>
                         <div className="h_titleContent_majin2">

@@ -1925,6 +1925,12 @@ a:link,a:visited, a:active.link_iconos {
     color: yellow;
 }
 
+.h_titleContent_majinWhite {
+    font-weight: bold;
+    font-size: 80px;
+    color: #fff;
+}
+
 .h_titleContent_majin {
     font-weight: bold;
     font-size: 80px;
@@ -2041,7 +2047,81 @@ a:link,a:visited, a:active.link_iconos {
     color: #ffff32 !important;
 }
 
+.nftWrapperSectionHead {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border-top: 1px solid #fff;
+    padding-top: 20px;
+}
+
+.nftWrapperSectionIco {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    /* background-color: pink; */
+}
+
+.nftSectionIco {
+    margin-right: 2rem;
+    margin-left: 2rem;
+}
+
+.nftSectionIcoBarWrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.nftSectionIco .nftSectionIcoBar {
+    width: 2px;
+    height: 100px;
+    background-color: #fff;
+    visibility: hidden;
+    margin-top: -50px;
+}
+.nftSectionIco:hover .nftSectionIcoBar {
+    visibility: visible;
+}
+
+.nftSectionIco .nftSectionIcoBar2 {
+    width: 2px;
+    height: 100px;
+    background-color: #fff;
+    visibility: hidden;
+    margin-top: -30px;
+}
+.nftSectionIco:hover .nftSectionIcoBar2 {
+    visibility: visible;
+}
+
+.nftSectionDescWrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.nftSectionDesc {
+    border: 2px solid #fff;
+    border-radius: 10px;
+    padding: 3rem;
+    width: 100%;
+}
+
+.nftSectionDescTitleHighlight {
+    width: 30px;
+    height: 2px;
+    background-color: #fff;
+    margin-top: -15px;
+    margin-left: 5px;
+    margin-bottom: 20px;
+}
+
 @media only screen and (max-width: 900px) {
+    #bg:after {
+        background-image: url('/images/SSI_protocolWeb_8001x4501pxMOBILE_fireBG.jpg');
+    }
     #header {
         margin-top: 15rem;
     }
@@ -2144,5 +2224,89 @@ a:link,a:visited, a:active.link_iconos {
     }
     .dao_titleImg {
         margin-left: 0px;
+    }
+    .h_txtContent_kf {
+        margin-left: -20px;
+        font-size: 20px;
+        padding: 0px;
+    }
+    .h_imgContent_majin {
+        width: 70px;
+        height: 70px;
+        margin-left: 0px;
+        margin-top: 20px;
+    }
+    .h_titleContent_majin {
+        font-weight: bold;
+        font-size: 30px;
+        color: yellow;
+        float: left;
+        padding-left: 30px;
+        padding-bottom: 50px;
+    }
+    .h_headIco_indice {
+        width: 40px;
+        height: 40px;
+        margin-left: 5px;
+        margin-right: 5px;
+        cursor: pointer;
+        z-index: 1;
+        text-decoration: none;
+    }
+    .h_headIco_indice:hover {
+        width: 50px;
+        height: 50px;
+        margin-left: 10px;
+        margin-right: 10px;
+        cursor: pointer;
+        z-index: 1;
+    }
+    .h_imgContentRight_RecSoc {
+        width: 70px;
+        height: 70px;
+        margin-left: 10px;
+        margin-top: 20px;
+    }
+    .h_titleContent_majin2 {
+        font-weight: bold;
+        font-size: 30px;
+        color: yellow;
+    }
+    .h_titleContent_majinWhite {
+        font-weight: bold;
+        font-size: 20px;
+        color: #fff;
+    }
+    .nftSectionIco .nftSectionIcoBar {
+        width: 2px;
+        height: 50px;
+        background-color: #fff;
+        visibility: hidden;
+        margin-top: -30px;
+    }
+    .nftSectionIco:hover .nftSectionIcoBar {
+        visibility: visible;
+    }
+
+    .nftSectionIco .nftSectionIcoBar2 {
+        width: 2px;
+        height: 50px;
+        background-color: #fff;
+        visibility: hidden;
+        margin-top: -10px;
+    }
+    .nftSectionIco:hover .nftSectionIcoBar2 {
+        visibility: visible;
+    }
+    .contacto {
+        padding-left: 0px;
+        list-style: none;
+        margin-bottom: 100px;
+    }
+    .contacto_2 {
+        font-size: 15px;
+    }
+    .nftSectionDescTitleHighlight {
+        margin-top: -5px;
     }
 }
