@@ -18,6 +18,7 @@ import app_didx from '../src/images/didxwallet.png'
 import app_RecSoc from '../src/images/socialrecovery.png'
 import app_SocTree from '../src/images/socialtree.png'
 import KvmeFelen from '../src/images/ejemplo_kf.jpg'
+import screenshoot_app from '../src/images/screenshoot-app.gif'
 import tw from '../src/images/socialmedia/soc_twitter_light.svg'
 
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
@@ -174,67 +175,71 @@ const Component: NextPage = () => {
             <div className="indice_majin" id="xwalletlink"></div>
 
             <table>
-                <tr>
-                    <th>
-                        <Image
-                            className="h_imgContent_majin"
-                            src={xWall}
-                            alt="content-ico"
-                        />
-                    </th>
-                    <th>
-                        <div className="h_titleContent_majin">xWALLETS</div>
-                        <table>
-                            <tr className="majin2">
-                                <th>
-                                    <a
-                                        className="link_iconos"
-                                        href="#didxlink"
-                                        title="DIDxWALLET"
-                                    >
-                                        <div>
-                                            <Image
-                                                className="h_headIco_indice"
-                                                src={DIDx}
-                                                alt="menu-ico"
-                                            />
-                                        </div>
-                                    </a>
-                                </th>
-                                <th>
-                                    <a
-                                        className="link_iconos"
-                                        href="#zilxlink"
-                                        title="ZILxWALLET"
-                                    >
-                                        <div>
-                                            <Image
-                                                className="h_headIco_indice"
-                                                src={ZILx}
-                                                alt="menu-ico"
-                                            />
-                                        </div>
-                                    </a>{' '}
-                                </th>
-                                <th>
-                                    <a
-                                        className="link_iconos"
-                                        href="#sbtxlink"
-                                        title="SBTxWALLET"
-                                    >
-                                        <div>
-                                            <Image
-                                                className="h_headIco_indice"
-                                                src={SBT}
-                                                alt="menu-ico"
-                                            />
-                                        </div>
-                                    </a>
-                                </th>
-                            </tr>
-                        </table>{' '}
-                    </th>
-                </tr>
+                <thead className="noStyleThead">
+                    <tr className="h_imgContent_majin_wrapper">
+                        <th>
+                            <Image
+                                className="h_imgContent_majin"
+                                src={xWall}
+                                alt="content-ico"
+                            />
+                        </th>
+                        <th className="h_imgContent_majin_wrapper2">
+                            <div className="h_titleContent_majin">xWALLETS</div>
+                            <table>
+                                <thead className="noStyleThead">
+                                    <tr className="majin2">
+                                        <th>
+                                            <a
+                                                className="link_iconos"
+                                                href="#didxlink"
+                                                title="DIDxWALLET"
+                                            >
+                                                <div>
+                                                    <Image
+                                                        className="h_headIco_indice2"
+                                                        src={DIDx}
+                                                        alt="menu-ico"
+                                                    />
+                                                </div>
+                                            </a>
+                                        </th>
+                                        <th>
+                                            <a
+                                                className="link_iconos"
+                                                href="#zilxlink"
+                                                title="ZILxWALLET"
+                                            >
+                                                <div>
+                                                    <Image
+                                                        className="h_headIco_indice2"
+                                                        src={ZILx}
+                                                        alt="menu-ico"
+                                                    />
+                                                </div>
+                                            </a>{' '}
+                                        </th>
+                                        <th>
+                                            <a
+                                                className="link_iconos"
+                                                href="#sbtxlink"
+                                                title="SBTxWALLET"
+                                            >
+                                                <div>
+                                                    <Image
+                                                        className="h_headIco_indice2"
+                                                        src={SBT}
+                                                        alt="menu-ico"
+                                                    />
+                                                </div>
+                                            </a>
+                                        </th>
+                                    </tr>
+                                </thead>
+                            </table>{' '}
+                        </th>
+                    </tr>
+                </thead>
             </table>
             <div className="indice_majin2" id="didxlink"></div>
 
@@ -260,13 +265,25 @@ const Component: NextPage = () => {
                         </div>
                     </div>
                 </div>
-                <div style={{ display: 'flex', justifyContent: 'center' }}>
+                <div className="imgScreenCapWrapper">
+                    <Image
+                        className="imgScreenCap"
+                        src={screenshoot_app}
+                        alt="img-screencap"
+                    />
+                    <Image
+                        className="imgScreenCap"
+                        src={screenshoot_app}
+                        alt="img-screencap"
+                    />
+                </div>
+                {/* <div style={{ display: 'flex', justifyContent: 'center' }}>
                     <Image
                         className="homePageImg"
                         src={app_didx}
                         alt="img-didx"
                     />
-                </div>
+                </div> */}
 
                 <div className="indice_majin" id="zilxlink"></div>
 
@@ -335,13 +352,28 @@ const Component: NextPage = () => {
                     />
                 </div>
                 <br />
-                <div style={{ display: 'flex', justifyContent: 'center' }}>
+                <br />
+                <br />
+                <br />
+                <div className="imgScreenCapWrapper">
+                    <Image
+                        className="imgScreenCap"
+                        src={screenshoot_app}
+                        alt="img-screencap"
+                    />
+                    <Image
+                        className="imgScreenCap"
+                        src={screenshoot_app}
+                        alt="img-screencap"
+                    />
+                </div>
+                {/* <div style={{ display: 'flex', justifyContent: 'center' }}>
                     <Image
                         className="homePageImg"
                         src={app_RecSoc}
                         alt="img-RecSoc"
                     />
-                </div>
+                </div> */}
                 <div className="indice_majin" id="nftlink"></div>
                 <br />
 
@@ -460,13 +492,28 @@ const Component: NextPage = () => {
                     />
                 </div>
                 <br />
-                <div style={{ display: 'flex', justifyContent: 'center' }}>
+                <br />
+                <br />
+                <br />
+                <div className="imgScreenCapWrapper">
+                    <Image
+                        className="imgScreenCap"
+                        src={screenshoot_app}
+                        alt="img-screencap"
+                    />
+                    <Image
+                        className="imgScreenCap"
+                        src={screenshoot_app}
+                        alt="img-screencap"
+                    />
+                </div>
+                {/* <div style={{ display: 'flex', justifyContent: 'center' }}>
                     <Image
                         className="homePageImg"
                         src={app_SocTree}
                         alt="img-SocialTree"
                     />
-                </div>
+                </div> */}
             </div>
             <div className="indice_majin2" id="communlink"></div>
             <br />
