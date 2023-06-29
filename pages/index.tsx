@@ -36,7 +36,7 @@ const Component: NextPage = () => {
                     <div
                         style={{ marginTop: '-20px' }}
                         id="nftlink"
-                        className="h_titleContent"
+                        className="h_titleContent2"
                     >
                         LEXICA.SSI
                     </div>
@@ -58,7 +58,7 @@ const Component: NextPage = () => {
                     <div
                         style={{ marginTop: '-20px' }}
                         id="nftlink"
-                        className="h_titleContent"
+                        className="h_titleContent2"
                     >
                         TYDRAS
                     </div>
@@ -84,7 +84,7 @@ const Component: NextPage = () => {
                     <div
                         style={{ marginTop: '-20px' }}
                         id="nftlink"
-                        className="h_titleContent"
+                        className="h_titleContent2"
                     >
                         {t('NFT DOMAIN NAME')}
                     </div>
@@ -244,13 +244,13 @@ const Component: NextPage = () => {
             <div className="indice_majin2" id="didxlink"></div>
 
             <div className="aboutTxt" style={{ marginTop: '10rem' }}>
-                <div style={{ display: 'flex' }}>
+                <div style={{ display: 'flex', justifyContent: 'center' }}>
                     <Image
                         className="h_imgContent_DIDx"
                         src={DIDx}
                         alt="content-ico"
                     />
-                    <div style={{ width: '70%' }}>
+                    <div style={{ width: '50%' }}>
                         <div className="h_titleContent">DIDxWALLET</div>
                         <div className="h_txtContent">
                             {t('index_wallets1')}
@@ -287,7 +287,7 @@ const Component: NextPage = () => {
 
                 <div className="indice_majin" id="zilxlink"></div>
 
-                <div style={{ display: 'flex' }}>
+                <div style={{ display: 'flex', justifyContent: 'center' }}>
                     <Image
                         className="h_imgContent_DIDx"
                         src={ZILx}
@@ -308,7 +308,7 @@ const Component: NextPage = () => {
                 <br />
 
                 <div className="indice_majin" id="sbtxlink"></div>
-                <div style={{ display: 'flex' }}>
+                <div style={{ display: 'flex', justifyContent: 'center' }}>
                     <Image
                         className="h_imgContent_DIDx"
                         src={SBT}
@@ -331,7 +331,7 @@ const Component: NextPage = () => {
             <br />
 
             <div className="aboutTxt" style={{ marginTop: '2rem' }}>
-                <div style={{ display: 'flex' }}>
+                <div style={{ display: 'flex', justifyContent: 'center' }}>
                     <div style={{ width: '50%' }}>
                         <div className="h_titleContent_majin2">
                             {t('SOCIAL RECOVERY')}
@@ -377,97 +377,106 @@ const Component: NextPage = () => {
                 <div className="indice_majin" id="nftlink"></div>
                 <br />
 
-                <div>
-                    <div className="nftWrapperSectionHead">
-                        <div>
-                            <Image
-                                className="h_imgContent_majin"
-                                src={NFT}
-                                alt="content-ico"
-                            />
+                <div
+                    style={{
+                        width: '100%',
+                        display: 'flex',
+                        flexDirection: 'column',
+                        alignItems: 'center',
+                    }}
+                >
+                    <div style={{ width: '90%' }}>
+                        <div className="nftWrapperSectionHead">
+                            <div>
+                                <Image
+                                    className="h_imgContent_majin2"
+                                    src={NFT}
+                                    alt="content-ico"
+                                />
+                            </div>
+                            <div
+                                style={{ marginLeft: '3rem' }}
+                                className="h_titleContent_majinWhite"
+                            >
+                                {t('index_nfts')}
+                            </div>
                         </div>
-                        <div
-                            style={{ marginLeft: '3rem' }}
-                            className="h_titleContent_majinWhite"
-                        >
-                            {t('index_nfts')}
+                        <div className="nftWrapperSectionIco">
+                            <div
+                                onMouseOver={() => setNftSection(1)}
+                                className="nftSectionIco"
+                            >
+                                <a
+                                    className="link_iconos nftSectionIco"
+                                    // href="#domnamelink"
+                                    title="NFTs"
+                                >
+                                    <div>
+                                        <Image
+                                            className="h_headIco_indice"
+                                            src={DomName}
+                                            alt="menu-ico"
+                                        />
+                                    </div>
+                                </a>
+                                <div className="nftSectionIcoBarWrapper">
+                                    <div className="nftSectionIcoBar" />
+                                </div>
+                            </div>
+                            <div
+                                onMouseOver={() => setNftSection(2)}
+                                className="nftSectionIco"
+                            >
+                                <a
+                                    className="link_iconos nftSectionIco"
+                                    // href="#tydraslink"
+                                    title="TYDRAS"
+                                >
+                                    <div>
+                                        <Image
+                                            className="h_headIco_indice"
+                                            src={Tydra}
+                                            alt="menu-ico"
+                                        />
+                                    </div>
+                                </a>
+                                <div className="nftSectionIcoBarWrapper">
+                                    <div className="nftSectionIcoBar" />
+                                </div>
+                            </div>
+                            <div
+                                onMouseOver={() => setNftSection(3)}
+                                className="nftSectionIco"
+                            >
+                                <a
+                                    className="link_iconos"
+                                    // href="#lexlink"
+                                    title="LEXICA.SSI"
+                                >
+                                    <div style={{ marginTop: '10px' }}>
+                                        <Image
+                                            className="h_headIco_indice"
+                                            src={Lssi}
+                                            alt="menu-ico"
+                                        />
+                                    </div>
+                                </a>
+                                <div className="nftSectionIcoBarWrapper">
+                                    <div className="nftSectionIcoBar2" />
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <div className="nftWrapperSectionIco">
-                        <div
-                            onMouseOver={() => setNftSection(1)}
-                            className="nftSectionIco"
-                        >
-                            <a
-                                className="link_iconos nftSectionIco"
-                                // href="#domnamelink"
-                                title="NFTs"
-                            >
-                                <div>
-                                    <Image
-                                        className="h_headIco_indice"
-                                        src={DomName}
-                                        alt="menu-ico"
-                                    />
-                                </div>
-                            </a>
-                            <div className="nftSectionIcoBarWrapper">
-                                <div className="nftSectionIcoBar" />
-                            </div>
-                        </div>
-                        <div
-                            onMouseOver={() => setNftSection(2)}
-                            className="nftSectionIco"
-                        >
-                            <a
-                                className="link_iconos nftSectionIco"
-                                // href="#tydraslink"
-                                title="TYDRAS"
-                            >
-                                <div>
-                                    <Image
-                                        className="h_headIco_indice"
-                                        src={Tydra}
-                                        alt="menu-ico"
-                                    />
-                                </div>
-                            </a>
-                            <div className="nftSectionIcoBarWrapper">
-                                <div className="nftSectionIcoBar" />
-                            </div>
-                        </div>
-                        <div
-                            onMouseOver={() => setNftSection(3)}
-                            className="nftSectionIco"
-                        >
-                            <a
-                                className="link_iconos"
-                                // href="#lexlink"
-                                title="LEXICA.SSI"
-                            >
-                                <div style={{ marginTop: '10px' }}>
-                                    <Image
-                                        className="h_headIco_indice"
-                                        src={Lssi}
-                                        alt="menu-ico"
-                                    />
-                                </div>
-                            </a>
-                            <div className="nftSectionIcoBarWrapper">
-                                <div className="nftSectionIcoBar2" />
-                            </div>
-                        </div>
+                    <div className="nftSectionDescWrapper">
+                        {nftSectionRender()}
                     </div>
-                </div>
-                <div className="nftSectionDescWrapper">
-                    {nftSectionRender()}
                 </div>
                 <div className="indice_majin" id="domnamelink"></div>
             </div>
 
             <div className="indice_majin" id="soctreelink"></div>
             <div className="aboutTxt">
-                <div style={{ display: 'flex' }}>
+                <div style={{ display: 'flex', justifyContent: 'center' }}>
                     <div style={{ width: '60%' }}>
                         <div className="h_titleContent_majin2">
                             {t('SOCIAL TREE')}
@@ -523,7 +532,7 @@ const Component: NextPage = () => {
                 className="aboutTxt"
                 style={{ marginTop: '2rem', marginBottom: '100px' }}
             >
-                <div style={{ display: 'flex' }}>
+                <div style={{ display: 'flex', justifyContent: 'center' }}>
                     <Image
                         className="h_imgContent_DIDx"
                         src={Commun}
