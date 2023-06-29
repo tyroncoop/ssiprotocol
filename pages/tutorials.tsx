@@ -1,39 +1,54 @@
 import React from 'react'
 import type { NextPage } from 'next'
+import { useTranslation } from 'next-i18next'
+import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
 
 const Component: NextPage = () => {
+    const { t } = useTranslation()
     return (
         <div className="contentBody">
-            <div>
-                <iframe
-                    className="iFrame"
-                    src="https://www.youtube.com/embed/4i7nXiC80v0?controls=1"
-                    title="Create a new SSI account & Mint an NFT Domain Name with $ZIL"
-                    frameBorder="0"
-                    allowFullScreen
-                ></iframe>
-
-                <iframe
-                    className="iFrame"
-                    src="https://www.youtube.com/embed/-87iQbhdhGs?"
-                    title="Activate NFT Social Recovery"
-                    frameBorder="0"
-                    allow="accelerometer; controls; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowFullScreen
-                ></iframe>
-
-                <iframe
-                    width="560"
-                    height="315"
-                    src="https://www.youtube.com/embed/nicBm8EpTMA?controls"
-                    title="YouTube video player"
-                    frameBorder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                    allowFullScreen
-                ></iframe>
+            <div className="t_tutorialRow">
+                <div className="t_tutorialWrapper">
+                    <div className="t_tutorialTitle">{t('tutorial_1')}</div>
+                    <iframe
+                        className="iFrame"
+                        src="https://www.youtube.com/embed/4i7nXiC80v0?controls=1"
+                        title="TUTORIAL: New DIDxWALLET & NFT Domain Name"
+                        frameBorder="0"
+                        allowFullScreen
+                    ></iframe>
+                </div>
+                <div className="t_tutorialWrapper">
+                    <div className="t_tutorialTitle">{t('tutorial_2')}</div>
+                    <iframe
+                        className="iFrame"
+                        src="https://www.youtube.com/embed/-87iQbhdhGs?controls=1"
+                        title="TUTORIAL: Activate NFT Social Recovery"
+                        frameBorder="0"
+                        allowFullScreen
+                    ></iframe>
+                </div>
+            </div>
+            <div className="t_tutorialRow">
+                <div className="t_tutorialWrapper">
+                    <div className="t_tutorialTitle">{t('tutorial_3')}</div>
+                    <iframe
+                        className="iFrame"
+                        src="https://www.youtube.com/embed/nicBm8EpTMA?controls=1"
+                        title="Mint a TYDRA of TYRON NFT"
+                        frameBorder="0"
+                        allowFullScreen
+                    ></iframe>
+                </div>
             </div>
         </div>
     )
 }
+
+export const getStaticProps = async ({ locale }) => ({
+    props: {
+        ...(await serverSideTranslations(locale, ['common'])),
+    },
+})
 
 export default Component

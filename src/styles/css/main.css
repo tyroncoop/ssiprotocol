@@ -1770,12 +1770,6 @@ body.is-preload #footer {
     margin-bottom: 20px;
 }
 
-.iFrame {
-    width: 476px;
-    height: 268px;
-    margin: 1rem;
-}
-
 .contentBody {
     margin-top: 5%;
     margin-bottom: 10%;
@@ -2160,6 +2154,25 @@ a:link,a:visited, a:active.link_iconos {
     margin-left: 30px;
 }
 
+.t_tutorialRow {
+    display: flex;
+    flex-direction: row;
+}
+
+.t_tutorialWrapper {
+    margin: 1rem;
+}
+
+.iFrame {
+    width: 595px;
+    height: 335px;
+    margin-top: 15px;
+}
+
+.t_tutorialTitle {
+    font-size: 30px;
+}
+
 @media only screen and (max-width: 799px) {
     .imgScreenCapWrapper {
         display: flex;
@@ -2185,7 +2198,6 @@ a:link,a:visited, a:active.link_iconos {
     .iFrame {
         width: 238px;
         height: 134px;
-        margin: 1rem;
     }
     .contentBody {
         margin-top: 200px;
@@ -2382,6 +2394,13 @@ a:link,a:visited, a:active.link_iconos {
     .nftSectionDescTitleHighlight {
         margin-top: -5px;
     }
+    .t_tutorialRow {
+        flex-direction: column;
+        align-items: center;
+    }
+    .t_tutorialTitle {
+        font-size: 20px;
+    }
 }
 
 @media only screen and (max-width: 1440px) and (min-width: 900px) {
@@ -2422,6 +2441,10 @@ a:link,a:visited, a:active.link_iconos {
         padding-left: 0px;
         list-style: none;
         margin-bottom: 200px;
+    }
+    .t_tutorialRow {
+        flex-direction: column;
+        align-items: center;
     }
     /* .h_imgContent_DIDx {
         width: 300px;
