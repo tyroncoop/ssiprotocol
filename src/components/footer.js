@@ -55,7 +55,6 @@ function Footer() {
                         <span className="label">Telegram</span>
                     </a>
                 </p>
-
                 <p>
                     <a
                         className="icon brands fa-twitter"
@@ -79,7 +78,7 @@ function Footer() {
                 <p>
                     <a
                         className="icon brands fa-github"
-                        href="https://github.com/pungtas"
+                        href="https://github.com/tyroncoop"
                         rel="noreferrer"
                         target="_blank"
                     >

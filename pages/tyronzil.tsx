@@ -25,16 +25,16 @@ const Component: NextPage = () => {
                     , {t('tyronZil2c')}{' '}
                     <a href="https://www.zilliqa.com/">Zilliqa</a> {' '}
                     {t('tyronZil2d')}{' '}
-                    <a href="https://www.zilhive.org/">ZILHive</a>
-                    {t('tyronZil2e')}
+                    <a href="https://www.zilhive.org/">ZILHive</a>.
                 </div>
                 <br />
-                <button
+                {/* @review */}
+                {/* <button
                     className="btnLink"
                     onClick={() => window.open('https://tyronzil.com')}
                 >
                     tyronzil.com
-                </button>
+                </button> */}
             </div>
         </div>
     )

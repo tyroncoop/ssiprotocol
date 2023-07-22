@@ -1771,7 +1771,7 @@ body.is-preload #footer {
 }
 
 .contentBody {
-    margin-top: 5%;
+    margin-top: 300px;
     margin-bottom: 10%;
 }
 
@@ -1784,8 +1784,8 @@ body.is-preload #footer {
 .languageWrapper {
     width: 170px;
     position: absolute;
-    bottom: 2%;
-    left: 2%;
+    bottom: 10px;
+    left: 10px;
 }
 
 .h_header {
@@ -1808,6 +1808,7 @@ a:link,a:visited, a:active.link_iconos {
 
 .link_iconos a img {
     text-decoration: none;
+    width: 40%;
 }
 
 #italicas {
@@ -1953,20 +1954,20 @@ a:link,a:visited, a:active.link_iconos {
 .h_titleContent_majin2 {
     font-weight: bold;
     font-size: 50px;
-    color: yellow;
+    color: #ffff32;
     text-align: center;
 }
 
 .h_titleContent_majinWhite {
     font-weight: bold;
-    font-size: 80px;
+    font-size: 70px;
     color: #fff;
 }
 
 .h_titleContent_majin {
     font-weight: bold;
-    font-size: 80px;
-    color: yellow;
+    font-size: 70px;
+    color: #ffff32;
     float: left;
     padding-bottom: 80px;
 }
@@ -1985,7 +1986,7 @@ a:link,a:visited, a:active.link_iconos {
 }
 
 .contacto_3 {
-    color: yellow;
+    color: #ffff32;
 }
 
 .h_txtContent {
@@ -2078,7 +2079,7 @@ a:link,a:visited, a:active.link_iconos {
     color: #ffff32 !important;
 }
 
-.nftWrapperSectionHead {
+.wrapperSectionHead {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -2086,7 +2087,7 @@ a:link,a:visited, a:active.link_iconos {
     padding-top: 20px;
 }
 
-.nftWrapperSectionIco {
+.wrapperSectionIco {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -2201,7 +2202,7 @@ a:link,a:visited, a:active.link_iconos {
 
 @media only screen and (max-width: 900px) {
     #bg:after {
-        background-image: url('/images/SSI_protocolWeb_8001x4501pxMOBILE_fireBG.jpg');
+        background-image: url('/images/ssi_website_mobile.jpg');
     }
     #header {
         margin-top: 15rem;
@@ -2325,8 +2326,8 @@ a:link,a:visited, a:active.link_iconos {
     }
     .h_titleContent_majin {
         font-weight: bold;
-        font-size: 30px;
-        color: yellow;
+        font-size: 40px;
+        color: #ffff32;
         float: left;
         padding-bottom: 50px;
     }
@@ -2372,8 +2373,8 @@ a:link,a:visited, a:active.link_iconos {
     }
     .h_titleContent_majin2 {
         font-weight: bold;
-        font-size: 30px;
-        color: yellow;
+        font-size: 40px;
+        color: #ffff32;
     }
     .h_titleContent_majinWhite {
         font-weight: bold;

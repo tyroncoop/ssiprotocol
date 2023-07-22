@@ -376,7 +376,6 @@ const Component: NextPage = () => {
                 </div> */}
                 <div className="indice_majin" id="nftlink"></div>
                 <br />
-
                 <div
                     style={{
                         width: '100%',
@@ -386,7 +385,7 @@ const Component: NextPage = () => {
                     }}
                 >
                     <div style={{ width: '90%' }}>
-                        <div className="nftWrapperSectionHead">
+                        <div className="wrapperSectionHead">
                             <div>
                                 <Image
                                     className="h_imgContent_majin2"
@@ -401,7 +400,7 @@ const Component: NextPage = () => {
                                 {t('index_nfts')}
                             </div>
                         </div>
-                        <div className="nftWrapperSectionIco">
+                        <div className="wrapperSectionIco">
                             <div
                                 onMouseOver={() => setNftSection(1)}
                                 className="nftSectionIco"
@@ -473,7 +472,6 @@ const Component: NextPage = () => {
                 </div>
                 <div className="indice_majin" id="domnamelink"></div>
             </div>
-
             <div className="indice_majin" id="soctreelink"></div>
             <div className="aboutTxt">
                 <div style={{ display: 'flex', justifyContent: 'center' }}>
@@ -527,7 +525,6 @@ const Component: NextPage = () => {
             <div className="indice_majin2" id="communlink"></div>
             <br />
             <br />
-
             <div
                 className="aboutTxt"
                 style={{ marginTop: '2rem', marginBottom: '100px' }}
@@ -555,7 +552,8 @@ const Component: NextPage = () => {
             <br />
             <br />
             <br />
-            <div
+            <br />
+            {/* <div
                 id="#community"
                 className="aboutTxt"
                 style={{ marginTop: '2rem', marginBottom: '100px' }}
@@ -624,7 +622,7 @@ const Component: NextPage = () => {
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> */}
         </>
     )
 }

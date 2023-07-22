@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import styles from './styles.module.scss'
-import Logo from '../../images/ssi_ssiprotocol_iso_2000px.png'
-import LogoNObg from '../../images/ssi_ssiprotocol_nobgside_2000px.png'
+import LogoSSI from '../../images/ssi_protocol_nb.svg'
+import IsoLogoSSI from '../../images/ssi_protocol_isoLogo_nB.svg'
 import LogoTYRON from '../../images/ssi_$Tipo_Chrome_1920x640px_trans.png'
 import Image from 'next/image'
 import { useRouter } from 'next/router'
@@ -39,7 +39,7 @@ function Menu() {
         <div className={styles.wrapper}>
             <div className={styles.wrapperLeftDesktop}>
                 <div onClick={() => Router.push('/')} className={styles.logo}>
-                    <Image width={100} height={100} src={Logo} alt="logo" />
+                    <Image width={90} height={90} src={LogoSSI} alt="logo" />
                 </div>
                 <div
                     onClick={() => Router.push('/about')}
@@ -60,7 +60,7 @@ function Menu() {
                     }
                     style={{ textTransform: 'none' }}
                 >
-                    tyronZIL
+                    TyronZIL
                 </div>
                 <div
                     onClick={() => Router.push('/tutorials')}
@@ -98,7 +98,7 @@ function Menu() {
             </div>
             <div className={styles.wrapperLeftMobile}>
                 <div onClick={() => Router.push('/')} className={styles.logo}>
-                    <Image width={200} height={200} src={LogoNObg} alt="logo" />
+                    <Image height={90} src={IsoLogoSSI} alt="logo" />
                 </div>
                 {showMenu && (
                     <>
@@ -121,7 +121,7 @@ function Menu() {
                             }
                             style={{ textTransform: 'none' }}
                         >
-                            tyronZIL
+                            TyronZIL
                         </div>
                         <div
                             onClick={() => Router.push('/tutorials')}
