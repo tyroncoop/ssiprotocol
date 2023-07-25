@@ -1253,6 +1253,7 @@ button {
     left: 0;
     width: 100%;
     height: 100%;
+    background-size: cover;
 }
 
 #bg:before {
@@ -2214,6 +2215,16 @@ a:link,a:visited, a:active.link_iconos {
     body {
         background-image: url('/images/ssi_background_1080x1920px.jpg');
         background-size: contain;
+    }
+    #bg:after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        /* background-image: url('/images/ssi_website_mobile.jpg'); */
+        /* background-size: cover; This will make the background image cover the entire element */
     }
     #header {
         margin-top: 15rem;
