@@ -113,10 +113,12 @@ section {
 body {
     margin: 0;
     padding: 0;
-    background-position: center;
+    background-position: bottom right;
+    background-color: black;
     background-size: cover;
     background-repeat: no-repeat;
     height: 100vh;
+    background-attachment: fixed; 
     /* Ensure the body takes up the full viewport height */
 }
 
@@ -189,9 +191,9 @@ html {
     box-sizing: inherit;
 }
 
-body {
+/* body {
     background: #1b1f22;
-}
+} */
 
 body.is-preload *,
 body.is-preload *:before,
@@ -1256,7 +1258,7 @@ button {
     background-size: cover;
 }
 
-#bg:before {
+/* #bg:before {
     -moz-transition: background-color 2.5s ease-in-out;
     -webkit-transition: background-color 2.5s ease-in-out;
     -ms-transition: background-color 2.5s ease-in-out;
@@ -1275,7 +1277,7 @@ button {
     background-position: center, center;
     background-repeat: no-repeat, repeat;
     z-index: 2;
-}
+} */
 
 #bg:after {
     -moz-transform: scale(1.125);
@@ -2208,13 +2210,13 @@ a:link,a:visited, a:active.link_iconos {
 @media only screen and (min-width: 900px) {
     body {
         background-image: url('/images/ssi_background_2968x1928px.jpg');
-        background-size: contain;
+        /* background-size: contain; */
     }
 }
 @media only screen and (max-width: 900px) {
     body {
         background-image: url('/images/ssi_background_1080x1920px.jpg');
-        background-size: contain;
+        /* background-size: contain; */
     }
     #bg:after {
         content: '';
