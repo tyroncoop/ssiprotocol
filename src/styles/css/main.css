@@ -2193,6 +2193,22 @@ a:link,a:visited, a:active.link_iconos {
     font-size: 30px;
 }
 
+@media only screen and (max-width: 425px) {
+    .h_titleContent_majin2 {
+        font-weight: bold;
+        font-size: 30px;
+        color: #ffff32;
+    }
+}
+
+@media only screen and (max-width: 900px) and (min-width: 426) {
+    .h_titleContent_majin2 {
+        font-weight: bold;
+        font-size: 40px;
+        color: #ffff32;
+    }
+}
+
 @media only screen and (max-width: 799px) {
     .imgScreenCapWrapper {
         display: flex;
@@ -2213,6 +2229,7 @@ a:link,a:visited, a:active.link_iconos {
         /* background-size: contain; */
     }
 }
+
 @media only screen and (max-width: 900px) {
     body {
         background-image: url('/images/ssi_background_1080x1920px.jpg');
@@ -2394,11 +2411,6 @@ a:link,a:visited, a:active.link_iconos {
         height: 70px;
         margin-left: 10px;
         margin-top: 20px;
-    }
-    .h_titleContent_majin2 {
-        font-weight: bold;
-        font-size: 40px;
-        color: #ffff32;
     }
     .h_titleContent_majinWhite {
         font-weight: bold;
