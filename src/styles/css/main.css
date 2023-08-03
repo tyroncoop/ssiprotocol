@@ -175,8 +175,8 @@ textarea {
 }
 
 @media screen and (max-width: 480px) {
-    html,
-    body {
+    html/*,
+    body*/ {
         min-width: 320px;
     }
 }
