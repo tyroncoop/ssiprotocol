@@ -17,7 +17,7 @@ import gZil from '../src/images/iconos/ssi_icon_60px_gZILDomName.svg'
 import app_didx from '../src/images/didxwallet.png'
 import app_RecSoc from '../src/images/socialrecovery.png'
 import app_SocTree from '../src/images/socialtree.png'
-import KvmeFelen from '../src/images/ejemplo_kf.jpg'
+import KvmeFelen from '../src/images/kvmeFelen.png'
 import screenshoot_app from '../src/images/screenshoot-app.gif'
 import tw from '../src/images/socialmedia/soc_twitter_light.svg'
 
@@ -32,15 +32,11 @@ const Component: NextPage = () => {
     const nftSectionRender = () => {
         if (nftSection === 3) {
             return (
-                <div className="nftSectionDesc">
-                    <div
-                        style={{ marginTop: '-20px' }}
-                        id="nftlink"
-                        className="h_titleContent2"
-                    >
-                        LEXICA.SSI
+                <div>
+                    <div id="nftlink" className="h_titleContent2">
+                        lexica.ssi
                     </div>
-                    <div className="nftSectionDescTitleHighlight" />
+                    {/* <div className="nftSectionDescTitleHighlight" /> */}
                     <div className="h_txtContent">
                         {t('index_lexica1')}
                         <a href="http://lexica.art/">lexica.art</a>
@@ -54,15 +50,11 @@ const Component: NextPage = () => {
             )
         } else if (nftSection === 2) {
             return (
-                <div className="nftSectionDesc">
-                    <div
-                        style={{ marginTop: '-20px' }}
-                        id="nftlink"
-                        className="h_titleContent2"
-                    >
+                <div>
+                    <div id="nftlink" className="h_titleContent2">
                         TYDRAS
                     </div>
-                    <div className="nftSectionDescTitleHighlight" />
+                    {/* <div className="nftSectionDescTitleHighlight" /> */}
                     <div className="h_txtContent">
                         {t('index_tot1')} {t('index_tot2')}
                         <br />
@@ -80,15 +72,11 @@ const Component: NextPage = () => {
             )
         } else {
             return (
-                <div className="nftSectionDesc">
-                    <div
-                        style={{ marginTop: '-20px' }}
-                        id="nftlink"
-                        className="h_titleContent2"
-                    >
+                <div>
+                    <div id="nftlink" className="h_titleContent2">
                         {t('NFT DOMAIN NAME')}
                     </div>
-                    <div className="nftSectionDescTitleHighlight" />
+                    {/* <div className="nftSectionDescTitleHighlight" /> */}
                     <div className="h_txtContent">
                         {t('index_nft1')}
                         <br />
@@ -149,10 +137,13 @@ const Component: NextPage = () => {
                     </div>
                 </a>
             </div>
-            <br />
-            <br />
-
-            <div style={{ display: 'flex', width: '65%' }}>
+            <div
+                style={{
+                    display: 'flex',
+                    flexDirection: 'column',
+                    width: '70%',
+                }}
+            >
                 <div className="h_txtContent_kf">
                     <span id="italicas">Kvme Felen</span>{' '}
                     {t('index_kvmefelen1')}{' '}
@@ -166,14 +157,12 @@ const Component: NextPage = () => {
                     {t('index_kvmefelen5')}
                     <span id="italicas">Kvme Felen</span>
                     {t('index_kvmefelen6')}
-                    <br />
-                    <br />
-                    <Image className="indexImg" src={KvmeFelen} alt="paisaje" />
                 </div>
+                <Image className="indexImg" src={KvmeFelen} alt="paisaje" />
             </div>
 
+            {/* @dev: SSI account */}
             <div className="indice_majin" id="xwalletlink"></div>
-
             <table>
                 <thead className="noStyleThead">
                     <tr className="h_imgContent_majin_wrapper">
@@ -326,10 +315,8 @@ const Component: NextPage = () => {
                 </div>
             </div>
             <div className="indice_majin2" id="recsoclink"></div>
-            <br />
-            <br />
-            <br />
 
+            {/* @dev: social */}
             <div className="aboutTxt" style={{ marginTop: '2rem' }}>
                 <div style={{ display: 'flex', justifyContent: 'center' }}>
                     <div style={{ width: '50%' }}>
@@ -351,10 +338,6 @@ const Component: NextPage = () => {
                         alt="content-ico"
                     />
                 </div>
-                <br />
-                <br />
-                <br />
-                <br />
                 <div className="imgScreenCapWrapper">
                     <Image
                         className="imgScreenCap"
@@ -375,7 +358,6 @@ const Component: NextPage = () => {
                     />
                 </div> */}
                 <div className="indice_majin" id="nftlink"></div>
-                <br />
                 <div
                     style={{
                         width: '100%',
@@ -384,19 +366,16 @@ const Component: NextPage = () => {
                         alignItems: 'center',
                     }}
                 >
-                    <div style={{ width: '90%' }}>
+                    <div style={{ width: '100%' }}>
                         <div className="wrapperSectionHead">
-                            <div>
-                                <Image
-                                    className="h_imgContent_majin2"
-                                    src={NFT}
-                                    alt="content-ico"
-                                />
-                            </div>
-                            <div
-                                style={{ marginLeft: '3rem' }}
-                                className="h_titleContent_majinWhite"
-                            >
+                            <Image
+                                className="h_imgContent_majin2"
+                                src={NFT}
+                                alt="content-ico"
+                                height="50"
+                                width="50"
+                            />
+                            <div className="h_titleContent_majinWhite">
                                 {t('index_nfts')}
                             </div>
                         </div>
@@ -410,13 +389,11 @@ const Component: NextPage = () => {
                                     // href="#domnamelink"
                                     title="NFTs"
                                 >
-                                    <div>
-                                        <Image
-                                            className="h_headIco_indice"
-                                            src={DomName}
-                                            alt="menu-ico"
-                                        />
-                                    </div>
+                                    <Image
+                                        className="h_headIco_indice"
+                                        src={DomName}
+                                        alt="menu-ico"
+                                    />
                                 </a>
                                 <div className="nftSectionIcoBarWrapper">
                                     <div className="nftSectionIcoBar" />
@@ -431,13 +408,11 @@ const Component: NextPage = () => {
                                     // href="#tydraslink"
                                     title="TYDRAS"
                                 >
-                                    <div>
-                                        <Image
-                                            className="h_headIco_indice"
-                                            src={Tydra}
-                                            alt="menu-ico"
-                                        />
-                                    </div>
+                                    <Image
+                                        className="h_headIco_indice"
+                                        src={Tydra}
+                                        alt="menu-ico"
+                                    />
                                 </a>
                                 <div className="nftSectionIcoBarWrapper">
                                     <div className="nftSectionIcoBar" />
@@ -452,13 +427,11 @@ const Component: NextPage = () => {
                                     // href="#lexlink"
                                     title="LEXICA.SSI"
                                 >
-                                    <div style={{ marginTop: '10px' }}>
-                                        <Image
-                                            className="h_headIco_indice"
-                                            src={Lssi}
-                                            alt="menu-ico"
-                                        />
-                                    </div>
+                                    <Image
+                                        className="h_headIco_indice"
+                                        src={Lssi}
+                                        alt="menu-ico"
+                                    />
                                 </a>
                                 <div className="nftSectionIcoBarWrapper">
                                     <div className="nftSectionIcoBar2" />
@@ -466,13 +439,11 @@ const Component: NextPage = () => {
                             </div>
                         </div>
                     </div>
-                    <div className="nftSectionDescWrapper">
-                        {nftSectionRender()}
-                    </div>
+                    <div className="sectionDesc">{nftSectionRender()}</div>
                 </div>
-                <div className="indice_majin" id="domnamelink"></div>
+                {/* <div className="indice_majin" id="domnamelink"></div> */}
             </div>
-            <div className="indice_majin" id="soctreelink"></div>
+            {/* <div className="indice_majin" id="soctreelink"></div>
             <div className="aboutTxt">
                 <div style={{ display: 'flex', justifyContent: 'center' }}>
                     <div style={{ width: '60%' }}>
@@ -498,10 +469,6 @@ const Component: NextPage = () => {
                         alt="content-ico"
                     />
                 </div>
-                <br />
-                <br />
-                <br />
-                <br />
                 <div className="imgScreenCapWrapper">
                     <Image
                         className="imgScreenCap"
@@ -513,19 +480,17 @@ const Component: NextPage = () => {
                         src={screenshoot_app}
                         alt="img-screencap"
                     />
-                </div>
-                {/* <div style={{ display: 'flex', justifyContent: 'center' }}>
+                </div> */}
+            {/* <div style={{ display: 'flex', justifyContent: 'center' }}>
                     <Image
                         className="homePageImg"
                         src={app_SocTree}
                         alt="img-SocialTree"
                     />
                 </div> */}
-            </div>
-            <div className="indice_majin2" id="communlink"></div>
-            <br />
-            <br />
-            <div
+            {/* </div> */}
+            {/* <div className="indice_majin2" id="communlink"></div> */}
+            {/* <div
                 className="aboutTxt"
                 style={{ marginTop: '2rem', marginBottom: '100px' }}
             >
@@ -548,11 +513,7 @@ const Component: NextPage = () => {
                         </div>
                     </div>
                 </div>
-            </div>
-            <br />
-            <br />
-            <br />
-            <br />
+            </div> */}
             {/* <div
                 id="#community"
                 className="aboutTxt"

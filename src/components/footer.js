@@ -68,7 +68,7 @@ function Footer() {
                 <p>
                     <a
                         className="icon brands fa-instagram"
-                        href="https://www.instagram.com/ssiprotocol/"
+                        href="https://www.instagram.com/ssiprotocol"
                         rel="noreferrer"
                         target="_blank"
                     >

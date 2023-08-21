@@ -41,7 +41,7 @@ function Menu() {
                 <div onClick={() => Router.push('/')} className={styles.logo}>
                     <Image width={90} height={90} src={LogoSSI} alt="logo" />
                 </div>
-                <div
+                {/* <div
                     onClick={() => Router.push('/about')}
                     className={
                         isActive('about')
@@ -61,7 +61,7 @@ function Menu() {
                     style={{ textTransform: 'none' }}
                 >
                     TyronZIL
-                </div>
+                </div> */}
                 <div
                     onClick={() => Router.push('/tutorials')}
                     className={
@@ -87,14 +87,14 @@ function Menu() {
                 >
                     WHITEPAPER
                 </div>
-                <div
+                {/* <div
                     onClick={() => Router.push('/dao')}
                     className={
                         isActive('dao') ? styles.txtMenuActive : styles.txtMenu
                     }
                 >
                     DAO
-                </div>
+                </div> */}
             </div>
             <div className={styles.wrapperLeftMobile}>
                 <div onClick={() => Router.push('/')} className={styles.logo}>
@@ -102,7 +102,7 @@ function Menu() {
                 </div>
                 {showMenu && (
                     <>
-                        <div
+                        {/* <div
                             onClick={() => Router.push('/about')}
                             className={
                                 isActive('about')
@@ -122,9 +122,12 @@ function Menu() {
                             style={{ textTransform: 'none' }}
                         >
                             TyronZIL
-                        </div>
+                        </div> */}
                         <div
-                            onClick={() => Router.push('/tutorials')}
+                            onClick={() => {
+                                setShowMenu(false)
+                                Router.push('/tutorials')
+                            }}
                             className={
                                 isActive('tutorials')
                                     ? styles.txtMenuActive
@@ -148,7 +151,7 @@ function Menu() {
                         >
                             WHITEPAPER
                         </div>
-                        <div
+                        {/* <div
                             onClick={() => Router.push('/dao')}
                             className={
                                 isActive('dao')
@@ -157,7 +160,7 @@ function Menu() {
                             }
                         >
                             DAO
-                        </div>
+                        </div> */}
                         <button
                             className={styles.button}
                             onClick={handleOnClick}

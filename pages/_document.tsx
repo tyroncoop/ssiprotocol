@@ -12,10 +12,17 @@ class MyDocument extends Document {
             <Html>
                 <Head>
                     <meta
-                        name="SSI PROTOCOL"
-                        content="Self Sovereign Identity Protocol"
+                        name="Tyron SSI Protocol"
+                        content="Tyron Self Sovereign Identity Protocol"
                     />
                     <link rel="icon" href="/favicon.ico" />
+                    <meta name="title" content="Tyron SSI Protocol" />
+                    <meta
+                        name="description"
+                        content="Tyron Self Sovereign Identity Protocol"
+                    />
+                    <meta property="og:image" content="/ssi_protocol.svg" />
+                    <meta property="og:title" content="Tyron SSI Protocol" />
                 </Head>
                 <body>
                     <Main />

@@ -118,7 +118,7 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
     height: 100vh;
-    background-attachment: fixed; 
+    background-attachment: fixed;
     /* Ensure the body takes up the full viewport height */
 }
 
@@ -1691,7 +1691,7 @@ body.is-preload #header .content .inner {
         opacity 0.325s ease-in-out;
     width: 100%;
     max-width: 100%;
-    margin-top: -25%;
+    /* margin-top: -25%; */
     text-align: right;
 }
 
@@ -1763,9 +1763,8 @@ body.is-preload #footer {
 }
 
 .indexImg {
-    width: 800px;
-    height: 300px;
-    padding-left: 100px;
+    width: 100%;
+    height: fit-content;
 }
 
 .homePageImg {
@@ -1790,7 +1789,7 @@ body.is-preload #footer {
 }
 
 .languageWrapper {
-    width: 170px;
+    width: 110px;
     position: absolute;
     bottom: 10px;
     left: 10px;
@@ -1841,13 +1840,10 @@ a:link,a:visited, a:active.link_iconos {
     z-index: 1;
 }
 .h_headIco_indice {
-    width: 150px;
-    height: 150px;
-    margin-left: 5px;
-    margin-right: 20px;
+    width: 111px;
+    height: 111px;
     cursor: pointer;
     z-index: 1;
-    text-decoration: none;
 }
 .h_headIco_indice2 {
     width: 150px;
@@ -1866,12 +1862,8 @@ a:link,a:visited, a:active.link_iconos {
 }
 
 .h_headIco_indice:hover {
-    width: 200px;
-    height: 200px;
-    margin-left: 50px;
-    margin-right: 50px;
-    cursor: pointer;
-    z-index: 1;
+    width: 170px;
+    height: 170px;
 }
 
 .h_headIco_indice2:hover {
@@ -1922,10 +1914,8 @@ a:link,a:visited, a:active.link_iconos {
     margin-top: 20px;
 }
 .h_imgContent_majin2 {
-    width: 400px;
-    height: 400px;
-    margin-left: 0px;
-    margin-top: 20px;
+    width: 222px;
+    height: 222px;
 }
 .h_imgContent_NFTs {
     width: 450px;
@@ -1950,13 +1940,17 @@ a:link,a:visited, a:active.link_iconos {
 
 .h_titleContent {
     font-weight: bold;
-    font-size: 50px;
+    font-size: x-large;
     text-align: center;
 }
 
 .h_titleContent2 {
-    font-weight: bold;
-    font-size: 50px;
+    font-weight: 600;
+    font-size: x-large;
+    margin-bottom: 22px;
+    text-decoration: overline;
+    text-decoration-color: #ffff32;
+    color: #dbe4eb;
 }
 
 .h_titleContent_majin2 {
@@ -1967,9 +1961,10 @@ a:link,a:visited, a:active.link_iconos {
 }
 
 .h_titleContent_majinWhite {
+    margin-left: 3rem;
     font-weight: bold;
-    font-size: 70px;
-    color: #fff;
+    font-size: xx-large;
+    color: #dbe4eb;
 }
 
 .h_titleContent_majin {
@@ -1998,16 +1993,18 @@ a:link,a:visited, a:active.link_iconos {
 }
 
 .h_txtContent {
-    font-size: 30px;
+    font-size: large;
 }
 
 .h_txtContent_kf {
-    font-size: 25px;
-    justify-content: center;
+    font-size: large;
+    margin-top: 11%;
+    margin-bottom: 11%;
+    /* justify-content: center;
     align-text: center;
     padding: 25px;
     border-width: 2px;
-    border-color: #000000;
+    border-color: #000000; */
 }
 
 #italicas {
@@ -2091,8 +2088,11 @@ a:link,a:visited, a:active.link_iconos {
     display: flex;
     flex-direction: row;
     align-items: center;
-    border-top: 1px solid #fff;
-    padding-top: 20px;
+    justify-content: center;
+    text-align: center;
+    border-top: 1px solid #dbe4eb;
+    padding-top: 66px;
+    padding-bottom: 33px;
 }
 
 .wrapperSectionIco {
@@ -2100,7 +2100,10 @@ a:link,a:visited, a:active.link_iconos {
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    /* background-color: pink; */
+    padding: 7%;
+    @media only screen and (max-width: 576px) {
+        flex-direction: column;
+    }
 }
 
 .nftSectionIco {
@@ -2136,17 +2139,11 @@ a:link,a:visited, a:active.link_iconos {
     visibility: visible;
 }
 
-.nftSectionDescWrapper {
-    width: 90%;
-    display: flex;
-    justify-content: center;
-}
-
-.nftSectionDesc {
-    border: 2px solid #fff;
-    border-radius: 10px;
-    padding: 3rem;
-    width: 100%;
+.sectionDesc {
+    width: 70%;
+    border: 1px solid #dbe4eb;
+    border-radius: 4px;
+    padding: 4rem;
 }
 
 .nftSectionDescTitleHighlight {
@@ -2256,9 +2253,6 @@ a:link,a:visited, a:active.link_iconos {
         margin-top: 200px;
         width: 90%;
     }
-    .languageWrapper {
-        width: 80px;
-    }
     .title1 {
         font-size: 30px;
     }
@@ -2306,18 +2300,14 @@ a:link,a:visited, a:active.link_iconos {
     }
     .h_titleContent,
     .h_titleContent2 {
-        font-size: 25px;
+        font-size: large;
     }
 
     .h_txtContent {
-        font-size: 20px;
+        font-size: medium;
     }
 
     .aboutImg {
-        width: 250px;
-        height: 150px;
-    }
-    .indexImg {
         width: 250px;
         height: 150px;
     }
@@ -2349,9 +2339,7 @@ a:link,a:visited, a:active.link_iconos {
         margin-left: 0px;
     }
     .h_txtContent_kf {
-        margin-left: -20px;
-        font-size: 20px;
-        padding: 0px;
+        font-size: medium;
     }
     .h_imgContent_majin {
         width: 70px;
@@ -2360,10 +2348,8 @@ a:link,a:visited, a:active.link_iconos {
         margin-top: 80px;
     }
     .h_imgContent_majin2 {
-        width: 70px;
-        height: 70px;
-        margin-left: 0px;
-        margin-top: 0px;
+        width: 111px;
+        height: 111px;
     }
     .h_titleContent_majin {
         font-weight: bold;
@@ -2373,21 +2359,12 @@ a:link,a:visited, a:active.link_iconos {
         padding-bottom: 50px;
     }
     .h_headIco_indice {
-        width: 40px;
-        height: 40px;
-        margin-left: 5px;
-        margin-right: 5px;
-        cursor: pointer;
-        z-index: 1;
-        text-decoration: none;
+        width: 70px;
+        height: 70px;
     }
     .h_headIco_indice:hover {
-        width: 50px;
-        height: 50px;
-        margin-left: 10px;
-        margin-right: 10px;
-        cursor: pointer;
-        z-index: 1;
+        width: 90px;
+        height: 90px;
     }
     .h_headIco_indice2 {
         width: 40px;
@@ -2413,9 +2390,7 @@ a:link,a:visited, a:active.link_iconos {
         margin-top: 20px;
     }
     .h_titleContent_majinWhite {
-        font-weight: bold;
-        font-size: 20px;
-        color: #fff;
+        font-size: large;
     }
     .nftSectionIco .nftSectionIcoBar {
         width: 2px;

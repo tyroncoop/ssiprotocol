@@ -17,7 +17,9 @@ function App({ Component, pageProps }) {
             <div id="wrapper">
                 <Menu />
                 <Component {...pageProps} />
-                <Footer />
+                <div style={{ width: '100%', marginTop: '111px' }}>
+                    <Footer />
+                </div>
             </div>
         </>
     )
