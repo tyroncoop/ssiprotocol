@@ -23,8 +23,7 @@ import tw from '../src/images/socialmedia/soc_twitter_light.svg'
 
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
 import { useTranslation } from 'next-i18next'
-import { text } from 'stream/consumers'
-
+import styles from './styles.module.scss'
 const Component: NextPage = () => {
     const { t } = useTranslation()
     const [nftSection, setNftSection] = useState(1)
@@ -137,13 +136,7 @@ const Component: NextPage = () => {
                     </div>
                 </a>
             </div>
-            <div
-                style={{
-                    display: 'flex',
-                    flexDirection: 'column',
-                    width: '70%',
-                }}
-            >
+            <div className={styles.kvmeFelen}>
                 <div className="h_txtContent_kf">
                     <span id="italicas">Kvme Felen</span>{' '}
                     {t('index_kvmefelen1')}{' '}
@@ -379,7 +372,7 @@ const Component: NextPage = () => {
                                 {t('index_nfts')}
                             </div>
                         </div>
-                        <div className="wrapperSectionIco">
+                        <div className={styles.wrapperSectionIco}>
                             <div
                                 onMouseOver={() => setNftSection(1)}
                                 className="nftSectionIco"

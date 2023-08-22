@@ -32,27 +32,33 @@ function Header() {
                 <div />
                 <div className={contentClassName}>
                     <div className={innerClassName}>
-                        <p style={{fontSize:'x-large', fontWeight:'500', textTransform:'uppercase'}}>Tyron Self-Sovereign Identity Protocol</p>
-                        <p style={{color:'#ffff32'}}>
-                            Decentralised networks of self-sovereign identities{' '}
+                        <p
+                            style={{
+                                fontSize: 'x-large',
+                                fontWeight: '700',
+                                textTransform: 'uppercase',
+                            }}
+                        >
+                            Tyron Self-Sovereign Identity Protocol
+                        </p>
+                        <p style={{ color: '#ffff32' }}>
+                            Decentralised networks of sovereign identities
                         </p>
                     </div>
                 </div>
                 <nav>
                     <ul>
-                    <li>
-                        <a
-                            onClick={handleOnClick}
-                        >
-                            <Image
-                                height={50}
-                                width={150}
-                                src={LogoTYRON}
-                                alt="logo"
-                            />
-                        </a>
-                    </li>
-                </ul>
+                        <li>
+                            <a onClick={handleOnClick}>
+                                <Image
+                                    height={50}
+                                    width={150}
+                                    src={LogoTYRON}
+                                    alt="logo"
+                                />
+                            </a>
+                        </li>
+                    </ul>
                 </nav>
                 <nav>
                     <ul>

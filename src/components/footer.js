@@ -21,7 +21,7 @@ function Footer() {
     const langDropdown = [
         {
             value: 'en',
-            label: '🇬🇧 English',
+            label: `🇬🇧 English`,
         },
         {
             value: 'es',

@@ -1364,6 +1364,7 @@ body.is-preload #bg:before {
 /* FIRST LOAD */
 
 .first-load {
+    width: 100%;
     max-height: 0;
     padding-top: 0;
     padding-bottom: 0;
@@ -1509,9 +1510,8 @@ body.is-preload #bg:before {
     padding-left: 0;
     flex: 1;
     border-radius: 4px;
-    padding:3px;
+    padding: 3px;
     padding-bottom: 8px;
-
 }
 
 #header nav ul li a {
@@ -2101,17 +2101,6 @@ a:link,a:visited, a:active.link_iconos {
     padding-bottom: 33px;
 }
 
-.wrapperSectionIco {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    padding: 7%;
-    @media only screen and (max-width: 576px) {
-        flex-direction: column;
-    }
-}
-
 .nftSectionIco {
     margin-right: 2rem;
     margin-left: 2rem;
@@ -2151,8 +2140,8 @@ a:link,a:visited, a:active.link_iconos {
     border-radius: 4px;
     padding: 4rem;
     @media only screen and (max-width: 576px) {
-        width:92%;
-            padding: 1rem
+        width: 92%;
+        padding: 1rem;
     }
 }
 

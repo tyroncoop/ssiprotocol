@@ -1,7 +1,18 @@
+.outerWrapper {
+    top: 0%;
+    left: 0%;
+    display: flex;
+    position: absolute;
+    max-width: 100%;
+    width: 100%;
+    max-height: 100%;
+    height: 100%;
+    transition: z-index linear 0s 0.3s;
+}
 .wrapper {
     display: flex;
     align-items: center;
-    width: 100vw;
+    width: 100%; //100vw;
     justify-content: space-between;
     padding-left: 3%;
     padding-right: 3%;
