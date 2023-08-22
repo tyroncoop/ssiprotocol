@@ -4,6 +4,8 @@ import Menu from './Menu'
 import Image from 'next/image'
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
 import { useTranslation } from 'next-i18next'
+import styles from './Menu/styles.module.scss'
+import LogoTYRON from '../images/ssi_$Tipo_Chrome_1920x640px_trans.png'
 
 function Header() {
     const [headerClassName, setHeaderClassName] = useState('first-load')
@@ -18,7 +20,9 @@ function Header() {
         }, 10)
         // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [])
-
+    const handleOnClick = () => {
+        window.open('https://tyron.network')
+    }
     return (
         <>
             <div id={headerClassName}>
@@ -28,24 +32,27 @@ function Header() {
                 <div />
                 <div className={contentClassName}>
                     <div className={innerClassName}>
-                        <h1> Self-Sovereign Identity Protocol </h1>
-                        <p>
-                            {' '}
+                        <p style={{fontSize:'x-large', fontWeight:'500', textTransform:'uppercase'}}>Tyron Self-Sovereign Identity Protocol</p>
+                        <p style={{color:'#ffff32'}}>
                             Decentralised networks of self-sovereign identities{' '}
                         </p>
                     </div>
                 </div>
                 <nav>
-                    {/* <ul>
+                    <ul>
                     <li>
                         <a
-                            href="https://ssiprotocol.notion.site/ssiprotocol/TYRON-Whitepaper-5ca16fc254b343fb90cfeb725cbfa2c3"
-                            rel="noreferrer" target="_blank"
+                            onClick={handleOnClick}
                         >
-                            whitepaper
+                            <Image
+                                height={50}
+                                width={150}
+                                src={LogoTYRON}
+                                alt="logo"
+                            />
                         </a>
                     </li>
-                </ul> */}
+                </ul>
                 </nav>
                 <nav>
                     <ul>

@@ -7,7 +7,7 @@
     padding-right: 3%;
     padding-top: 1%;
     padding-bottom: 1%;
-    border-bottom: 1px dashed #fff;
+    border-bottom: 1px solid #ffff32;
     top: 0%;
     position: fixed;
     background-color: #000;
@@ -77,6 +77,9 @@
     margin-left: 10px;
     text-transform: uppercase;
     margin-bottom: 10px;
+}
+.txtMenu:hover {
+    color: #ffff32 !important;
 }
 
 .txtMenuActive {

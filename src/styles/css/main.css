@@ -1500,12 +1500,18 @@ body.is-preload #bg:before {
     list-style: none;
     padding-left: 0;
     border-radius: 4px;
+    /* border: 1px solid #dbe4eb; */
+    /* background-color: rgba(255, 255, 255, 0.075); */
+    background-color: #ffffff2e;
 }
 
 #header nav ul li {
     padding-left: 0;
     flex: 1;
-    border: 1px solid white;
+    border-radius: 4px;
+    padding:3px;
+    padding-bottom: 8px;
+
 }
 
 #header nav ul li a {
@@ -1519,7 +1525,7 @@ body.is-preload #bg:before {
 }
 
 #header nav ul li a:hover {
-    background-color: rgba(255, 255, 255, 0.075);
+    cursor: pointer;
 }
 
 #header nav ul li a:active {
@@ -1626,7 +1632,7 @@ body.is-preload #header .content .inner {
 
     #header nav ul li {
         border-left: 0;
-        border-top: solid 1px #ffffff;
+        /* border-top: solid 1px #ffffff; */
     }
 
     #header nav ul li:first-child {
@@ -2144,6 +2150,10 @@ a:link,a:visited, a:active.link_iconos {
     border: 1px solid #dbe4eb;
     border-radius: 4px;
     padding: 4rem;
+    @media only screen and (max-width: 576px) {
+        width:92%;
+            padding: 1rem
+    }
 }
 
 .nftSectionDescTitleHighlight {
@@ -2390,6 +2400,7 @@ a:link,a:visited, a:active.link_iconos {
         margin-top: 20px;
     }
     .h_titleContent_majinWhite {
+        margin-left: 1rem;
         font-size: large;
     }
     .nftSectionIco .nftSectionIcoBar {
