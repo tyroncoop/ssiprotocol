@@ -89,7 +89,7 @@ const Component: NextPage = () => {
     }
 
     return (
-        <>
+        <div className={styles.wrapper}>
             <div className="h_header">
                 <Header />
             </div>
@@ -577,7 +577,7 @@ const Component: NextPage = () => {
                     </div>
                 </div>
             </div> */}
-        </>
+        </div>
     )
 }
 

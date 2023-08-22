@@ -11,7 +11,7 @@ function App({ Component, pageProps }) {
     return (
         <>
             <Head>
-                <title>SSI Protocol</title>
+                <title>Tyron SSI Protocol</title>
             </Head>
             <div id="bg"></div>
             <div id="wrapper">
