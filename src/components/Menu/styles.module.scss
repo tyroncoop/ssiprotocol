@@ -65,12 +65,17 @@
     display: flex;
     align-items: center;
 }
+.buttonText {
+    text-transform: uppercase;
+    color: #dbe4eb;
+}
 
 .button:hover {
     border-color: #ffff32;
+}
+.buttonText:hover {
     color: #ffff32 !important;
 }
-
 .logo {
     margin-top: 1px;
     margin-right: 30px;

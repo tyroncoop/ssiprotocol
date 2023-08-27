@@ -5,7 +5,7 @@ import Image from 'next/image'
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
 import { useTranslation } from 'next-i18next'
 import styles from './Menu/styles.module.scss'
-import LogoTYRON from '../images/ssi_$Tipo_Chrome_1920x640px_trans.png'
+import LogoTYRON from '../images/tyron_logo.svg'
 
 function Header() {
     const [headerClassName, setHeaderClassName] = useState('first-load')
@@ -51,8 +51,8 @@ function Header() {
                         <li>
                             <a onClick={handleOnClick}>
                                 <Image
-                                    height={50}
-                                    width={150}
+                                    height={30}
+                                    width={90}
                                     src={LogoTYRON}
                                     alt="logo"
                                 />

@@ -22,8 +22,10 @@ const Component: NextPage = () => {
                 <div className="dao_flexContent">
                     <div className="dao_flexContentTxt">
                         {t('dao1')} 
-                        <a href="https://tyron.network/tyron">Tyron DAO</a>,{' '}
-                        {t('dao2')}{' '}
+                        <a href="https://tyron.network/tyronmapu">
+                            Tyron Mapu CIC
+                        </a>
+                        , {t('dao2')}{' '}
                         <span id="italicas">
                             Decentralized Autonomous Organization
                         </span>

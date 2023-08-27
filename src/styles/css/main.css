@@ -1498,7 +1498,9 @@ body.is-preload #bg:before {
     margin-bottom: 0;
     flex-wrap: wrap;
     list-style: none;
-    padding-left: 0;
+    padding-top: 11px;
+    padding-left: 11px;
+    padding-right: 11px;
     border-radius: 4px;
     /* border: 1px solid #dbe4eb; */
     /* background-color: rgba(255, 255, 255, 0.075); */
@@ -1509,8 +1511,6 @@ body.is-preload #bg:before {
     padding-left: 0;
     flex: 1;
     border-radius: 4px;
-    padding: 3px;
-    padding-bottom: 8px;
 }
 
 #header nav ul li a {
@@ -1768,7 +1768,7 @@ body.is-preload #footer {
 }
 
 .indexImg {
-    width: 100%;
+    width: 56%;
     height: fit-content;
 }
 
@@ -1929,12 +1929,11 @@ a:link,a:visited, a:active.link_iconos {
     margin-top: 20px;
 }
 
-.h_imgContentRight_RecSoc {
+/* .h_imgContentRight_RecSoc {
     width: 200px;
     height: 200px;
     margin-left: 100px;
-    margin-top: 20px;
-}
+} */
 
 .h_imgContentRight {
     width: 200px;
@@ -1954,16 +1953,16 @@ a:link,a:visited, a:active.link_iconos {
     font-size: x-large;
     margin-bottom: 22px;
     text-decoration: overline;
-    text-decoration-color: #ffff32;
+    text-decoration-color: #ffffff2e;
     color: #dbe4eb;
 }
 
-.h_titleContent_majin2 {
+/* .h_titleContent_majin2 {
     font-weight: bold;
     font-size: 50px;
     color: #ffff32;
-    text-align: center;
-}
+    text-align: center; 
+}*/
 
 .h_titleContent_majinWhite {
     margin-left: 3rem;
@@ -1998,6 +1997,8 @@ a:link,a:visited, a:active.link_iconos {
 }
 
 .h_txtContent {
+    padding-top: 22px;
+    text-align: justify;
     font-size: large;
 }
 
@@ -2005,8 +2006,8 @@ a:link,a:visited, a:active.link_iconos {
     font-size: large;
     margin-top: 11%;
     margin-bottom: 11%;
-    /* justify-content: center;
-    align-text: center;
+    justify-content: center;
+    /*align-text: center;
     padding: 25px;
     border-width: 2px;
     border-color: #000000; */
@@ -2137,10 +2138,32 @@ a:link,a:visited, a:active.link_iconos {
     width: 70%;
     border: 1px solid #dbe4eb;
     border-radius: 4px;
-    padding: 4rem;
+    padding: 2rem;
     @media only screen and (max-width: 576px) {
         width: 92%;
         padding: 1rem;
+    }
+
+    position: relative;
+    &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(
+            45deg,
+            black,
+            #333333,
+            #dbe4eb,
+            #333333,
+            black
+        );
+        opacity: 0.5;
+        /* Ajusta la opacidad según sea necesario */
+        z-index: -1;
+        /* Coloca la capa detrás del texto */
     }
 }
 
@@ -2155,18 +2178,6 @@ a:link,a:visited, a:active.link_iconos {
 
 .noStyleThead {
     border: none !important;
-}
-
-.imgScreenCapWrapper {
-    display: flex;
-    justify-content: center;
-}
-
-.imgScreenCap {
-    width: 400px;
-    height: auto;
-    margin-right: 30px;
-    margin-left: 30px;
 }
 
 .t_tutorialRow {
@@ -2188,7 +2199,7 @@ a:link,a:visited, a:active.link_iconos {
     font-size: 30px;
 }
 
-@media only screen and (max-width: 425px) {
+/* @media only screen and (max-width: 425px) {
     .h_titleContent_majin2 {
         font-weight: bold;
         font-size: 30px;
@@ -2202,22 +2213,8 @@ a:link,a:visited, a:active.link_iconos {
         font-size: 40px;
         color: #ffff32;
     }
-}
+} */
 
-@media only screen and (max-width: 799px) {
-    .imgScreenCapWrapper {
-        display: flex;
-        align-items: center;
-        flex-direction: column;
-    }
-    .imgScreenCap {
-        width: 200px;
-        height: auto;
-        margin-right: 0px;
-        margin-left: 0px;
-        margin-bottom: 30px;
-    }
-}
 @media only screen and (min-width: 900px) {
     body {
         background-image: url('/images/ssi_background_2968x1928px.jpg');
@@ -2382,10 +2379,9 @@ a:link,a:visited, a:active.link_iconos {
         z-index: 1;
     }
     .h_imgContentRight_RecSoc {
-        width: 70px;
-        height: 70px;
-        margin-left: 10px;
-        margin-top: 20px;
+        width: 140px;
+        height: 140px;
+        margin-left: 70px;
     }
     .h_titleContent_majinWhite {
         margin-left: 1rem;

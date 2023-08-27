@@ -32,6 +32,13 @@ function Footer() {
     return (
         <>
             <div className="languageWrapper">
+                {/* <div
+                onClick={() => {
+                    window.open('http://tyron.network/tyronmapu', '_self')
+                }}
+            >
+                tyronmapu.ssi
+            </div> */}
                 <Selector
                     option={langDropdown}
                     onChange={changeLang}

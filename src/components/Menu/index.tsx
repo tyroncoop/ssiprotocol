@@ -2,7 +2,6 @@ import React, { useEffect, useState } from 'react'
 import styles from './styles.module.scss'
 import LogoSSI from '../../images/ssi_protocol_nb.svg'
 import IsoLogoSSI from '../../images/ssi_protocol_isoLogo_nB.svg'
-import LogoTYRON from '../../images/ssi_$Tipo_Chrome_1920x640px_trans.png'
 import Image from 'next/image'
 import { useRouter } from 'next/router'
 import burgerIco from '../../images/burger.png'
@@ -180,24 +179,16 @@ function Menu() {
                                 className={styles.button}
                                 onClick={handleOnClick}
                             >
-                                <Image
-                                    height={50}
-                                    width={150}
-                                    src={LogoTYRON}
-                                    alt="logo"
-                                />
+                                <span className={styles.buttonText}>
+                                    Launch App
+                                </span>
                             </button>
                         </>
                     )}
                 </div>
                 <div className={styles.btnDesktop}>
                     <button className={styles.button} onClick={handleOnClick}>
-                        <Image
-                            height={50}
-                            width={150}
-                            src={LogoTYRON}
-                            alt="logo"
-                        />
+                        <span className={styles.buttonText}>Launch App</span>
                     </button>
                 </div>
                 <div
