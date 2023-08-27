@@ -2134,39 +2134,6 @@ a:link,a:visited, a:active.link_iconos {
     visibility: visible;
 }
 
-.sectionDesc {
-    width: 70%;
-    border: 1px solid #dbe4eb;
-    border-radius: 4px;
-    padding: 2rem;
-    @media only screen and (max-width: 576px) {
-        width: 92%;
-        padding: 1rem;
-    }
-
-    position: relative;
-    &::before {
-        content: '';
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background: linear-gradient(
-            45deg,
-            black,
-            #333333,
-            #dbe4eb,
-            #333333,
-            black
-        );
-        opacity: 0.5;
-        /* Ajusta la opacidad según sea necesario */
-        z-index: -1;
-        /* Coloca la capa detrás del texto */
-    }
-}
-
 .nftSectionDescTitleHighlight {
     width: 30px;
     height: 2px;

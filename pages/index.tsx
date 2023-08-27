@@ -19,6 +19,8 @@ import app_RecSoc from '../src/images/socialrecovery.png'
 import app_SocTree from '../src/images/socialtree.png'
 import KvmeFelen from '../src/images/kvmeFelen.png'
 import imgSocialRecovery from '../src/images/test.gif'
+import imgSocialTree from '../src/images/test.gif'
+
 import screenshoot_app from '../src/images/screenshoot-app.gif'
 import tw from '../src/images/socialmedia/soc_twitter_light.svg'
 
@@ -104,7 +106,7 @@ const Component: NextPage = () => {
                         <Image className="h_headIco" src={NFT} alt="menu-ico" />
                     </div>
                 </a>
-                <a className="link_iconos" href="#recsoclink">
+                <a className="link_iconos" href="#socialrecovery">
                     <div>
                         <Image
                             className="h_headIco"
@@ -305,13 +307,13 @@ const Component: NextPage = () => {
                     </div>
                 </div>
             </div>
-            <div className="indice_majin2" id="recsoclink"></div>
 
-            {/* @dev: social */}
+            <div className="indice_majin2" id="socialrecovery"></div>
+            {/* @dev: social recovery */}
             <div className={styles.subsection}>
-                <div className={styles.sideImg}>
+                <div className={styles.img}>
                     <Image
-                        className={styles.imgRecSoc}
+                        className={styles.imgIcon}
                         src={RecSoc}
                         alt="content-ico"
                     />
@@ -344,83 +346,110 @@ const Component: NextPage = () => {
 
             {/* @dev: NFTs */}
             <div className={styles.section}>
-                <div style={{ width: '100%' }}>
-                    <div className="wrapperSectionHead" id="ssinfts">
-                        <Image
-                            className="h_imgContent_majin2"
-                            src={NFT}
-                            alt="content-ico"
-                            height="50"
-                            width="50"
-                        />
-                        <div className="h_titleContent_majinWhite">
-                            {t('index_nfts')}
+                <div className="wrapperSectionHead" id="ssinfts">
+                    <Image
+                        className="h_imgContent_majin2"
+                        src={NFT}
+                        alt="content-ico"
+                        height="50"
+                        width="50"
+                    />
+                    <div className="h_titleContent_majinWhite">
+                        {t('index_nfts')}
+                    </div>
+                </div>
+                <div className={styles.wrapperSectionIco}>
+                    <div
+                        onMouseOver={() => setNftSection(1)}
+                        className="nftSectionIco"
+                    >
+                        <a
+                            className="link_iconos nftSectionIco"
+                            // href="#domnamelink"
+                            title="NFTs"
+                        >
+                            <Image
+                                className="h_headIco_indice"
+                                src={DomName}
+                                alt="menu-ico"
+                            />
+                        </a>
+                        <div className="nftSectionIcoBarWrapper">
+                            <div className="nftSectionIcoBar" />
                         </div>
                     </div>
-                    <div className={styles.wrapperSectionIco}>
-                        <div
-                            onMouseOver={() => setNftSection(1)}
-                            className="nftSectionIco"
+                    <div
+                        onMouseOver={() => setNftSection(2)}
+                        className="nftSectionIco"
+                    >
+                        <a
+                            className="link_iconos nftSectionIco"
+                            // href="#tydraslink"
+                            title="TYDRAS"
                         >
-                            <a
-                                className="link_iconos nftSectionIco"
-                                // href="#domnamelink"
-                                title="NFTs"
-                            >
-                                <Image
-                                    className="h_headIco_indice"
-                                    src={DomName}
-                                    alt="menu-ico"
-                                />
-                            </a>
-                            <div className="nftSectionIcoBarWrapper">
-                                <div className="nftSectionIcoBar" />
-                            </div>
+                            <Image
+                                className="h_headIco_indice"
+                                src={Tydra}
+                                alt="menu-ico"
+                            />
+                        </a>
+                        <div className="nftSectionIcoBarWrapper">
+                            <div className="nftSectionIcoBar" />
                         </div>
-                        <div
-                            onMouseOver={() => setNftSection(2)}
-                            className="nftSectionIco"
+                    </div>
+                    <div
+                        onMouseOver={() => setNftSection(3)}
+                        className="nftSectionIco"
+                    >
+                        <a
+                            className="link_iconos"
+                            // href="#lexlink"
+                            title="LEXICA.SSI"
                         >
-                            <a
-                                className="link_iconos nftSectionIco"
-                                // href="#tydraslink"
-                                title="TYDRAS"
-                            >
-                                <Image
-                                    className="h_headIco_indice"
-                                    src={Tydra}
-                                    alt="menu-ico"
-                                />
-                            </a>
-                            <div className="nftSectionIcoBarWrapper">
-                                <div className="nftSectionIcoBar" />
-                            </div>
-                        </div>
-                        <div
-                            onMouseOver={() => setNftSection(3)}
-                            className="nftSectionIco"
-                        >
-                            <a
-                                className="link_iconos"
-                                // href="#lexlink"
-                                title="LEXICA.SSI"
-                            >
-                                <Image
-                                    className="h_headIco_indice"
-                                    src={Lssi}
-                                    alt="menu-ico"
-                                />
-                            </a>
-                            <div className="nftSectionIcoBarWrapper">
-                                <div className="nftSectionIcoBar2" />
-                            </div>
+                            <Image
+                                className="h_headIco_indice"
+                                src={Lssi}
+                                alt="menu-ico"
+                            />
+                        </a>
+                        <div className="nftSectionIcoBarWrapper">
+                            <div className="nftSectionIcoBar2" />
                         </div>
                     </div>
                 </div>
-                <div className="sectionDesc">{nftSectionRender()}</div>
+                <div className={styles.sectionDesc}>{nftSectionRender()}</div>
             </div>
             {/* <div className="indice_majin" id="domnamelink"></div> */}
 
+            {/* @dev: social tree */}
+            <div className={styles.subsection}>
+                <div className={styles.img}>
+                    <Image
+                        className={styles.imgIcon}
+                        src={SocTree}
+                        alt="soctree-ico"
+                    />
+                    <Image
+                        className={styles.imgScreenCap}
+                        src={imgSocialTree}
+                        alt="img-soc-tree"
+                    />
+                </div>
+                <div className={styles.subtitle}> {t('SOCIAL TREE')}</div>
+                <div className="h_txtContent">
+                    {t('index_tree1')}
+                    <br />
+                    <br />
+                    {t('index_tree2')}
+                    <br />
+                    <br />
+                    {t('index_tree3')}{' '}
+                    <a href="https://www.tyron.network/ssiprotocol">
+                        tyron.network/ssiprotocol
+                    </a>
+                </div>
+                <div></div>
+            </div>
             {/* <div className="indice_majin" id="soctreelink"></div>
             <div className="aboutTxt">
                 <div style={{ display: 'flex', justifyContent: 'center' }}>
