@@ -37,6 +37,8 @@ function Header() {
                                 fontSize: 'x-large',
                                 fontWeight: '700',
                                 textTransform: 'uppercase',
+                                paddingTop: '4%',
+                                paddingBottom: '4%',
                             }}
                         >
                             Tyron Self-Sovereign Identity Protocol
@@ -47,18 +49,19 @@ function Header() {
                     </div>
                 </div>
                 <nav>
-                    <ul>
-                        <li>
-                            <a onClick={handleOnClick}>
-                                <Image
-                                    height={30}
-                                    width={90}
-                                    src={LogoTYRON}
-                                    alt="logo"
-                                />
-                            </a>
-                        </li>
-                    </ul>
+                    <a
+                        style={{
+                            cursor: 'pointer',
+                        }}
+                        onClick={handleOnClick}
+                    >
+                        <Image
+                            height={30}
+                            width={90}
+                            src={LogoTYRON}
+                            alt="logo"
+                        />
+                    </a>
                 </nav>
                 <nav>
                     <ul>

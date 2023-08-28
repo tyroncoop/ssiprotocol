@@ -1,0 +1,37 @@
+.container {
+    margin-top: 222px;
+    width: 100%;
+    background: linear-gradient(
+        to right,
+        black,
+        #ffff32,
+        #333333,
+        #dbe4eb
+    ); // Cambia los colores según tu preferencia
+    overflow: hidden;
+}
+.react-swipeable-view-container {
+    display: flex;
+    transition: transform 0.3s ease-in-out;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+    align-items: center;
+}
+
+.card {
+    flex-shrink: 0;
+    width: 74%;
+    height: 400px;
+    background-color: black;
+    border-radius: 11px;
+    padding: 11px;
+    margin: 222px 11px 22px -11px;
+    border-left: 3px solid #ffff32;
+}
+.cardNext {
+    margin-left: 19%;
+}

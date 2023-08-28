@@ -1,13 +1,16 @@
 import React, { useState } from 'react'
 import type { NextPage } from 'next'
-import { Header, Footer } from '../src/components'
+import { Header, Footer, Account } from '../src/components'
 import Image from 'next/image'
 import xWall from '../src/images/iconos/ssi_icon_60px_xWallets.svg'
+import ssiAccount from '../src/images/iconos/ssi_icon_ssi-acc.svg'
 import NFT from '../src/images/iconos/ssi_icon_60px_NFT.svg'
 import RecSoc from '../src/images/iconos/ssi_icon_60px_RecSoc.svg'
 import SocTree from '../src/images/iconos/ssi_icon_60px_SocTree.svg'
 import Commun from '../src/images/iconos/ssi_icon_60px_balanza.svg'
 import DIDx from '../src/images/iconos/ssi_icon_60px_DIDx.svg'
+import DEFIx from '../src/images/iconos/ssi_icon_defix.svg'
+
 import ZILx from '../src/images/iconos/ssi_icon_60px_ZILx.svg'
 import SBT from '../src/images/iconos/ssi_icon_60px_SBT.svg'
 import DomName from '../src/images/iconos/ssi_icon_60px_DomName.svg'
@@ -19,7 +22,7 @@ import app_RecSoc from '../src/images/socialrecovery.png'
 import app_SocTree from '../src/images/socialtree.png'
 import KvmeFelen from '../src/images/kvmeFelen.png'
 import imgSocialRecovery from '../src/images/test.gif'
-import imgSocialTree from '../src/images/test.gif'
+import imgSocTree from '../src/images/test.gif'
 
 import screenshoot_app from '../src/images/screenshoot-app.gif'
 import tw from '../src/images/socialmedia/soc_twitter_light.svg'
@@ -91,48 +94,40 @@ const Component: NextPage = () => {
             <div className="h_header">
                 <Header />
             </div>
-            <div className="h_headWrapper">
-                <a className="link_iconos" href="#ssiaccount">
+            <div className={styles.headWrapper}>
+                <a className="link_iconos" href="#account">
                     <div className="link_iconos">
                         <Image
                             className="h_headIco"
                             src={xWall}
-                            alt="menu-ico"
+                            alt="ssi-account-ico"
                         />
-                    </div>
-                </a>
-                <a className="link_iconos" href="#ssinfts">
-                    <div>
-                        <Image className="h_headIco" src={NFT} alt="menu-ico" />
                     </div>
                 </a>
                 <a className="link_iconos" href="#socialrecovery">
-                    <div>
-                        <Image
-                            className="h_headIco"
-                            src={RecSoc}
-                            alt="menu-ico"
-                        />
-                    </div>
+                    <Image
+                        className="h_headIco"
+                        src={RecSoc}
+                        alt="social-recovery-ico"
+                    />
                 </a>
-                <a className="link_iconos" href="#soctreelink">
-                    <div>
-                        <Image
-                            className="h_headIco"
-                            src={SocTree}
-                            alt="menu-ico"
-                        />
-                    </div>
+                <a className="link_iconos" href="#nfts">
+                    <Image className="h_headIco" src={NFT} alt="nfts-ico" />
                 </a>
-                <a className="link_iconos" href="#communlink">
-                    <div>
-                        <Image
+                <a className="link_iconos" href="#socialtree">
+                    <Image
+                        className="h_headIco"
+                        src={SocTree}
+                        alt="social-tree-ico"
+                    />
+                </a>
+                {/* <a className="link_iconos" href="#communlink">
+                    <Image
                             className="h_headIco"
                             src={Commun}
                             alt="menu-ico"
                         />
-                    </div>
-                </a>
+                </a> */}
             </div>
 
             {/* @dev: introduction */}
@@ -155,7 +150,58 @@ const Component: NextPage = () => {
             </div>
 
             {/* @dev: SSI account */}
-            <div className="indice_majin" id="ssiaccount"></div>
+            <div id="account" />
+            <div className={styles.section}>
+                <table>
+                    <thead className="noStyleThead">
+                        <tr className="h_imgContent_majin_wrapper">
+                            <th>
+                                <Image
+                                    className={styles.imgIcon}
+                                    src={ssiAccount}
+                                    alt="account-ico"
+                                />
+                            </th>
+                            <th className="h_imgContent_majin_wrapper2">
+                                <div className={styles.title}>SSI account</div>
+                                <table>
+                                    <thead className="noStyleThead">
+                                        <tr className="majin2">
+                                            <th>
+                                                <a
+                                                    className="link_iconos"
+                                                    href="#didxwallet"
+                                                    title="DIDxWALLET"
+                                                >
+                                                    <Image
+                                                        className="h_headIco_indice2"
+                                                        src={DIDx}
+                                                        alt="didx-ico"
+                                                    />
+                                                </a>
+                                            </th>
+                                            <th>
+                                                <a
+                                                    className="link_iconos"
+                                                    href="#defixwallet"
+                                                    title="DEFIxWALLET"
+                                                >
+                                                    <Image
+                                                        className="h_headIco_indice2"
+                                                        src={DEFIx}
+                                                        alt="menu-ico"
+                                                    />
+                                                </a>
+                                            </th>
+                                        </tr>
+                                    </thead>
+                                </table>
+                            </th>
+                        </tr>
+                    </thead>
+                </table>
+            </div>
+            {/* 
             <table>
                 <thead className="noStyleThead">
                     <tr className="h_imgContent_majin_wrapper">
@@ -174,7 +220,7 @@ const Component: NextPage = () => {
                                         <th>
                                             <a
                                                 className="link_iconos"
-                                                href="#didxlink"
+                                                href="#didxwallet"
                                                 title="DIDxWALLET"
                                             >
                                                 <div>
@@ -222,10 +268,9 @@ const Component: NextPage = () => {
                         </th>
                     </tr>
                 </thead>
-            </table>
-            <div className="indice_majin2" id="didxlink"></div>
-
-            <div className="aboutTxt" style={{ marginTop: '10rem' }}>
+            </table> */}
+            <div className="aboutTxt">
+                <div id="didxwallet" />
                 <div style={{ display: 'flex', justifyContent: 'center' }}>
                     <Image
                         className="h_imgContent_DIDx"
@@ -266,10 +311,7 @@ const Component: NextPage = () => {
                         alt="img-didx"
                     />
                 </div> */}
-
-                <div className="indice_majin" id="zilxlink"></div>
-
-                <div style={{ display: 'flex', justifyContent: 'center' }}>
+                {/* <div style={{ display: 'flex', justifyContent: 'center' }}>
                     <Image
                         className="h_imgContent_DIDx"
                         src={ZILx}
@@ -288,7 +330,6 @@ const Component: NextPage = () => {
                     </div>
                 </div>
                 <br />
-
                 <div className="indice_majin" id="sbtxlink"></div>
                 <div style={{ display: 'flex', justifyContent: 'center' }}>
                     <Image
@@ -305,12 +346,16 @@ const Component: NextPage = () => {
                             {t('index_wallets7')}
                         </div>
                     </div>
-                </div>
+                </div> */}
             </div>
 
-            <div className="indice_majin2" id="socialrecovery"></div>
+            {/* @dev: DEFIxWALLET */}
+            <div id="defixwallet" />
+            <Account />
+
             {/* @dev: social recovery */}
             <div className={styles.subsection}>
+                <div id="socialrecovery"></div>
                 <div className={styles.img}>
                     <Image
                         className={styles.imgIcon}
@@ -346,7 +391,7 @@ const Component: NextPage = () => {
 
             {/* @dev: NFTs */}
             <div className={styles.section}>
-                <div className="wrapperSectionHead" id="ssinfts">
+                <div className="wrapperSectionHead" id="nfts">
                     <Image
                         className="h_imgContent_majin2"
                         src={NFT}
@@ -423,6 +468,7 @@ const Component: NextPage = () => {
 
             {/* @dev: social tree */}
             <div className={styles.subsection}>
+                <div id="socialtree"></div>
                 <div className={styles.img}>
                     <Image
                         className={styles.imgIcon}
@@ -431,11 +477,11 @@ const Component: NextPage = () => {
                     />
                     <Image
                         className={styles.imgScreenCap}
-                        src={imgSocialTree}
+                        src={imgSocTree}
                         alt="img-soc-tree"
                     />
                 </div>
-                <div className={styles.subtitle}> {t('SOCIAL TREE')}</div>
+                <div className={styles.subtitle}>{t('SOCIAL TREE')}</div>
                 <div className="h_txtContent">
                     {t('index_tree1')}
                     <br />
@@ -450,8 +496,7 @@ const Component: NextPage = () => {
                 </div>
                 <div></div>
             </div>
-            {/* <div className="indice_majin" id="soctreelink"></div>
-            <div className="aboutTxt">
+            {/* <div className="aboutTxt">
                 <div style={{ display: 'flex', justifyContent: 'center' }}>
                     <div style={{ width: '60%' }}>
                         <div className="h_titleContent_majin2">

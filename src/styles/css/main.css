@@ -1334,7 +1334,7 @@ body.is-preload #bg:before {
     position: relative;
     min-height: 100vh;
     width: 100%;
-    padding: 4rem 2rem;
+    /* padding: 4rem 2rem; */
     z-index: 3;
 }
 
@@ -1343,23 +1343,23 @@ body.is-preload #bg:before {
     display: block;
 }
 
-@media screen and (max-width: 1680px) {
+/* @media screen and (max-width: 1680px) {
     #wrapper {
         padding: 3rem 2rem;
     }
-}
+} */
 
-@media screen and (max-width: 736px) {
+/* @media screen and (max-width: 736px) {
     #wrapper {
         padding: 2rem 1rem;
     }
-}
+} */
 
-@media screen and (max-width: 480px) {
+/* @media screen and (max-width: 480px) {
     #wrapper {
         padding: 1rem;
     }
-}
+} */
 
 /* FIRST LOAD */
 
@@ -1498,9 +1498,6 @@ body.is-preload #bg:before {
     margin-bottom: 0;
     flex-wrap: wrap;
     list-style: none;
-    padding-top: 11px;
-    padding-left: 11px;
-    padding-right: 11px;
     border-radius: 4px;
     /* border: 1px solid #dbe4eb; */
     /* background-color: rgba(255, 255, 255, 0.075); */
@@ -1508,9 +1505,7 @@ body.is-preload #bg:before {
 }
 
 #header nav ul li {
-    padding-left: 0;
     flex: 1;
-    border-radius: 4px;
 }
 
 #header nav ul li a {
@@ -1698,6 +1693,7 @@ body.is-preload #header .content .inner {
     max-width: 100%;
     /* margin-top: -25%; */
     text-align: right;
+    padding-right: 11px;
 }
 
 #footer .copyright {
@@ -1804,10 +1800,6 @@ body.is-preload #footer {
     margin-top: 100px;
 }
 
-.h_headWrapper {
-    display: flex;
-    margin-top: 2rem;
-}
 /*
 a:link,a:visited, a:active.link_iconos {
     text-decoration: none;
@@ -1827,8 +1819,8 @@ a:link,a:visited, a:active.link_iconos {
     font-style: italic;
 }
 .h_headIco {
-    width: 150px;
-    height: 150px;
+    width: 164px;
+    height: 164px;
     margin-left: 50px;
     margin-right: 50px;
     cursor: pointer;
@@ -1837,8 +1829,8 @@ a:link,a:visited, a:active.link_iconos {
 }
 
 .h_headIco:hover {
-    width: 200px;
-    height: 200px;
+    width: 182px;
+    height: 182px;
     margin-left: 50px;
     margin-right: 50px;
     cursor: pointer;
@@ -1850,32 +1842,39 @@ a:link,a:visited, a:active.link_iconos {
     cursor: pointer;
     z-index: 1;
 }
+.h_headIco_indice:hover {
+    width: 137px;
+    height: 137px;
+}
+
 .h_headIco_indice2 {
-    width: 150px;
-    height: 150px;
-    margin-left: 50px;
-    margin-right: 50px;
+    margin: 7%;
+    width: 74px;
+    height: 74px;
     cursor: pointer;
     z-index: 1;
     text-decoration: none;
-}
-.indice_majin {
-    margin-bottom: 300px;
-}
-.indice_majin2 {
-    margin-bottom: 100px;
-}
-
-.h_headIco_indice:hover {
-    width: 170px;
-    height: 170px;
+    @media only screen and (min-width: 900px) {
+        width: 137px;
+        height: 137px;
+    }
+    @media only screen and (min-width: 576px) {
+        width: 111px;
+        height: 111px;
+    }
 }
 
 .h_headIco_indice2:hover {
-    width: 165px;
-    height: 165px;
-    cursor: pointer;
-    z-index: 1;
+    width: 92px;
+    height: 92px;
+    @media only screen and (min-width: 900px) {
+        width: 155px;
+        height: 155px;
+    }
+    @media only screen and (min-width: 576px) {
+        width: 137px;
+        height: 137px;
+    }
 }
 
 .h_imgContent {
@@ -1969,14 +1968,6 @@ a:link,a:visited, a:active.link_iconos {
     font-weight: bold;
     font-size: xx-large;
     color: #dbe4eb;
-}
-
-.h_titleContent_majin {
-    font-weight: bold;
-    font-size: 70px;
-    color: #ffff32;
-    float: left;
-    padding-bottom: 80px;
 }
 
 .h_titleContent_b {
@@ -2090,13 +2081,17 @@ a:link,a:visited, a:active.link_iconos {
     color: #ffff32 !important;
 }
 
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
 .wrapperSectionHead {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
     text-align: center;
-    border-top: 1px solid #dbe4eb;
     padding-top: 66px;
     padding-bottom: 33px;
 }
@@ -2230,13 +2225,15 @@ a:link,a:visited, a:active.link_iconos {
     .h_header {
         margin-top: -50px;
     }
-    .h_headWrapper {
+    /* .h_headWrapper {
         display: flex;
         flex-direction: column;
         margin-top: 0rem;
         text-decoration: none;
-    }
+    } */
     .h_headIco {
+        width: 111px;
+        height: 111px;
         margin-top: 25px;
         margin-bottom: 25px;
     }
@@ -2313,22 +2310,22 @@ a:link,a:visited, a:active.link_iconos {
         width: 111px;
         height: 111px;
     }
-    .h_titleContent_majin {
+    /* .h_titleContent_majin {
         font-weight: bold;
         font-size: 40px;
         color: #ffff32;
         float: left;
         padding-bottom: 50px;
-    }
+    } */
     .h_headIco_indice {
-        width: 70px;
-        height: 70px;
+        width: 74px;
+        height: 74px;
     }
     .h_headIco_indice:hover {
-        width: 90px;
-        height: 90px;
+        width: 92px;
+        height: 92px;
     }
-    .h_headIco_indice2 {
+    /* .h_headIco_indice2 {
         width: 40px;
         height: 40px;
         margin-left: 5px;
@@ -2336,15 +2333,15 @@ a:link,a:visited, a:active.link_iconos {
         cursor: pointer;
         z-index: 1;
         text-decoration: none;
-    }
-    .h_headIco_indice2:hover {
+    } */
+    /* .h_headIco_indice2:hover {
         width: 50px;
         height: 50px;
         margin-left: 5px;
         margin-right: 5px;
         cursor: pointer;
         z-index: 1;
-    }
+    } */
     .h_imgContentRight_RecSoc {
         width: 140px;
         height: 140px;
@@ -2396,12 +2393,12 @@ a:link,a:visited, a:active.link_iconos {
 }
 
 @media only screen and (max-width: 1440px) and (min-width: 900px) {
-    .h_headWrapper {
+    /* .h_headWrapper {
         display: flex;
         flex-direction: column;
         margin-top: 0rem;
         text-decoration: none;
-    }
+    } */
     .h_headIco {
         margin-top: 25px;
         margin-bottom: 25px;
@@ -2412,7 +2409,7 @@ a:link,a:visited, a:active.link_iconos {
         margin-left: 0px;
         margin-top: 180px;
     }
-    .h_headIco_indice2 {
+    /* .h_headIco_indice2 {
         width: 150px;
         height: 150px;
         margin-left: 5px;
@@ -2420,15 +2417,15 @@ a:link,a:visited, a:active.link_iconos {
         cursor: pointer;
         z-index: 1;
         text-decoration: none;
-    }
-    .h_headIco_indice2:hover {
+    } */
+    /* .h_headIco_indice2:hover {
         width: 50px;
         height: 50px;
         margin-left: 5px;
         margin-right: 5px;
         cursor: pointer;
         z-index: 1;
-    }
+    } */
     .contacto {
         padding-left: 0px;
         list-style: none;
