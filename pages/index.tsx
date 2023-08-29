@@ -146,61 +146,66 @@ const Component: NextPage = () => {
                     <span id="italicas">Kvme Felen</span>
                     {t('index_kvmefelen6')}
                 </div>
-                <Image className="indexImg" src={KvmeFelen} alt="paisaje" />
+                <Image
+                    className={styles.indexImg}
+                    src={KvmeFelen}
+                    alt="Kvme Felen"
+                />
             </div>
 
             {/* @dev: SSI account */}
-            <div id="account" />
-            <div className={styles.section}>
-                <table>
-                    <thead className="noStyleThead">
-                        <tr className="h_imgContent_majin_wrapper">
-                            <th>
-                                <Image
-                                    className={styles.imgIcon}
-                                    src={ssiAccount}
-                                    alt="account-ico"
-                                />
-                            </th>
-                            <th className="h_imgContent_majin_wrapper2">
-                                <div className={styles.title}>SSI account</div>
-                                <table>
-                                    <thead className="noStyleThead">
-                                        <tr className="majin2">
-                                            <th>
-                                                <a
-                                                    className="link_iconos"
-                                                    href="#didxwallet"
-                                                    title="DIDxWALLET"
-                                                >
-                                                    <Image
-                                                        className="h_headIco_indice2"
-                                                        src={DIDx}
-                                                        alt="didx-ico"
-                                                    />
-                                                </a>
-                                            </th>
-                                            <th>
-                                                <a
-                                                    className="link_iconos"
-                                                    href="#defixwallet"
-                                                    title="DEFIxWALLET"
-                                                >
-                                                    <Image
-                                                        className="h_headIco_indice2"
-                                                        src={DEFIx}
-                                                        alt="menu-ico"
-                                                    />
-                                                </a>
-                                            </th>
-                                        </tr>
-                                    </thead>
-                                </table>
-                            </th>
-                        </tr>
-                    </thead>
-                </table>
-            </div>
+            <table id="account" className={styles.section}>
+                <thead className="noStyleThead">
+                    <tr className="h_imgContent_majin_wrapper">
+                        <th>
+                            <Image
+                                className={styles.imgIcon}
+                                src={ssiAccount}
+                                alt="account-ico"
+                            />
+                        </th>
+                        <th className="h_imgContent_majin_wrapper2">
+                            <div className={styles.title}>SSI account</div>
+                            <table>
+                                <thead className="noStyleThead">
+                                    <tr className="majin2">
+                                        <th>
+                                            <a
+                                                className="link_iconos"
+                                                href="#didxwallet"
+                                                title="DIDxWALLET"
+                                            >
+                                                <Image
+                                                    className={
+                                                        styles.h_headIco_indice2
+                                                    }
+                                                    src={DIDx}
+                                                    alt="didx-ico"
+                                                />
+                                            </a>
+                                        </th>
+                                        <th>
+                                            <a
+                                                className="link_iconos"
+                                                href="#defixwallet"
+                                                title="DEFIxWALLET"
+                                            >
+                                                <Image
+                                                    className={
+                                                        styles.h_headIco_indice2
+                                                    }
+                                                    src={DEFIx}
+                                                    alt="defix-ico"
+                                                />
+                                            </a>
+                                        </th>
+                                    </tr>
+                                </thead>
+                            </table>
+                        </th>
+                    </tr>
+                </thead>
+            </table>
             {/* 
             <table>
                 <thead className="noStyleThead">
@@ -354,8 +359,7 @@ const Component: NextPage = () => {
             <Account />
 
             {/* @dev: social recovery */}
-            <div className={styles.subsection}>
-                <div id="socialrecovery"></div>
+            <div id="socialrecovery" className={styles.subsection}>
                 <div className={styles.img}>
                     <Image
                         className={styles.imgIcon}
@@ -390,8 +394,8 @@ const Component: NextPage = () => {
             {/* <div className="indice_majin" id="nftlink"></div> */}
 
             {/* @dev: NFTs */}
-            <div className={styles.section}>
-                <div className="wrapperSectionHead" id="nfts">
+            <div id="nfts" className={styles.section}>
+                <div className="wrapperSectionHead">
                     <Image
                         className="h_imgContent_majin2"
                         src={NFT}
@@ -467,8 +471,7 @@ const Component: NextPage = () => {
             {/* <div className="indice_majin" id="domnamelink"></div> */}
 
             {/* @dev: social tree */}
-            <div className={styles.subsection}>
-                <div id="socialtree"></div>
+            <div id="socialtree" className={styles.subsection}>
                 <div className={styles.img}>
                     <Image
                         className={styles.imgIcon}

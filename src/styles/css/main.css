@@ -1763,11 +1763,6 @@ body.is-preload #footer {
     height: 300px;
 }
 
-.indexImg {
-    width: 56%;
-    height: fit-content;
-}
-
 .homePageImg {
     width: 1500px;
     height: 750px;
@@ -1845,23 +1840,6 @@ a:link,a:visited, a:active.link_iconos {
 .h_headIco_indice:hover {
     width: 137px;
     height: 137px;
-}
-
-.h_headIco_indice2 {
-    margin: 7%;
-    width: 74px;
-    height: 74px;
-    cursor: pointer;
-    z-index: 1;
-    text-decoration: none;
-    @media only screen and (min-width: 900px) {
-        width: 137px;
-        height: 137px;
-    }
-    @media only screen and (min-width: 576px) {
-        width: 111px;
-        height: 111px;
-    }
 }
 
 .h_headIco_indice2:hover {
@@ -2092,8 +2070,8 @@ a:link,a:visited, a:active.link_iconos {
     align-items: center;
     justify-content: center;
     text-align: center;
-    padding-top: 66px;
-    padding-bottom: 33px;
+    padding-top: 29px;
+    padding-bottom: 22px;
 }
 
 .nftSectionIco {

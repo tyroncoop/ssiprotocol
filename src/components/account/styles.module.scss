@@ -24,14 +24,29 @@
 
 .card {
     flex-shrink: 0;
-    width: 74%;
+    width: 83%;
     height: 400px;
     background-color: black;
     border-radius: 11px;
     padding: 11px;
-    margin: 222px 11px 22px -11px;
+    margin: 111px 11px 22px -11px;
     border-left: 3px solid #ffff32;
 }
 .cardNext {
-    margin-left: 19%;
+    margin-left: 11%;
+}
+
+.img {
+    fill: #333333;
+    padding-top: 4%;
+    padding-left: 2%;
+    display: flex;
+    width: 65%;
+    height: fit-content;
+    @media only screen and (min-width: 576px) and (max-width: 899px) {
+        width: 47%;
+    }
+    @media only screen and (min-width: 900px) {
+        width: 29%;
+    }
 }
