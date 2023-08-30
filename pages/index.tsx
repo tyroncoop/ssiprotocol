@@ -30,6 +30,7 @@ import tw from '../src/images/socialmedia/soc_twitter_light.svg'
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
 import { useTranslation } from 'next-i18next'
 import styles from './styles.module.scss'
+
 const Component: NextPage = () => {
     const { t } = useTranslation()
     const [nftSection, setNftSection] = useState(1)
@@ -67,7 +68,7 @@ const Component: NextPage = () => {
                         <a href="https://www.tyron.io/origin/">
                             {t('index_tot6')}
                         </a>
-                        , {t('index_tot7')}
+                        {t('index_tot7')}
                     </div>
                 </div>
             )
@@ -276,7 +277,7 @@ const Component: NextPage = () => {
             </table> */}
             <div className="aboutTxt">
                 <div id="didxwallet" />
-                <div style={{ display: 'flex', justifyContent: 'center' }}>
+                {/* <div style={{ display: 'flex', justifyContent: 'center' }}>
                     <Image
                         className="h_imgContent_DIDx"
                         src={DIDx}
@@ -308,7 +309,7 @@ const Component: NextPage = () => {
                         src={screenshoot_app}
                         alt="img-screencap"
                     />
-                </div>
+                </div> */}
                 {/* <div style={{ display: 'flex', justifyContent: 'center' }}>
                     <Image
                         className="homePageImg"
@@ -373,7 +374,7 @@ const Component: NextPage = () => {
                     />
                 </div>
                 <div className={styles.subtitle}>{t('SOCIAL RECOVERY')}</div>
-                <div className="h_txtContent">
+                <div className={styles.txtContent}>
                     {t('index_recsoc1')}
                     <br />
                     <br />
@@ -485,7 +486,7 @@ const Component: NextPage = () => {
                     />
                 </div>
                 <div className={styles.subtitle}>{t('SOCIAL TREE')}</div>
-                <div className="h_txtContent">
+                <div className={styles.txtContent}>
                     {t('index_tree1')}
                     <br />
                     <br />

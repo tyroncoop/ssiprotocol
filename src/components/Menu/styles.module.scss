@@ -18,7 +18,7 @@
     padding-right: 3%;
     padding-top: 1%;
     padding-bottom: 1%;
-    border-bottom: 7px solid #ffffff2e;
+    border-bottom: 4px solid #ffffff2e;
     top: 0%;
     position: fixed;
     background-color: #000;
@@ -46,9 +46,7 @@
     border: 0;
     border: 1px solid #dbe4eb;
     box-shadow: none;
-    border-radius: 5px;
-    color: #ffffff !important;
-    cursor: pointer;
+    border-radius: 4px;
     display: inline-block;
     font-size: 0.8rem;
     font-family: 'Source Sans Pro', sans-serif;
@@ -57,7 +55,7 @@
     letter-spacing: 0.2rem;
     line-height: 1.7rem;
     outline: 0;
-    padding: 0 1.25rem 0 1.35rem;
+    //padding: 0 1rem 0 1rem;
     text-align: center;
     text-decoration: none;
     text-transform: none;
@@ -72,6 +70,7 @@
 
 .button:hover {
     border-color: #ffff32;
+    cursor: pointer;
 }
 .buttonText:hover {
     color: #ffff32 !important;

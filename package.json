@@ -1,6 +1,6 @@
 {
     "name": "ssiprotocol",
-    "description": "Self-Sovereign Identity Protocol",
+    "description": "Tyron Self-Sovereign Identity Protocol",
     "version": "4.0.0",
     "homepage": "https://ssiprotocol.com",
     "private": true,
@@ -8,7 +8,7 @@
         "type": "git",
         "url": "git+https://github.com/tyroncoop/ssiprotocol.git"
     },
-    "author": "Tyron Pungtas",
+    "author": "Tyron Coop",
     "license": "GPL-3.0-only",
     "keywords": [
         "tyron",

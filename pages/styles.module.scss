@@ -9,7 +9,7 @@
 
 .headWrapper {
     display: flex;
-    margin-top: 2rem;
+    margin-top: 4%;
     flex-direction: column;
 
     @media only screen and (min-width: 1100px) {
@@ -69,15 +69,15 @@
 }
 .title {
     font-weight: bold;
-    font-size: 38px;
-    color: #ffff32;
+    font-size: 29px;
+    color: #dbe4eb;
     /* float: left; */
     padding-top: 4px;
     padding-left: 11px;
     padding-bottom: 22px;
 
     @media only screen and (min-width: 830px) {
-        font-size: 56px;
+        font-size: 47px;
         padding: 38px;
     }
 }
@@ -114,8 +114,8 @@
         margin-top: 0;
         font-size: x-large;
         width: fit-content;
-        padding: 22px;
-        margin-right: 22px;
+        padding: 7%;
+        //margin-right: 22px;
     }
 
     /* Estilos para la capa de degradado */
@@ -126,14 +126,7 @@
         right: 0;
         width: 100%;
         height: 100%;
-        background: linear-gradient(
-            135deg,
-            black,
-            #333333,
-            #dbe4eb,
-            #ffff32,
-            black
-        );
+        background: linear-gradient(135deg, #ffff32, black, #333333);
         opacity: 0.5;
         /* Ajusta la opacidad según sea necesario */
         z-index: -1;
@@ -142,17 +135,21 @@
 }
 
 .imgIcon {
+    display: flex;
     margin-bottom: 22px;
     width: 111px;
     height: 111px;
 
     @media only screen and (min-width: 576px) {
+        width: 164px;
+        height: 164px;
+    }
+    @media only screen and (min-width: 1100px) {
         width: 182px;
         height: 182px;
     }
-    @media only screen and (min-width: 1100px) {
-        width: 222px;
-        height: 222px;
+    @media only screen and (min-width: 900px) {
+        padding-top: 47px;
     }
 }
 
@@ -204,14 +201,7 @@
         left: 0;
         width: 100%;
         height: 100%;
-        background: linear-gradient(
-            45deg,
-            black,
-            #333333,
-            #dbe4eb,
-            #333333,
-            black
-        );
+        background: linear-gradient(45deg, #333333, #dbe4eb);
         opacity: 0.5;
         /* Ajusta la opacidad según sea necesario */
         z-index: -1;
@@ -234,4 +224,34 @@
         width: 111px;
         height: 111px;
     }
+}
+
+.h_headIco_indice2:hover {
+    width: 83px;
+    height: 83px;
+    @media only screen and (min-width: 900px) {
+        width: 146px;
+        height: 146px;
+    }
+    @media only screen and (min-width: 576px) and (max-width: 899px) {
+        width: 128px;
+        height: 128px;
+    }
+}
+
+.txtContent {
+    text-align: justify;
+    font-size: 17px;
+    @media only screen and (min-width: 900px) {
+        font-size: 19px;
+        border-top-right-radius: 13px;
+        border-bottom-right-radius: 13px;
+        padding: 7%;
+    }
+    @media only screen and (max-width: 899px) {
+        border-bottom-left-radius: 11px;
+        border-bottom-right-radius: 11px;
+        padding: 11%;
+    }
+    background: linear-gradient(135deg, black, #333333, #dbe4eb);
 }

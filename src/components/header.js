@@ -4,9 +4,8 @@ import Menu from './Menu'
 import Image from 'next/image'
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
 import { useTranslation } from 'next-i18next'
-import styles from './Menu/styles.module.scss'
 import LogoTYRON from '../images/tyron_logo.svg'
-
+import styles from './styles.module.scss'
 function Header() {
     const [headerClassName, setHeaderClassName] = useState('first-load')
     const [contentClassName, setContentClassName] = useState('first-load')
@@ -43,33 +42,29 @@ function Header() {
                         >
                             Tyron Self-Sovereign Identity Protocol
                         </p>
-                        <p style={{ color: '#ffff32' }}>
+                        <p style={{ color: '#dbe4eb', fontSize: '11px' }}>
                             Decentralised networks of sovereign identities
                         </p>
                     </div>
                 </div>
                 <nav>
-                    <a
-                        style={{
-                            cursor: 'pointer',
-                        }}
-                        onClick={handleOnClick}
-                    >
-                        <Image
+                    <a className={styles.launch} onClick={handleOnClick}>
+                        launch app
+                        {/* <Image
                             height={30}
                             width={90}
                             src={LogoTYRON}
                             alt="logo"
-                        />
+                        /> */}
                     </a>
                 </nav>
-                <nav>
+                {/*<nav>
                     <ul>
-                        {/* <li><Link to="/about">About</Link></li>
+                         <li><Link to="/about">About</Link></li>
                     <li><Link to="/wallets">DID<span style={{ textTransform: 'lowercase'}}>x</span>Wallet</Link></li>
-                    <li><Link to="/contact">Contact</Link></li> */}
+                    <li><Link to="/contact">Contact</Link></li> 
                     </ul>
-                </nav>
+                </nav>*/}
             </div>
         </>
     )

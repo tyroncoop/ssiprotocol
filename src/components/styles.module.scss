@@ -1,0 +1,18 @@
+.launch {
+    color: #dbe4eb;
+    text-transform: capitalize;
+    font-size: 14px;
+    border: 1px solid #dbe4eb; //ffffff2e;
+    padding-left: 7px;
+    padding-right: 7px;
+    padding-bottom: 4px;
+    padding-top: 4px;
+    border-radius: 4px;
+    background: linear-gradient(to right, black, #333333);
+}
+
+.launch:hover {
+    border: 1px solid #ffff32;
+    cursor: pointer;
+    color: #ffff32;
+}
