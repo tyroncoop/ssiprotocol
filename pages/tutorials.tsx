@@ -7,28 +7,28 @@ const Component: NextPage = () => {
             <div>
                 <iframe
                     className="iFrame"
-                    src="https://www.youtube.com/embed/x0i9iqittQo"
-                    title="How to create your SSI and mint an NFT Domain Name?"
+                    src="https://www.youtube.com/embed/4i7nXiC80v0?controls=1"
+                    title="Create a new SSI account & Mint an NFT Domain Name with $ZIL"
                     frameBorder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                     allowFullScreen
                 ></iframe>
+
                 <iframe
                     className="iFrame"
-                    src="https://www.youtube.com/embed/8wCApLyQsF8"
-                    title="¿Cómo crear tu billetera de staking de Zilliqa?"
+                    src="https://www.youtube.com/embed/-87iQbhdhGs?"
+                    title="Activate NFT Social Recovery"
                     frameBorder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allow="accelerometer; controls; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                     allowFullScreen
                 ></iframe>
-            </div>
-            <div>
+
                 <iframe
-                    className="iFrame"
-                    src="https://www.youtube.com/embed/C0MNhv5HhGs"
-                    title="How to create your ZILxWallet ($ZIL staking wallet)?"
+                    width="560"
+                    height="315"
+                    src="https://www.youtube.com/embed/nicBm8EpTMA?controls"
+                    title="YouTube video player"
                     frameBorder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                     allowFullScreen
                 ></iframe>
             </div>

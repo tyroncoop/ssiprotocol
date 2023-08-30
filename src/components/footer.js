@@ -55,16 +55,7 @@ function Footer() {
                         <span className="label">Telegram</span>
                     </a>
                 </p>
-                <p>
-                    <a
-                        className="icon brands fa-discord"
-                        href="https://discord.gg/NPbd92HJ7e"
-                        rel="noreferrer"
-                        target="_blank"
-                    >
-                        <span className="label">Discord</span>
-                    </a>
-                </p>
+
                 <p>
                     <a
                         className="icon brands fa-twitter"

@@ -1,8 +1,8 @@
 import React from 'react'
 import type { NextPage } from 'next'
 import Image from 'next/image'
-import dao1 from '../src/images/dao_1.png'
-import dao2 from '../src/images/dao_2.png'
+import dao1 from '../src/images/ssi_dao_logo_iso_400px.png'
+import daotree from '../src/images/dao_socialtree.png'
 import tyronSsi from '../src/images/tyron_ssi.png'
 import tyronPungtas from '../src/images/logo.png'
 import legalEntities from '../src/images/legal_entities.webp'
@@ -21,31 +21,91 @@ const Component: NextPage = () => {
                 <br />
                 <div className="dao_flexContent">
                     <div className="dao_flexContentTxt">
-                        {t(
-                            'The coordination of the projects is the job of the'
-                        )}
-                         <a href="https://tyron.network/tyron">Tyron DAO</a>,{' '}
-                        {t('a Decentralized Autonomous Organisation (DAO).')}
+                        {t('dao1')} 
+                        <a href="https://tyron.network/tyron">Tyron DAO</a>,{' '}
+                        {t('dao2')}{' '}
+                        <span id="italicas">
+                            Decentralized Autonomous Organization
+                        </span>
+                        {t('dao3')} 
                         <br />
                         <br />
-                        {t(
-                            "On the TYRON Network, the DAO has a self-sovereign identity. You can access the organisation's DID Social Tree at"
-                        )}
-                         <a href="https://tyron.network/tyron.did">tyron.did</a>
-                        .{' '}
-                        {t(
-                            'To find out about the Tyron Coop Minority Reports with the development info and other valuable information, such as the Gather Virtual Office 🔥.'
-                        )}
-                    </div>
-                    <div>
-                        <Image
-                            className="dao_titleImg"
-                            src={dao1}
-                            alt="dao-1"
-                        />
+                        <div className="dao_wrapperTyronSsi">
+                            <Image
+                                className="dao_titleImg"
+                                src={dao1}
+                                alt="dao-1"
+                            />
+                        </div>
+                        <br />
+                        <br />
+                        {t('dao4')}
+                        <br />
+                        <br />
+                        {t('dao5')}
+                        <br />
+                        {t('dao6')}
+                        <br />
+                        {t('dao7')}
+                        <br />
+                        <br />
+                        {t('dao8')}
+                        <br />
+                        {t('dao9')}
+                        {t('dao10')} 
+                        <a href="https://tyron.network/tyron">Tyron Mapu</a>,{' '}
+                        <span id="italicas">Community Interest Company</span>
+                        {t('dao11')}
+                        <br />
+                        <br />
+                        {t('dao12')}
+                        <br />
+                        {t('dao13')}
+                        <br />
+                        <br />
+                        <br />
+                        {t('dao14')}
+                        <span id="italicas">Kvme Felen.</span>
+                        {t('dao15')}
+                        <br />
+                        <br />
+                        {t('dao16')}
+                        <br />
+                        {t('dao17')}
+                        <br />
+                        {t('dao18')}
+                        <br />
+                        <br />
+                        {t('dao19')}
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        {t('dao20')}
+                        <br />
+                        {t('dao21')}
+                        <br />
+                        {t('dao22')}
+                        <br />
+                        <br />
+                        {t('dao23')}
+                        <a href="https://www.tyron.network/tyrondao">
+                            tyrondao.ssi
+                        </a>
+                        {t('dao24')}
+                        <br />
+                        <br />
                     </div>
                 </div>
-                <br />
+                <div className="dao_wrapperTyronSsi">
+                    <Image
+                        src={daotree}
+                        className="dao_tyronSsi"
+                        alt="daotree-ssi"
+                    />
+                </div>
+
+                {/* 
                 <div className="dao_wrapperTyronSsi">
                     <a
                         className="dao_tyronSsiTitle"
@@ -54,39 +114,11 @@ const Component: NextPage = () => {
                         tyron.ssi
                     </a>
                     <br />
-                    <div>
-                        <Image
-                            src={tyronSsi}
-                            className="dao_tyronSsi"
-                            alt="tyron-ssi"
-                        />
-                    </div>
+                    
                 </div>
                 <br />
-                <br />
                 <div style={{ width: '60%' }}>
-                    {t(
-                        'The DAO has a multidisciplinary team dubbed Tyron Coop. With contributors from independent projects working in various support areas to the decentralized network of self-sovereign identities{{colon}} the',
-                        { colon: ':' }
-                    )}{' '}
-                    <a href="https://tyron.network">TYRON Network</a>.<br />
-                    <br />
-                    {t('The areas cover')}
-                    <br />
-                    &#183; {t('Engineering & software development')}
-                    <br />
-                    &#183; {t('Pedagogy & anthropology')}
-                    <br />
-                    &#183; {t('Design & technical analysis')}
-                    <br />
-                    <br />
-                    {t(
-                        'The principle of the Coop is to work holistically with independent projects and to encourage self-sovereignty in all developers.'
-                    )}
-                </div>
-                {/* <br />
-                <div style={{ width: '60%' }}>
-                    {t('The Tyron DAO has two legal entities:')}
+                    {t('dao11')}
                     <br />
                     <br />
                 </div>
@@ -103,10 +135,10 @@ const Component: NextPage = () => {
                         <a href="https://tyron.network/tyronmapu">Tyron Mapu</a>
                         :{' '}
                         {t(
-                            'a Community Interest Company (CIC) registered in the UK, and that provides information services. By law, it must reinvest 65% of profits into the community.'
+                            'dao12'
                         )}
                         <br />
-                        {t('+info: tyronmapu.ssi')}
+                        {t('dao13')}
                     </div>
                 </div>
                 <br />
@@ -121,7 +153,7 @@ const Component: NextPage = () => {
                     <div style={{ width: '60%' }}>
                         &#183; Tyron Pungtas:{' '}
                         {t(
-                            'a private company registered in Singapore, whose main activity is the development of web portals.'
+                            'dao14'
                         )}
                     </div>
                 </div>
@@ -130,7 +162,7 @@ const Component: NextPage = () => {
                 <div className="dao_flexContent">
                     <div className="dao_flexContentTxt">
                         {t(
-                            'These legal entities support the DAO in maintaining a relational approach to technology. So that the protocol of the TYRON Network, the Self-Sovereign Identity Protocol, cannot be corrupted and to maintain a network of cooperation to address socio-economic and environmental issues. Tyron Mapu CIC will address these issues in three areas: social injustices, DeFi education, and remediation of the environment.'
+                            'dao15'
                         )}
                     </div>
                     <div>

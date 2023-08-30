@@ -16,7 +16,7 @@ const Component: NextPage = () => {
                 <div className="content1">
                     {t('tyronZil2a')}{' '}
                     <a href="https://www.ssiprotocol.com/">
-                        Tyron Self-Sovereign Identity Protocol
+                        Self-Sovereign Identity Protocol
                     </a>
                     . {t('tyronZil2b')}{' '}
                     <a href="https://w3c.github.io/did-spec-registries/">

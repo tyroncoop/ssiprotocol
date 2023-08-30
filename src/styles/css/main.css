@@ -252,6 +252,9 @@ a {
 a:hover {
     border-bottom-color: transparent;
 }
+a:link {
+    text-decoration: none;
+}
 
 strong,
 b {
@@ -289,6 +292,11 @@ h4 a,
 h5 a,
 h6 a {
     color: inherit;
+    text-decoration: none;
+}
+
+div,
+a.link_iconos {
     text-decoration: none;
 }
 
@@ -1275,7 +1283,7 @@ button {
     -ms-transition: -ms-transform 0.325s ease-in-out,
         -ms-filter 0.325s ease-in-out;
     transition: transform 0.325s ease-in-out, filter 0.325s ease-in-out;
-    background-image: url('/images/lightning.jpg');
+    background-image: url('/images/SSI_protocolWeb_8001x4501px_fireBG.jpg');
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -1747,6 +1755,22 @@ body.is-preload #footer {
     height: 300px;
 }
 
+.indexImg {
+    width: 800px;
+    height: 300px;
+    padding-left: 100px;
+}
+
+.homePageImg {
+    width: 1500px;
+    height: 750px;
+    border-style: solid;
+    border-width: 2px;
+    border-color: red;
+    margin-top: 90px;
+    margin-bottom: 20px;
+}
+
 .iFrame {
     width: 476px;
     height: 268px;
@@ -1779,19 +1803,60 @@ body.is-preload #footer {
     display: flex;
     margin-top: 2rem;
 }
+/*
+a:link,a:visited, a:active.link_iconos {
+    text-decoration: none;
+}
+ 
 
+.link_iconos a:link,a:visited, a:active {
+    text-decoration: none;
+}*/
+
+.link_iconos a img {
+    text-decoration: none;
+}
+
+#italicas {
+    font-style: italic;
+}
 .h_headIco {
-    width: 100px;
-    height: 100px;
+    width: 150px;
+    height: 150px;
+    margin-left: 50px;
+    margin-right: 50px;
+    cursor: pointer;
+    z-index: 1;
+    text-decoration: none;
+}
+
+.h_headIco:hover {
+    width: 200px;
+    height: 200px;
     margin-left: 50px;
     margin-right: 50px;
     cursor: pointer;
     z-index: 1;
 }
+.h_headIco_indice {
+    width: 150px;
+    height: 150px;
+    margin-left: 5px;
+    margin-right: 20px;
+    cursor: pointer;
+    z-index: 1;
+    text-decoration: none;
+}
+.indice_majin {
+    margin-bottom: 300px;
+}
+.indice_majin2 {
+    margin-bottom: 100px;
+}
 
-.h_headIco:hover {
-    width: 120px;
-    height: 120px;
+.h_headIco_indice:hover {
+    width: 200px;
+    height: 200px;
     margin-left: 50px;
     margin-right: 50px;
     cursor: pointer;
@@ -1804,6 +1869,43 @@ body.is-preload #footer {
     margin-right: 100px;
     margin-top: 20px;
 }
+.majin {
+    height: 600px;
+    width: 600px;
+    background: red;
+    float: left;
+    padding-right: 600px;
+}
+
+.majin2 {
+    margin-top: 100px;
+}
+
+.h_imgContent_DIDx {
+    width: 500px;
+    height: 500px;
+    margin-right: 100px;
+    margin-top: 20px;
+}
+.h_imgContent_majin {
+    width: 400px;
+    height: 400px;
+    margin-left: 200px;
+    margin-top: 20px;
+}
+.h_imgContent_NFTs {
+    width: 450px;
+    height: 450px;
+    margin-right: 100px;
+    margin-top: 20px;
+}
+
+.h_imgContentRight_RecSoc {
+    width: 500px;
+    height: 500px;
+    margin-left: 100px;
+    margin-top: 20px;
+}
 
 .h_imgContentRight {
     width: 200px;
@@ -1814,11 +1916,56 @@ body.is-preload #footer {
 
 .h_titleContent {
     font-weight: bold;
-    font-size: 35px;
+    font-size: 80px;
+}
+
+.h_titleContent_majin2 {
+    font-weight: bold;
+    font-size: 80px;
+    color: yellow;
+}
+
+.h_titleContent_majin {
+    font-weight: bold;
+    font-size: 80px;
+    color: yellow;
+    float: left;
+    padding-left: 300px;
+    padding-bottom: 80px;
+}
+
+.h_titleContent_b {
+    font-weight: bold;
+    font-size: 50px;
+}
+.contacto {
+    padding-left: 500px;
+    list-style: none;
+}
+
+.contacto_2 {
+    list-style: none;
+}
+
+.contacto_3 {
+    color: yellow;
 }
 
 .h_txtContent {
     font-size: 30px;
+}
+
+.h_txtContent_kf {
+    font-size: 25px;
+    justify-content: center;
+    align-text: center;
+    padding: 25px;
+    border-width: 2px;
+    border-color: #000000;
+}
+
+#italicas {
+    font-style: italic;
 }
 
 .dao_wrapperTyronSsi {
@@ -1929,6 +2076,7 @@ body.is-preload #footer {
         display: flex;
         flex-direction: column;
         margin-top: 0rem;
+        text-decoration: none;
     }
     .h_headIco {
         margin-top: 10px;
@@ -1940,6 +2088,14 @@ body.is-preload #footer {
         margin-right: 20px;
         margin-top: 20px;
     }
+
+    .h_imgContent_DIDx {
+        width: 80px;
+        height: 80px;
+        margin-right: 20px;
+        margin-top: 20px;
+    }
+
     .h_imgContentRight {
         width: 80px;
         height: 80px;
@@ -1957,6 +2113,18 @@ body.is-preload #footer {
     .aboutImg {
         width: 250px;
         height: 150px;
+    }
+    .indexImg {
+        width: 250px;
+        height: 150px;
+    }
+    .homePageImg {
+        width: 250px;
+        height: 150px;
+        padding-top: 10px;
+    }
+    #italicas {
+        font-style: italic;
     }
 
     .dao_tyronSsi {
