@@ -30,7 +30,7 @@
     "index_wallets2": "The DIDxWALLET is a secure vault that allows you to store your money. It is a non-custodial wallet, which means that you are the only one who has control over your private keys and the security of your assets.",
     "index_wallets3": "Moreover, it has social recovery!",
     "index_wallets4": "With a DEFIxWALLET, one can securely delegate ZIL without intermediaries. Social recovery for Zillion, the decentralised application for staking on Zilliqa.",
-    "index_wallets5": "You can choose any staking node while safeguarding your ZIL delegated with the social recovery of your account.",
+    "index_wallets5": "You can choose any staking node while safeguarding your delegated ZIL with the social recovery of your account.",
     "index_wallets6": "Receive and store Soulbound tokens, such as the tyronSBT token.",
     "index_wallets7": "SBT tokens make it safer to identify and authenticate independently from a centralised registry. Thus, they enable access decentralised applications that require authentication, like TyronS$I DAO.",
     "social recovery": "Social recovery",
