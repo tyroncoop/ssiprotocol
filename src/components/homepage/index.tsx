@@ -8,7 +8,7 @@ import NFT from '../../images/iconos/ssi_icon_60px_NFT.svg'
 import RecSoc from '../../images/iconos/ssi_icon_60px_RecSoc.svg'
 import SocTree from '../../images/iconos/ssi_icon_60px_SocTree.svg'
 import Commun from '../../images/iconos/ssi_icon_60px_balanza.svg'
-import DIDx from '../../images/iconos/ssi_icon_didx2.svg'
+import DIDx from '../../images/iconos/ssi_icon_didx.svg'
 import DEFIx from '../../images/iconos/ssi_icon_defix.svg'
 
 import ZILx from '../../images/iconos/ssi_icon_60px_ZILx.svg'
