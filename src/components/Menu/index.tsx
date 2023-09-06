@@ -37,8 +37,7 @@ function Menu() {
         setShowMenu(false)
     }
     return (
-        <>
-            <div onClick={outerClose} className={styles.outerWrapper} />
+            // <div onClick={outerClose} className={styles.outerWrapper} />
             <div className={styles.wrapper}>
                 <div className={styles.wrapperDesktop}>
                     <div
@@ -198,7 +197,6 @@ function Menu() {
                     <Image width={22} src={burgerIco} alt="burger-ico" />
                 </div>
             </div>
-        </>
     )
 }
 export default Menu

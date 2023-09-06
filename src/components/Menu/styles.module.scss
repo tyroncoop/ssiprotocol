@@ -98,7 +98,8 @@
     font-weight: 500;
     font-size: large;
     cursor: pointer;
-    margin-left: 11px;
+    margin-left: 22px;
+    margin-right: 22px;
     text-transform: uppercase;
     margin-bottom: 1px;
     text-decoration: overline;
@@ -134,7 +135,8 @@
         margin-top: 50px;
         cursor: pointer;
     }
-    .txtMenu {
+    .txtMenu,
+    .txtMenuActive {
         font-weight: 400;
         font-size: medium;
         margin-left: 11px;
