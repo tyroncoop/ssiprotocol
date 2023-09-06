@@ -1908,19 +1908,20 @@ a:link,a:visited, a:active.link_iconos {
 
 .h_titleContent {
     text-transform: uppercase;
-    font-weight: bold;
-    font-size: 22px;
+    font-size: 27px;
     text-align: center;
     color: #ffff32;
-    padding-top: 7%;
-    padding-bottom: 3%;
+    padding-top: 44px;
+    padding-bottom: 22px;
+    text-decoration: overline;
+    text-decoration-color: #ffffff2e;
 }
 .h_txtContent {
     padding-left: 11%;
     padding-right: 11%;
     padding-bottom: 11%;
-    text-align: justify;
-    font-size: 19px;
+    text-align: left;
+    font-size: 22px;
 }
 
 .h_titleContent2 {
@@ -2233,11 +2234,13 @@ a:link,a:visited, a:active.link_iconos {
     }
     .h_titleContent,
     .h_titleContent2 {
-        font-size: large;
+        font-size: 22px;
+        padding-top: 33px;
+        padding-bottom: 11px;
     }
 
     .h_txtContent {
-        font-size: 17px;
+        font-size: 18px;
     }
 
     .aboutImg {

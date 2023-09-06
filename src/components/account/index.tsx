@@ -26,7 +26,6 @@ const account = () => {
                 <div className={styles.wrapper}>
                     <div className={styles.card}>
                         <div className="h_titleContent">Soulbound tokens</div>
-                        <br />
                         <div className="h_txtContent">
                             {t('index_wallets6')}
                             <br />
@@ -34,7 +33,7 @@ const account = () => {
                             {t('index_wallets7')}
                         </div>
                     </div>
-                    <div className={`${styles.card} ${styles.cardNext}`} />
+                    {/* <div className={`${styles.card} ${styles.cardNext}`} /> */}
                 </div>
                 {/* <div className={styles.wrapper}>
                     <div className={styles.card}>Card 3</div>
