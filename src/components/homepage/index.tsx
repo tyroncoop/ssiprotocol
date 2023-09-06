@@ -45,7 +45,9 @@ const Component: NextPage = () => {
                         <a href="http://lexica.art/">lexica.art</a>
                         {t('index_lexica2')}
                         <br />
+                        <br />
                         {t('index_lexica3')}
+                        <br />
                         <br />
                         {t('index_lexica4')}
                     </div>
@@ -59,9 +61,11 @@ const Component: NextPage = () => {
                     <div className="h_txtContent">
                         {t('index_tot1')} {t('index_tot2')}
                         <br />
+                        <br />
                         {t('index_tot3')}
                         <br />
                         {t('index_tot4')}
+                        <br />
                         <br />
                         {t('index_tot5')}
                         <a href="https://www.tyron.io/origin/">
