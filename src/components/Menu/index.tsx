@@ -40,14 +40,14 @@ function Menu() {
         <>
             <div onClick={outerClose} className={styles.outerWrapper} />
             <div className={styles.wrapper}>
-                <div className={styles.wrapperLeftDesktop}>
+                <div className={styles.wrapperDesktop}>
                     <div
                         onClick={() => Router.push('/')}
                         className={styles.logo}
                     >
                         <Image
-                            width={90}
-                            height={90}
+                            width={83}
+                            height={83}
                             src={LogoSSI}
                             alt="logo"
                         />
@@ -112,7 +112,7 @@ function Menu() {
                         onClick={() => Router.push('/')}
                         className={styles.logo}
                     >
-                        <Image height={90} src={IsoLogoSSI} alt="logo" />
+                        <Image height={74} src={IsoLogoSSI} alt="logo" />
                     </div>
                     {showMenu && (
                         <>
@@ -195,7 +195,7 @@ function Menu() {
                     onClick={() => setShowMenu(!showMenu)}
                     className={styles.burger}
                 >
-                    <Image width={30} src={burgerIco} alt="burger-ico" />
+                    <Image width={22} src={burgerIco} alt="burger-ico" />
                 </div>
             </div>
         </>

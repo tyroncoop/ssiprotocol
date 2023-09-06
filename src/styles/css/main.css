@@ -1909,6 +1909,7 @@ a:link,a:visited, a:active.link_iconos {
 .h_titleContent {
     text-transform: uppercase;
     font-size: 27px;
+    font-weight: bold;
     text-align: center;
     color: #ffff32;
     padding-top: 44px;
@@ -2119,7 +2120,7 @@ a:link,a:visited, a:active.link_iconos {
 }
 
 .t_tutorialWrapper {
-    margin: 1rem;
+    margin-bottom: 7rem;
 }
 
 .iFrame {
@@ -2153,6 +2154,9 @@ a:link,a:visited, a:active.link_iconos {
         background-image: url('/images/ssi_background_2968x1928px.jpg');
         /* background-size: contain; */
     }
+    .t_tutorialWrapper {
+        margin-right: 1rem;
+    }
 }
 
 @media only screen and (max-width: 900px) {
@@ -2172,10 +2176,6 @@ a:link,a:visited, a:active.link_iconos {
     }
     #header {
         margin-top: 15rem;
-    }
-    .iFrame {
-        width: 238px;
-        height: 134px;
     }
     .contentBody {
         margin-top: 200px;
@@ -2368,7 +2368,18 @@ a:link,a:visited, a:active.link_iconos {
         font-size: 20px;
     }
 }
-
+@media only screen and (max-width: 900px) and (min-width: 576px) {
+    .iFrame {
+        width: 500px;
+        height: 280px;
+    }
+}
+@media only screen and (max-width: 576px) {
+    .iFrame {
+        width: 300px;
+        height: 168px;
+    }
+}
 @media only screen and (max-width: 1440px) and (min-width: 900px) {
     /* .h_headWrapper {
         display: flex;
