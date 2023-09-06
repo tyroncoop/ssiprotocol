@@ -36,9 +36,9 @@ const account = () => {
                     </div>
                     <div className={`${styles.card} ${styles.cardNext}`} />
                 </div>
-                <div className={styles.wrapper}>
+                {/* <div className={styles.wrapper}>
                     <div className={styles.card}>Card 3</div>
-                </div>
+                </div> */}
             </SwipeableViews>
         </div>
     )
