@@ -37,21 +37,13 @@ function Menu() {
         setShowMenu(false)
     }
     return (
-            // <div onClick={outerClose} className={styles.outerWrapper} />
-            <div className={styles.wrapper}>
-                <div className={styles.wrapperDesktop}>
-                    <div
-                        onClick={() => Router.push('/')}
-                        className={styles.logo}
-                    >
-                        <Image
-                            width={83}
-                            height={83}
-                            src={LogoSSI}
-                            alt="logo"
-                        />
-                    </div>
-                    {/* <div
+        // <div onClick={outerClose} className={styles.outerWrapper} />
+        <div className={styles.wrapper}>
+            <div className={styles.wrapperDesktop}>
+                <div onClick={() => Router.push('/')} className={styles.logo}>
+                    <Image width={83} height={83} src={LogoSSI} alt="logo" />
+                </div>
+                {/* <div
                     onClick={() => Router.push('/about')}
                     className={
                         isActive('about')
@@ -72,32 +64,32 @@ function Menu() {
                 >
                     TyronZIL
                 </div> */}
-                    <div
-                        onClick={() => Router.push('/tutorials')}
-                        className={
-                            isActive('tutorials')
-                                ? styles.txtMenuActive
-                                : styles.txtMenu
-                        }
-                    >
-                        {t('TUTORIALS')}
-                    </div>
-                    <div
-                        onClick={() =>
-                            // Router.push('/whitepaper')
-                            window.open(
-                                'https://ssiprotocol.notion.site/TYRON-whitepaper-5ca16fc254b343fb90cfeb725cbfa2c3'
-                            )
-                        }
-                        className={
-                            isActive('whitepaper')
-                                ? styles.txtMenuActive
-                                : styles.txtMenu
-                        }
-                    >
-                        WHITEPAPER
-                    </div>
-                    {/* <div
+                <div
+                    onClick={() => Router.push('/tutorials')}
+                    className={
+                        isActive('tutorials')
+                            ? styles.txtMenuActive
+                            : styles.txtMenu
+                    }
+                >
+                    {t('TUTORIALS')}
+                </div>
+                <div
+                    onClick={() =>
+                        // Router.push('/whitepaper')
+                        window.open(
+                            'https://ssiprotocol.notion.site/TYRON-whitepaper-5ca16fc254b343fb90cfeb725cbfa2c3'
+                        )
+                    }
+                    className={
+                        isActive('whitepaper')
+                            ? styles.txtMenuActive
+                            : styles.txtMenu
+                    }
+                >
+                    WHITEPAPER
+                </div>
+                {/* <div
                     onClick={() => Router.push('/dao')}
                     className={
                         isActive('dao') ? styles.txtMenuActive : styles.txtMenu
@@ -105,17 +97,14 @@ function Menu() {
                 >
                     DAO
                 </div> */}
+            </div>
+            <div className={styles.wrapperLeftMobile}>
+                <div onClick={() => Router.push('/')} className={styles.logo}>
+                    <Image height={74} src={IsoLogoSSI} alt="logo" />
                 </div>
-                <div className={styles.wrapperLeftMobile}>
-                    <div
-                        onClick={() => Router.push('/')}
-                        className={styles.logo}
-                    >
-                        <Image height={74} src={IsoLogoSSI} alt="logo" />
-                    </div>
-                    {showMenu && (
-                        <>
-                            {/* <div
+                {showMenu && (
+                    <>
+                        {/* <div
                             onClick={() => Router.push('/about')}
                             className={
                                 isActive('about')
@@ -136,35 +125,35 @@ function Menu() {
                         >
                             TyronZIL
                         </div> */}
-                            <div
-                                onClick={() => {
-                                    setShowMenu(false)
-                                    Router.push('/tutorials')
-                                }}
-                                className={
-                                    isActive('tutorials')
-                                        ? styles.txtMenuActive
-                                        : styles.txtMenu
-                                }
-                            >
-                                {t('TUTORIALS')}
-                            </div>
-                            <div
-                                onClick={() =>
-                                    // Router.push('/whitepaper')
-                                    window.open(
-                                        'https://ssiprotocol.notion.site/TYRON-whitepaper-5ca16fc254b343fb90cfeb725cbfa2c3'
-                                    )
-                                }
-                                className={
-                                    isActive('whitepaper')
-                                        ? styles.txtMenuActive
-                                        : styles.txtMenu
-                                }
-                            >
-                                WHITEPAPER
-                            </div>
-                            {/* <div
+                        <div
+                            onClick={() => {
+                                setShowMenu(false)
+                                Router.push('/tutorials')
+                            }}
+                            className={
+                                isActive('tutorials')
+                                    ? styles.txtMenuActive
+                                    : styles.txtMenu
+                            }
+                        >
+                            {t('TUTORIALS')}
+                        </div>
+                        <div
+                            onClick={() =>
+                                // Router.push('/whitepaper')
+                                window.open(
+                                    'https://ssiprotocol.notion.site/TYRON-whitepaper-5ca16fc254b343fb90cfeb725cbfa2c3'
+                                )
+                            }
+                            className={
+                                isActive('whitepaper')
+                                    ? styles.txtMenuActive
+                                    : styles.txtMenu
+                            }
+                        >
+                            WHITEPAPER
+                        </div>
+                        {/* <div
                             onClick={() => Router.push('/dao')}
                             className={
                                 isActive('dao')
@@ -174,29 +163,29 @@ function Menu() {
                         >
                             DAO
                         </div> */}
-                            <button
-                                className={styles.button}
-                                onClick={handleOnClick}
-                            >
-                                <span className={styles.buttonText}>
-                                    Launch App
-                                </span>
-                            </button>
-                        </>
-                    )}
-                </div>
-                <div className={styles.btnDesktop}>
-                    <button className={styles.button} onClick={handleOnClick}>
-                        <span className={styles.buttonText}>Launch App</span>
-                    </button>
-                </div>
-                <div
-                    onClick={() => setShowMenu(!showMenu)}
-                    className={styles.burger}
-                >
-                    <Image width={22} src={burgerIco} alt="burger-ico" />
-                </div>
+                        <button
+                            className={styles.button}
+                            onClick={handleOnClick}
+                        >
+                            <span className={styles.buttonText}>
+                                Launch App
+                            </span>
+                        </button>
+                    </>
+                )}
             </div>
+            <div className={styles.btnDesktop}>
+                <button className={styles.button} onClick={handleOnClick}>
+                    <span className={styles.buttonText}>Launch App</span>
+                </button>
+            </div>
+            <div
+                onClick={() => setShowMenu(!showMenu)}
+                className={styles.burger}
+            >
+                <Image width={22} src={burgerIco} alt="burger-ico" />
+            </div>
+        </div>
     )
 }
 export default Menu

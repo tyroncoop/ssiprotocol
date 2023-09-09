@@ -10,6 +10,7 @@ import SocTree from '../../images/iconos/ssi_icon_60px_SocTree.svg'
 import Commun from '../../images/iconos/ssi_icon_60px_balanza.svg'
 import DIDx from '../../images/iconos/ssi_icon_didx.svg'
 import DEFIx from '../../images/iconos/ssi_icon_defix.svg'
+import DIDxImg from '../../images/iconos/ssi_ICO_didxwallet_100px.svg'
 
 import ZILx from '../../images/iconos/ssi_icon_60px_ZILx.svg'
 import SBT from '../../images/iconos/ssi_icon_60px_SBT.svg'
@@ -171,7 +172,9 @@ const Component: NextPage = () => {
                             />
                         </th>
                         <th className="h_imgContent_majin_wrapper2">
-                            <div className={styles.title}>SSI account</div>
+                            <div className={styles.title}>
+                                Tyron SSI Account
+                            </div>
                             <table>
                                 <thead className="noStyleThead">
                                     <tr className="majin2">
@@ -280,30 +283,31 @@ const Component: NextPage = () => {
                     </tr>
                 </thead>
             </table> */}
-            <div className="aboutTxt">
-                <div id="didxwallet" />
-                {/* <div style={{ display: 'flex', justifyContent: 'center' }}>
+            {/* @dev: DIDxWALLET */}
+            <div id="didxwallet" />
+            <div className="aboutTxt" style={{ marginTop: '111px' }}>
+                <div className={styles.wrapperSection}>
                     <Image
                         className="h_imgContent_DIDx"
-                        src={DIDx}
-                        alt="content-ico"
+                        src={DIDxImg}
+                        alt="didxwallet-ico"
                     />
-                    <div style={{ width: '50%' }}>
-                        <div className="h_titleContent">DIDxWALLET</div>
+                    <div style={{ width: '100%' }}>
+                        <div className="h_titleContent">
+                            Decentralised Identifier Wallet
+                        </div>
                         <div className="h_txtContent">
                             {t('index_wallets1')}
                             <br />
+                            <br />
                             {t('index_wallets2')}
                             <br />
+                            <br />
                             {t('index_wallets3')}
-                            <br />
-                            <br />
-                            <br />
-                            <br />
                         </div>
                     </div>
                 </div>
-                <div className={styles.imgScreenCapWrapper}>
+                {/* <div className={styles.imgScreenCapWrapper}>
                     <Image
                         className={styles.imgScreenCap}
                         src={screenshoot_app}
@@ -413,7 +417,7 @@ const Component: NextPage = () => {
                         {t('index_nfts')}
                     </div>
                 </div>
-                <div className={styles.wrapperSectionIco}>
+                <div className={styles.wrapperSection}>
                     <div
                         onMouseOver={() => setNftSection(1)}
                         className="nftSectionIco"

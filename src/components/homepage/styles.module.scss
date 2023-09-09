@@ -37,9 +37,10 @@
     height: fit-content;
     border: 1px solid #ffffff2e;
     border-radius: 4%;
+    transform: rotate(90deg);
 }
 
-.wrapperSectionIco {
+.wrapperSection {
     display: flex;
     flex-direction: row;
     align-items: center;
