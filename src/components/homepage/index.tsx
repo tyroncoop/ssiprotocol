@@ -22,8 +22,8 @@ import app_didx from '../../images/didxwallet.png'
 import app_RecSoc from '../../images/socialrecovery.png'
 import app_SocTree from '../../images/socialtree.png'
 import KvmeFelen from '../../images/kvmeFelen.png'
-import imgSocialRecovery from '../../images/test.gif'
-import imgSocTree from '../../images/test.gif'
+import gifSocialRecovery from '../../images/web_social-recovery.gif'
+import gifSocTree from '../../images/web_social-tree.gif'
 
 import screenshoot_app from '../../images/screenshoot-app.gif'
 import tw from '../../images/socialmedia/soc_twitter_light.svg'
@@ -378,8 +378,8 @@ const Component: NextPage = () => {
                     />
                     <Image
                         className={styles.imgScreenCap}
-                        src={imgSocialRecovery}
-                        alt="img-soc-rec"
+                        src={gifSocialRecovery}
+                        alt="gif_social-recovery"
                     />
                 </div>
                 <div className={styles.subtitle}>{t('SOCIAL RECOVERY')}</div>
@@ -490,8 +490,8 @@ const Component: NextPage = () => {
                     />
                     <Image
                         className={styles.imgScreenCap}
-                        src={imgSocTree}
-                        alt="img-soc-tree"
+                        src={gifSocTree}
+                        alt="gif_social-tree"
                     />
                 </div>
                 <div className={styles.subtitle}>{t('SOCIAL TREE')}</div>
@@ -504,7 +504,7 @@ const Component: NextPage = () => {
                     <br />
                     {t('index_tree3')}{' '}
                     <a href="https://www.tyron.network/ssiprotocol">
-                        tyron.network/ssiprotocol
+                        tyron.network/ssiprotocol &#8594;
                     </a>
                 </div>
                 <div></div>

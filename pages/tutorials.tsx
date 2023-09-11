@@ -34,8 +34,8 @@ const Component: NextPage = () => {
                     <div className="t_tutorialTitle">{t('tutorial_3')}</div>
                     <iframe
                         className="iFrame"
-                        src="https://www.youtube.com/embed/nicBm8EpTMA?controls=1"
-                        title="Mint a TYDRA of TYRON NFT"
+                        src="https://www.youtube.com/embed/sYfYY3q5m9M?controls=1"
+                        title="TUTORIAL: Tydra of Tyron NFT"
                         frameBorder="0"
                         allowFullScreen
                     ></iframe>

@@ -49,7 +49,7 @@ function Header() {
                 </div>
                 <nav>
                     <a className={styles.launch} onClick={handleOnClick}>
-                        launch app
+                        Launch dApp &#8594;
                         {/* <Image
                             height={30}
                             width={90}

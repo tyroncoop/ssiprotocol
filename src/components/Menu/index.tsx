@@ -87,7 +87,8 @@ function Menu() {
                             : styles.txtMenu
                     }
                 >
-                    WHITEPAPER
+                    WHITEPAPER &#8594;
+                    {/* triangulo: &#9654; flecha hacia arriba: &#x2197;*/}
                 </div>
                 {/* <div
                     onClick={() => Router.push('/dao')}
@@ -168,7 +169,7 @@ function Menu() {
                             onClick={handleOnClick}
                         >
                             <span className={styles.buttonText}>
-                                Launch App
+                                Launch dApp &#8594;
                             </span>
                         </button>
                     </>
@@ -176,7 +177,9 @@ function Menu() {
             </div>
             <div className={styles.btnDesktop}>
                 <button className={styles.button} onClick={handleOnClick}>
-                    <span className={styles.buttonText}>Launch App</span>
+                    <span className={styles.buttonText}>
+                        Launch dApp &#8594;
+                    </span>
                 </button>
             </div>
             <div
