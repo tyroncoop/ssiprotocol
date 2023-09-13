@@ -1966,7 +1966,8 @@ a:link,a:visited, a:active.link_iconos {
 }
 
 .h_txtContent_kf {
-    font-size: large;
+    font-weight: 700;
+    font-size: 22px;
     margin-top: 11%;
     margin-bottom: 11%;
     justify-content: center;
@@ -2277,7 +2278,7 @@ a:link,a:visited, a:active.link_iconos {
         margin-left: 0px;
     }
     .h_txtContent_kf {
-        font-size: medium;
+        font-size: 17px;
     }
     .h_imgContent_majin {
         width: 70px;

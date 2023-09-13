@@ -87,7 +87,7 @@ function Menu() {
                             : styles.txtMenu
                     }
                 >
-                    WHITEPAPER &#8594;
+                    WHITE PAPER &#8594;
                     {/* triangulo: &#9654; flecha hacia arriba: &#x2197;*/}
                 </div>
                 {/* <div
@@ -152,7 +152,7 @@ function Menu() {
                                     : styles.txtMenu
                             }
                         >
-                            WHITEPAPER
+                            WHITEPAPER &#8594;
                         </div>
                         {/* <div
                             onClick={() => Router.push('/dao')}

@@ -21,7 +21,9 @@ const account = () => {
                             {t('index_wallets5')}
                         </div>
                     </div>
-                    <div className={`${styles.card} ${styles.cardNext}`} />
+                    <div className={`${styles.card} ${styles.cardNext}`}>
+                        <div className={styles.arrow}>&#8592;</div>
+                    </div>
                 </div>
                 <div className={styles.wrapper}>
                     <div className={styles.card}>
