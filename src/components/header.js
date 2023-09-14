@@ -31,20 +31,12 @@ function Header() {
                 <div />
                 <div className={contentClassName}>
                     <div className={innerClassName}>
-                        <p
-                            style={{
-                                fontSize: 'x-large',
-                                fontWeight: '700',
-                                textTransform: 'uppercase',
-                                paddingTop: '4%',
-                                paddingBottom: '4%',
-                            }}
-                        >
+                        <div className={styles.title}>
                             Tyron Self-Sovereign Identity Protocol
-                        </p>
-                        <p style={{ color: '#dbe4eb', fontSize: '11px' }}>
+                        </div>
+                        <div className={styles.subtitle}>
                             Decentralised networks of sovereign identities
-                        </p>
+                        </div>
                     </div>
                 </div>
                 {/* <nav>
