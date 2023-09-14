@@ -62,6 +62,7 @@ $font-anonymous-pro: 'Anonymous Pro', monospace;
     white-space: nowrap;
     display: flex;
     align-items: center;
+    background: linear-gradient(to right, black, #333333);
 }
 .button:hover {
     border-color: #ffff32;

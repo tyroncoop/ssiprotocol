@@ -140,7 +140,6 @@ const Component: NextPage = () => {
                 <div className="h_txtContent_kf">
                     <span
                         style={{
-                            textDecoration: 'underline',
                             color: '#ffff32',
                         }}
                     >
@@ -159,7 +158,6 @@ const Component: NextPage = () => {
                     {t('index_kvmefelen5')}
                     <span
                         style={{
-                            textDecoration: 'underline',
                             color: '#ffff32',
                         }}
                     >
@@ -183,6 +181,7 @@ const Component: NextPage = () => {
                                 className={styles.imgIcon}
                                 src={ssiAccount}
                                 alt="account-ico"
+                                title="Tyron SSI Account"
                             />
                         </th>
                         <th className="h_imgContent_majin_wrapper2">

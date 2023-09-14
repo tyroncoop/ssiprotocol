@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css?family=Anonymous+Pro&display=swap');
+$font-anonymous-pro: 'Anonymous Pro', monospace;
+
 .wrapper {
     z-index: 1;
     width: 100%;
@@ -69,17 +72,20 @@
     }
 }
 .title {
+    font-family: $font-anonymous-pro;
     font-weight: bold;
     font-size: 29px;
     color: #dbe4eb;
     /* float: left; */
-    padding-top: 4px;
-    padding-left: 11px;
-    padding-bottom: 22px;
+    padding-top: 22px;
+    padding-left: 22px;
+    padding-bottom: 33px;
 
     @media only screen and (min-width: 830px) {
         font-size: 47px;
-        padding: 38px;
+        padding-top: 65px;
+        padding-left: 22px;
+        padding-bottom: 56px;
     }
 }
 
@@ -139,6 +145,7 @@
 }
 
 .imgIcon {
+    cursor: pointer;
     display: flex;
     margin-bottom: 22px;
     width: 111px;

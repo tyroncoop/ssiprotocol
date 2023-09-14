@@ -47,17 +47,17 @@ function Header() {
                         </p>
                     </div>
                 </div>
-                <nav>
+                {/* <nav>
                     <a className={styles.launch} onClick={handleOnClick}>
-                        Launch dApp &#8594;
-                        {/* <Image
+                        Launch dApp &#8594; */}
+                {/* <Image
                             height={30}
                             width={90}
                             src={LogoTYRON}
                             alt="logo"
                         /> */}
-                    </a>
-                </nav>
+                {/* </a>
+                </nav> */}
                 {/*<nav>
                     <ul>
                          <li><Link to="/about">About</Link></li>
