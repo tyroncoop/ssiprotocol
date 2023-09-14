@@ -138,7 +138,14 @@ const Component: NextPage = () => {
             {/* @dev: introduction */}
             <div className={styles.kvmeFelen}>
                 <div className="h_txtContent_kf">
-                    <span id="italicas">Kvme Felen</span>{' '}
+                    <span
+                        style={{
+                            textDecoration: 'underline',
+                            color: '#ffff32',
+                        }}
+                    >
+                        Kvme Felen
+                    </span>{' '}
                     {t('index_kvmefelen1')}{' '}
                     <span id="italicas">Buen Vivir</span>
                     {t('index_kvmefelen2')}
@@ -150,7 +157,14 @@ const Component: NextPage = () => {
                     <br />
                     <br />
                     {t('index_kvmefelen5')}
-                    <span id="italicas">Kvme Felen</span>
+                    <span
+                        style={{
+                            textDecoration: 'underline',
+                            color: '#ffff32',
+                        }}
+                    >
+                        Kvme Felen
+                    </span>
                     {t('index_kvmefelen6')}
                 </div>
                 <Image

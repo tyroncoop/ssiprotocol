@@ -1,5 +1,6 @@
 @import url(fontawesome-all.min.css);
 @import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:300italic,600italic,300,600');
+@import url('https://fonts.googleapis.com/css?family=Anonymous+Pro&display=swap');
 
 /*
 	Dimension by HTML5 UP
@@ -1966,14 +1967,15 @@ a:link,a:visited, a:active.link_iconos {
 }
 
 .h_txtContent_kf {
+    font-family: 'Anonymous Pro', monospace;
     font-weight: 700;
     font-size: 22px;
-    margin-top: 11%;
-    margin-bottom: 11%;
+    margin-top: 7%;
+    /* margin-bottom: 11%; */
     justify-content: center;
     background-color: #ffffff2e;
-    padding: 3%;
-    border-radius: 4px;
+    padding: 4%;
+    border-radius: 0px;
     /*align-text: center;
     padding: 25px;
     border-width: 2px;

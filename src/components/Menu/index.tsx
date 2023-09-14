@@ -90,6 +90,14 @@ function Menu() {
                     WHITE PAPER &#8594;
                     {/* triangulo: &#9654; flecha hacia arriba: &#x2197;*/}
                 </div>
+                <div
+                    onClick={() => window.open('https://tyron.io')}
+                    className={
+                        isActive('blog') ? styles.txtMenuActive : styles.txtMenu
+                    }
+                >
+                    blog &#8594;
+                </div>
                 {/* <div
                     onClick={() => Router.push('/dao')}
                     className={
@@ -153,6 +161,16 @@ function Menu() {
                             }
                         >
                             WHITEPAPER &#8594;
+                        </div>
+                        <div
+                            onClick={() => window.open('https://tyron.io')}
+                            className={
+                                isActive('blog')
+                                    ? styles.txtMenuActive
+                                    : styles.txtMenu
+                            }
+                        >
+                            blog &#8594;
                         </div>
                         {/* <div
                             onClick={() => Router.push('/dao')}

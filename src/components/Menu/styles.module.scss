@@ -1,3 +1,7 @@
+@import url('https://fonts.googleapis.com/css?family=Anonymous+Pro&display=swap');
+
+$font-anonymous-pro: 'Anonymous Pro', monospace;
+
 .outerWrapper {
     top: 0%;
     left: 0%;
@@ -42,16 +46,16 @@
 .button {
     border: 1px solid #dbe4eb;
     box-shadow: none;
-    border-radius: 4px;
+    border-radius: 0px;
     display: inline-block;
     font-size: 0.8rem;
-    font-family: 'Source Sans Pro', sans-serif;
+    font-family: $font-anonymous-pro;
     font-weight: 900;
-    height: 2.2rem;
-    letter-spacing: 0.11rem;
-    line-height: 1.7rem;
+    height: 1.7rem;
+    letter-spacing: 0.1rem;
+    line-height: 1.1rem;
     outline: 0;
-    //padding: 0 1rem 0 1rem;
+    padding: 0 1rem 0 1rem;
     text-align: center;
     text-decoration: none;
     text-transform: none;
