@@ -7,6 +7,7 @@ import { useTranslation } from 'next-i18next'
 import LogoTYRON from '../images/tyron_logo.svg'
 import styles from './styles.module.scss'
 function Header() {
+    const { t } = useTranslation()
     const [headerClassName, setHeaderClassName] = useState('first-load')
     const [contentClassName, setContentClassName] = useState('first-load')
     const [innerClassName, setInnerClassName] = useState('first-load')
@@ -32,10 +33,12 @@ function Header() {
                 <div className={contentClassName}>
                     <div className={innerClassName}>
                         <div className={styles.title}>
-                            Tyron Self-Sovereign Identity Protocol
+                            {t('Tyron Self-Sovereign Identity Protocol')}
                         </div>
                         <div className={styles.subtitle}>
-                            Decentralised networks of sovereign identities
+                            {t(
+                                'Decentralised networks of sovereign identities'
+                            )}
                         </div>
                     </div>
                 </div>

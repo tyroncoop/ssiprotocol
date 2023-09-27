@@ -87,7 +87,7 @@ function Menu() {
                             : styles.txtMenu
                     }
                 >
-                    WHITE PAPER &#8594;
+                    WHITE PAPER&#x2197;
                     {/* triangulo: &#9654; flecha hacia arriba: &#x2197;*/}
                 </div>
                 <div
@@ -96,7 +96,7 @@ function Menu() {
                         isActive('blog') ? styles.txtMenuActive : styles.txtMenu
                     }
                 >
-                    blog &#8594;
+                    blog&#x2197;
                 </div>
                 {/* <div
                     onClick={() => Router.push('/dao')}
@@ -160,7 +160,7 @@ function Menu() {
                                     : styles.txtMenu
                             }
                         >
-                            WHITEPAPER &#8594;
+                            WHITEPAPER&#x2197;
                         </div>
                         <div
                             onClick={() => window.open('https://tyron.io')}
@@ -170,7 +170,7 @@ function Menu() {
                                     : styles.txtMenu
                             }
                         >
-                            blog &#8594;
+                            blog&#x2197;
                         </div>
                         {/* <div
                             onClick={() => Router.push('/dao')}
@@ -182,23 +182,22 @@ function Menu() {
                         >
                             DAO
                         </div> */}
-                        <button
-                            className={styles.button}
-                            onClick={handleOnClick}
-                        >
+                        <div className={styles.button} onClick={handleOnClick}>
                             <span className={styles.buttonText}>
-                                Launch dApp &#8594;
+                                {t('Launch dApp')}
+                                &#8594;
                             </span>
-                        </button>
+                        </div>
                     </>
                 )}
             </div>
             <div className={styles.btnDesktop}>
-                <button className={styles.button} onClick={handleOnClick}>
+                <div className={styles.button} onClick={handleOnClick}>
                     <span className={styles.buttonText}>
-                        Launch dApp &#8594;
+                        {t('Launch dApp')}
+                        &#8594;
                     </span>
-                </button>
+                </div>
             </div>
             <div
                 onClick={() => setShowMenu(!showMenu)}

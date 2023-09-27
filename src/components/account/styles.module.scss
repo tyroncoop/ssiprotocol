@@ -1,6 +1,10 @@
+@import url('https://fonts.googleapis.com/css?family=Anonymous+Pro&display=swap');
+$font-anonymous-pro: 'Anonymous Pro', monospace;
+
 .container {
     margin-top: 222px;
     width: 100%;
+    height: fit-content;
     background: linear-gradient(to right, #333333, #dbe4eb);
     overflow: hidden;
 }
@@ -14,23 +18,28 @@
     flex-direction: row;
     overflow: hidden;
     align-items: center;
+    margin-bottom: 22px;
 }
 
 .card {
+    display: flex;
+    flex-direction: column;
     flex-shrink: 0;
     width: 83%;
-    height: 600px;
+    height: fit-content;
     background-color: black;
-    border-radius: 11px;
+    border-radius: 1px;
     padding: 11px;
-    margin: 70px 11px 22px -11px;
+    margin: 70px 11px 22px 0;
     border-left: 3px solid #ffff32;
-    @media only screen and (min-width: 900px) {
-        height: 400px;
-    }
 }
 .cardNext {
-    margin-left: 11%;
+    margin-left: 7%;
+}
+.cardNext:hover {
+    background-color: #ffff32;
+    cursor: pointer;
+    border-left: 3px solid black;
 }
 
 .img {
@@ -48,11 +57,49 @@
 }
 
 .arrow {
-    margin-left: -44px;
+    cursor: pointer;
     height: 100%;
     display: flex;
     color: #ffff32;
-    font-size: 33px;
+    font-size: 22px;
     font-weight: bold;
     align-items: center;
+    margin-left: -14px;
+    @media only screen and (min-width: 900px) {
+        font-size: 33px;
+    }
+}
+//arrow on hover turns black
+.arrow:hover {
+    color: black;
+}
+
+.button {
+    border: 1px solid #dbe4eb;
+    box-shadow: none;
+    border-radius: 0px;
+    display: inline-block;
+    font-size: 0.8rem;
+    font-family: $font-anonymous-pro;
+    font-weight: 900;
+    width: fit-content;
+    height: 1.7rem;
+    letter-spacing: 0.1rem;
+    line-height: 1.1rem;
+    outline: 0;
+    padding: 0 1rem 0 1rem;
+    text-align: center;
+    text-decoration: none;
+    text-transform: none;
+    white-space: nowrap;
+    display: flex;
+    align-items: center;
+    background: linear-gradient(to right, black, #333333);
+    text-transform: none;
+    color: #dbe4eb;
+}
+.button:hover {
+    border-color: #ffff32;
+    color: #ffff32 !important;
+    cursor: pointer;
 }

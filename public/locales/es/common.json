@@ -84,5 +84,15 @@
     "index_nfts": "TOKENS NO FUNGIBLES",
     "tutorial_1": "Nueva cuenta",
     "tutorial_2": "Recuperación social",
-    "tutorial_3": "Tydra de Tyron NFT"
+    "tutorial_3": "Tydra de Tyron NFT",
+    "defixwallet_1": "Podés intercambiar entre distintas criptomonedas utilizando esta tecnología multi-DEX.",
+    "defixwallet_2": "TyronDEX introduce nuevos pares de intercambio basados en el Dólar de Identidades Soberanas (S$I). ",
+    "defixwallet_3": "Cuenta con una interfaz simplificada y unificada, desde la que se puede elegir entre las mejores opciones de liquidez.",
+    "defixwallet_4": "Por ejemplo, al comprar y vender stZIL, se pueden comparar los retornos recibidos de DragonDEX (ZilPay), ZilSwap (Switcheo) y ASwap (Avely).",
+    "DIDxWALLET": "Billetera de Identidad Descentralizada",
+    "Tyron SSI Account": "Cuenta Tyron SSI",
+    "Launch dApp": "Lanzar dApp",
+    "Tyron Self-Sovereign Identity Protocol": "Protocolo Tyron de Identidades Autosoberanas",
+    "Decentralised networks of sovereign identities": "Redes descentralizadas de identidades soberanas",
+    "Go to TyronDEX": "Ir a TyronDEX"
 }

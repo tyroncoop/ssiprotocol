@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css?family=Anonymous+Pro&display=swap');
-
 $font-anonymous-pro: 'Anonymous Pro', monospace;
 
 .outerWrapper {
@@ -94,6 +93,7 @@ $font-anonymous-pro: 'Anonymous Pro', monospace;
     margin-right: 22px;
     text-transform: uppercase;
     margin-bottom: 1px;
+    font-family: $font-anonymous-pro;
 }
 .txtMenu:hover {
     color: #ffff32 !important;
@@ -110,6 +110,7 @@ $font-anonymous-pro: 'Anonymous Pro', monospace;
     text-decoration: overline;
     text-decoration-color: #ffffff2e;
     color: #ffff32;
+    font-family: $font-anonymous-pro;
 }
 
 .btnDesktop {

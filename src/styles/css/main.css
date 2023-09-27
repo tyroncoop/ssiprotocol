@@ -1907,13 +1907,14 @@ a:link,a:visited, a:active.link_iconos {
 }
 
 .h_titleContent {
+    font-family: 'Anonymous Pro', monospace;
     text-transform: none;
     font-size: 27px;
     font-weight: bold;
     text-align: center;
     color: #ffff32;
     padding-top: 44px;
-    padding-bottom: 22px;
+    padding-bottom: 38px;
     text-decoration: overline;
     text-decoration-color: #ffffff2e;
 }
@@ -1927,6 +1928,7 @@ a:link,a:visited, a:active.link_iconos {
 }
 
 .h_titleContent2 {
+    font-family: 'Anonymous Pro', monospace;
     font-weight: 600;
     font-size: x-large;
     margin-bottom: 22px;

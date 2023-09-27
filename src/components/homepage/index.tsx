@@ -186,7 +186,7 @@ const Component: NextPage = () => {
                         </th>
                         <th className="h_imgContent_majin_wrapper2">
                             <div className={styles.title}>
-                                Tyron SSI Account
+                                {t('Tyron SSI Account')}
                             </div>
                             <table>
                                 <thead className="noStyleThead">
@@ -306,9 +306,7 @@ const Component: NextPage = () => {
                         alt="didxwallet-ico"
                     />
                     <div style={{ width: '100%' }}>
-                        <div className="h_titleContent">
-                            Decentralised Identifier Wallet
-                        </div>
+                        <div className="h_titleContent">{t('DIDxWALLET')}</div>
                         <div className="h_txtContent">
                             {t('index_wallets1')}
                             <br />
@@ -446,9 +444,9 @@ const Component: NextPage = () => {
                                 alt="menu-ico"
                             />
                         </a>
-                        <div className="nftSectionIcoBarWrapper">
+                        {/* <div className="nftSectionIcoBarWrapper">
                             <div className="nftSectionIcoBar" />
-                        </div>
+                        </div> */}
                     </div>
                     <div
                         onMouseOver={() => setNftSection(2)}
@@ -465,9 +463,9 @@ const Component: NextPage = () => {
                                 alt="menu-ico"
                             />
                         </a>
-                        <div className="nftSectionIcoBarWrapper">
+                        {/* <div className="nftSectionIcoBarWrapper">
                             <div className="nftSectionIcoBar" />
-                        </div>
+                        </div> */}
                     </div>
                     <div
                         onMouseOver={() => setNftSection(3)}
@@ -484,9 +482,10 @@ const Component: NextPage = () => {
                                 alt="menu-ico"
                             />
                         </a>
-                        <div className="nftSectionIcoBarWrapper">
+                        {/* @review sin linea blanca perpendicular */}
+                        {/* <div className="nftSectionIcoBarWrapper">
                             <div className="nftSectionIcoBar2" />
-                        </div>
+                        </div> */}
                     </div>
                 </div>
                 <div className={styles.sectionDesc}>{nftSectionRender()}</div>
@@ -517,7 +516,7 @@ const Component: NextPage = () => {
                     <br />
                     {t('index_tree3')}{' '}
                     <a href="https://www.tyron.network/ssiprotocol">
-                        tyron.network/ssiprotocol &#8594;
+                        tyron.network/ssiprotocol &#x2197;
                     </a>
                 </div>
                 <div></div>
