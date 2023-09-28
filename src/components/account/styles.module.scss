@@ -49,9 +49,6 @@ $font-anonymous-pro: 'Anonymous Pro', monospace;
     width: 100%;
     //padding top, and sides of 4%, bottom 0
     padding: 4% 7% 0 7%;
-    @media only screen and (min-width: 900px) {
-        justify-content: space-between;
-    }
 }
 
 .img {
