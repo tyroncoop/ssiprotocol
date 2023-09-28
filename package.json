@@ -26,7 +26,8 @@
         "start": "next start",
         "lint": "next lint",
         "p": "prettier -w .",
-        "s": "next build && prettier -w ."
+        "s": "next build && prettier -w .",
+        "c": "git push origin solar:master"
     },
     "dependencies": {
         "@reduxjs/toolkit": "^1.6.0",
