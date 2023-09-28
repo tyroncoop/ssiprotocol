@@ -35,7 +35,7 @@
     "index_wallets7": "SBT tokens make it safer to identify and authenticate independently from a centralised registry. Thus, they enable access decentralised applications that require authentication, like TyronS$I DAO.",
     "social recovery": "Social recovery",
     "index_recsoc1": "Social recovery is a security mechanism for regaining control of your Tyron SSI account and all of your funds, including those deposited on DeFi protocols.",
-    "index_recsoc2": "The goal is to recover your account in case of an unfortunate event that may result in the loss of access to it. This recovery is achieved by updating your controller wallet (such as ZilPay or MetaMask).",
+    "index_recsoc2": "The goal is to recover your account in case of an unfortunate event that may result in the loss of access to it. This recovery is achieved by updating your controlling wallet (such as ZilPay or MetaMask).",
     "index_recsoc3": "To activate Tyron's social recovery, you have to choose at least three people or organisations you trust, called NFT guardians, and assign them to your decentralised identity.",
     "index_nft1": "Assign NFT domain names for your Tyron SSI account according to their intended use.",
     "index_nft2": "An NFT domain acts as an alias that simplifies transactions.",
