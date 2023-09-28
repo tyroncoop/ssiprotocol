@@ -20,7 +20,14 @@ const account = () => {
 
     return (
         <div className={styles.container}>
-            <Image className={styles.img} src={DEFIxWALLET} alt="DEFIxWALLET" />
+            <div className={styles.header}>
+                <div className="h_titleContent">{t('DEFIxWALLET')}</div>
+                <Image
+                    className={styles.img}
+                    src={DEFIxWALLET}
+                    alt="DEFIxWALLET"
+                />
+            </div>
 
             {/* Carousel indicator/pagination */}
             <Carousel
@@ -32,7 +39,7 @@ const account = () => {
                 {/* Slide 1 */}
                 <div className={styles.wrapper}>
                     <div className={styles.card}>
-                        <div className="h_titleContent">Trading</div>
+                        <div className="h_titleContent2">Trading</div>
                         <div className="h_txtContent">
                             {t('defixwallet_1')}
                             <br />
@@ -70,7 +77,7 @@ const account = () => {
                 {/* Slide 2 */}
                 <div className={styles.wrapper}>
                     <div className={styles.card}>
-                        <div className="h_titleContent">Staking</div>
+                        <div className="h_titleContent2">Staking</div>
                         <div className="h_txtContent">
                             {t('index_wallets4')}
                             <br />
@@ -89,7 +96,7 @@ const account = () => {
                 {/* Slide 3 */}
                 <div className={styles.wrapper}>
                     <div className={styles.card}>
-                        <div className="h_titleContent">Soulbound tokens</div>
+                        <div className="h_titleContent2">Soulbound tokens</div>
                         <div className="h_txtContent">
                             {t('index_wallets6')}
                             <br />

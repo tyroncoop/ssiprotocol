@@ -1931,7 +1931,8 @@ a:link,a:visited, a:active.link_iconos {
     font-family: 'Anonymous Pro', monospace;
     font-weight: 600;
     font-size: x-large;
-    margin-bottom: 22px;
+    margin-top: 4%;
+    margin-bottom: 4%;
     text-decoration: overline;
     text-decoration-color: #ffffff2e;
     color: #dbe4eb;

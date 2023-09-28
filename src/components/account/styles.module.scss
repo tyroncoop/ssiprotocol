@@ -42,12 +42,21 @@ $font-anonymous-pro: 'Anonymous Pro', monospace;
     border-left: 3px solid black;
 }
 
-.img {
-    padding-top: 4%;
-    padding-left: 2%;
+.header {
     display: flex;
-    width: 65%;
+    flex-direction: column;
+    align-items: center; /* Center items on mobile */
+    width: 100%;
+    //padding top, and sides of 4%, bottom 0
+    padding: 4% 7% 0 7%;
+    @media only screen and (min-width: 900px) {
+        justify-content: space-between;
+    }
+}
+
+.img {
     height: fit-content;
+    width: 65%;
     @media only screen and (min-width: 576px) and (max-width: 899px) {
         width: 47%;
     }
