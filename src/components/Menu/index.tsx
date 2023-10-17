@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import styles from './styles.module.scss'
 import LogoSSI from '../../images/ssi_protocol_nb.svg'
-import IsoLogoSSI from '../../images/ssi_protocol_isoLogo_nB.svg'
+// import IsoLogoSSI from '../../images/ssi_protocol_isoLogo_nB.svg'
 import Image from 'next/image'
 import { useRouter } from 'next/router'
 import burgerIco from '../../images/burger.png'
@@ -96,7 +96,7 @@ function Menu() {
                         isActive('blog') ? styles.txtMenuActive : styles.txtMenu
                     }
                 >
-                    blog&#x2197;
+                    DAO Site&#x2197;
                 </div>
                 {/* <div
                     onClick={() => Router.push('/dao')}
@@ -109,7 +109,8 @@ function Menu() {
             </div>
             <div className={styles.wrapperLeftMobile}>
                 <div onClick={() => Router.push('/')} className={styles.logo}>
-                    <Image height={74} src={IsoLogoSSI} alt="logo" />
+                    {/* <Image height={74} src={IsoLogoSSI} alt="logo" /> */}
+                    <Image width={83} height={83} src={LogoSSI} alt="logo" />
                 </div>
                 {showMenu && (
                     <>
@@ -170,7 +171,7 @@ function Menu() {
                                     : styles.txtMenu
                             }
                         >
-                            blog&#x2197;
+                            DAO Site&#x2197;
                         </div>
                         {/* <div
                             onClick={() => Router.push('/dao')}
