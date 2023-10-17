@@ -24,6 +24,8 @@ import app_SocTree from '../../images/socialtree.png'
 import KvmeFelen from '../../images/kvmeFelen.png'
 import gifSocialRecovery from '../../images/web_social-recovery.gif'
 import gifSocTree from '../../images/web_social-tree.gif'
+import gifDIDx from '../../images/web_didxwallet.gif'
+import gifDEFIx from '../../images/web_defixwallet.gif'
 
 import screenshoot_app from '../../images/screenshoot-app.gif'
 import tw from '../../images/socialmedia/soc_twitter_light.svg'
@@ -296,6 +298,18 @@ const Component: NextPage = () => {
                     </tr>
                 </thead>
             </table> */}
+            <div className={styles.imgScreenCapWrapper}>
+                <Image
+                    className={styles.imgScreenCap}
+                    src={gifDIDx}
+                    alt="gif_DIDxWALLET"
+                />
+                <Image
+                    className={styles.imgScreenCap}
+                    src={gifDEFIx}
+                    alt="gif_DEFIxWALLET"
+                />
+            </div>
             {/* @dev: DIDxWALLET */}
             <div id="didxwallet" />
             <div className="aboutTxt" style={{ marginTop: '111px' }}>
